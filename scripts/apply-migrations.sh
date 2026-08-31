@@ -4,8 +4,10 @@
 set -euo pipefail
 
 : "${DB_PASSWORD:?DB_PASSWORD مطلوبة — احصل عليها من Supabase Dashboard → Settings → Database}"
-REF="wxknpssoebirzguwcivf"
-DB_URL="postgresql://postgres.${REF}:${DB_PASSWORD}@aws-0-eu-central-1.pooler.supabase.com:6543/postgres"
+REF="qrqrhgyddptgtqaefrzv"
+DB_URL="postgresql://postgres.${REF}@aws-0-ap-northeast-1.pooler.supabase.com:5432/postgres"
+
+
 
 if ! command -v psql >/dev/null 2>&1; then
   echo "تثبيت عميل psql..."
