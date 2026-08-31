@@ -40,7 +40,7 @@ const nextConfig = {
       { protocol: "https", hostname: "**.onesourceerp.com" },
       // شعار الموقع (مخزّن على خادم الأصول):
       { protocol: "https", hostname: "assets.khadmqtr.com" },
-      { protocol: "https", hostname: "wxknpssoebirzguwcivf.supabase.co" },
+      { protocol: "https", hostname: "qrqrhgyddptgtqaefrzv.supabase.co" },
     ],
     // إخراج WebP مع تخزين النسخ المحسّنة لمدة طويلة؛ تتغير الصورة عند تغيير updated_at.
     formats: ["image/webp"],
