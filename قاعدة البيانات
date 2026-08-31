@@ -35,7 +35,14 @@ on conflict (key) do update
 set value = excluded.value,
     updated_at = now();
 
+لعرض صور العاملات يجب ان يتم تحديث الملف scripts/apply-migrations.sh 
+السطر 7+8 الى المفاتيح الجديده 
 
+
+يجب تعديل ملف next.config.mjs
+لتعريف مفتاح الحساب العام الجديد لعرض صور العاملات 
+السطر 43 
+ويتم وضع المفتاح الجديد 
 
 
 
