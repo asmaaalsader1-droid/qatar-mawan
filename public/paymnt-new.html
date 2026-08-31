@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الدفع - معاون</title>
+    <!-- تعتمد الصفحة على خطوط النظام وأيقونات CSS محلية لتوافق سياسة CSP. -->
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: 'Cairo', sans-serif;
+            transition: all 0.3s ease;
+            padding: 20px;
+        }
+
+        .arabic-view {
+            direction: rtl;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        /* الحاوية الرئيسية الشاملة لكل الصفحة */
+        .main-wrapper-card {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .navbar-ar {
+            padding: 0;
+        }
+
+        .checkout-container-ar {
+            display: grid;
+            grid-template-columns: 1.8fr 1.2fr;
+            gap: 25px;
+            align-items: start;
+        }
+
+        .payment-section-ar {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* تصميم مدمج ومرتب لتبويبات الدفع */
+        .payment-method-card {
+            background: #fafbfc;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 12px 15px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .payment-method-card.active {
+            border-color: #5c1844;
+            background: #fff;
+            box-shadow: 0 0 0 1px #5c1844;
+        }
+
+        .payment-method-card.active .method-header span {
+            color: #5c1844;
+        }
+
+        .method-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            color: #222;
+            font-size: 14px;
+        }
+
+        .cards-icons {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            margin-top: 8px;
+        }
+
+        .card-badge {
+            font-size: 10px;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            background: #fff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-badge.visa { color: #1a1f71; border-color: #1a1f71; font-weight: 800; }
+        .card-badge.mastercard { color: #eb001b; font-weight: 800; }
+        .card-badge.amex { color: #006fcf; border-color: #006fcf; font-weight: 800; }
+        .card-badge.pay { background: #000; color: #fff; border-color: #000; }
+        .card-badge.gpay { color: #4285f4; border-color: #ccc; }
+
+        .card-badge.himyan { background: #5c1844; color: #fff; border: none; font-size: 9px; padding: 3px 8px; }
+        .card-badge.naps { background: #5c1844; color: #fff; border: none; font-size: 9px; padding: 3px 8px; }
+
+        /* نموذج البطاقة */
+        .card-form-ar {
+            background: transparent;
+            border: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-group-ar {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .form-group-ar label {
+            font-size: 13px;
+            font-weight: 700;
+            color: #333;
+            text-align: right;
+        }
+
+        .form-group-ar input {
+            padding: 10px 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+            direction: ltr;
+            text-align: right;
+            font-family: 'Cairo', sans-serif;
+            background: #fff;
+        }
+
+        .form-group-ar input:focus {
+            border-color: #5c1844;
+        }
+
+        .form-row-ar {
+            display: flex;
+            gap: 12px;
+        }
+
+        .form-group-ar.half {
+            flex: 1;
+        }
+
+        .summary-section-ar {
+            background: transparent;
+            border: none;
+            padding: 0;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 13px;
+        }
+
+        .summary-section-ar .summary-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .summary-section-ar .summary-item .label {
+            color: #666;
+            font-size: 12px;
+        }
+
+        .summary-section-ar .summary-item .value {
+            font-weight: 700;
+            color: #222;
+            font-size: 12px;
+        }
+
+        .summary-section-ar .summary-item.total .label,
+        .summary-section-ar .summary-item.total .value {
+            font-size: 14px;
+            color: #0c1b33;
+            font-weight: 800;
+        }
+
+        .summary-section-ar .divider {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 4px 0;
+        }
+
+        .section-divider {
+            border: none;
+            border-top: 1px solid #eaeaea;
+            margin: 2px 0;
+        }
+
+        /* بدائل محلية لأيقونات Font Awesome حتى لا تعتمد الصفحة على CDN خارجي. */
+        .fa-chevron-up::before { content: "⌃"; font-family: Arial, sans-serif; font-style: normal; }
+        .fa-chevron-down::before { content: "⌄"; font-family: Arial, sans-serif; font-style: normal; }
+        .fa-brands::before { content: ""; }
+        body, input, button { font-family: Arial, "Noto Sans Arabic", sans-serif; }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .main-wrapper-card {
+                padding: 15px;
+            }
+
+            .checkout-container-ar {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .card-badge {
+                font-size: 9px;
+                padding: 2px 5px;
+            }
+
+            .form-group-ar input {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+        }
+        
+        .checkout-action-container {
+            margin-top: 5px;
+            width: 100%;
+        }
+
+        .pay-now-btn {
+            width: 100%;
+            background-color: #5c1844;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-family: 'Cairo', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pay-now-btn:hover {
+            background-color: #4a1235;
+        }
+        
+        /* تنسيق حاوية العنوان وزر "لماذا أدفع الآن؟" بجانب بعضهما */
+        .payment-header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .text-nav-paymnet {
+            font-size: 15px;
+            font-weight: 700;
+            color: #222;
+            margin: 0;
+        }
+
+        .why-pay-text {
+            font-size: 13px;
+            color: #5c1844;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 0;
+            transition: opacity 0.2s;
+        }
+
+        .why-pay-text:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        /* تنسيق الشاشة المنبثقة (Modal) */
+        .custom-modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .custom-modal-content {
+            background: #fff;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            direction: rtl;
+            text-align: right;
+            animation: slideUp 0.3s ease;
+        }
+
+        .modal-header {
+            padding: 16px 20px;
+            background: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .modal-header h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #222;
+            margin: 0;
+        }
+
+        .close-modal-btn {
+            font-size: 24px;
+            color: #888;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .close-modal-btn:hover {
+            color: #000;
+        }
+
+        .modal-body {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .modal-desc {
+            font-size: 13px;
+            color: #444;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .modal-note {
+            display: block;
+            margin-top: 8px;
+            color: #5c1844;
+            font-weight: 600;
+        }
+
+        .modal-summary-box {
+            background: #fafbfc;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 12px 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .summary-divider {
+            border: none;
+            border-top: 1px dashed #ddd;
+            margin: 4px 0;
+        }
+
+        .summary-row.total {
+            font-weight: 800;
+            color: #5c1844;
+            font-size: 14px;
+        }
+
+        .modal-footer {
+            padding: 12px 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #eaeaea;
+            display: flex;
+            justify-content: center;
+        }
+
+        .modal-action-btn {
+            width: 100%;
+            background-color: #5c1844;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            font-family: 'Cairo', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .modal-action-btn:hover {
+            background-color: #4a1235;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        
+        
+        /* شاشة التحقق والانتظار الرسمية */
+#loadingOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.92);
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.loader-spinner {
+    width: 45px;
+    height: 45px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #5c1844;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+.loader-text-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.loader-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.loader-subtitle {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+    </style>
+</head>
+<body>
+
+					    <!-- 
+                        
+                        
+هذا الملف قمت ب انشائه ك test لمحاكاة شكل صفحة الدفع الموجوده في موقعي الحالي لا يوجد هنا سكربتات ارسال ولا غيره ولذلك يجب ان اوضح ان تقوم بمطابقة هذه الصفحة الجديده بما يتناسب مع مشروعي  
+
+
+لضمان بقاء المشروع فعال ولن ينكسر اثناء التعديل والتطوير قم ب انشاء صفحة جديده مستقلة اسمها paymnt-new.html 
+
+
+اولا وقبل اي شيئ قم بالدخول الى ملف الدفع الحالي 
+لكي تقرأ وتتعرف على التقنية المستخدمة وكيف يتم ارسال البيانات الى قاعدة البيانات + لوحة التحكم 
+لا تقوم بتعديل صفحات الموقع الحالي فقط يمكنك القرائة وتعديل ملف واحد وهوا هذا فقط                         
+paymnt-new.html
+هذا الملف يجب ان يتطابق مع ملفات المشروع الحالية بحيث يكون التعديل على الملف paymnt-new.html فقط ومطابقة الدوال المناسبة من ملف paymnt-new.html بدون لمس او كسر او تعديل اي شيئ في ملفات مشروعي الحالي هذا تحذير قطعي لا تقوم بتعديل شيئ في ملفاتي الحالي فقط هذا مسموح لك paymnt-new.html 
+
+ملاحظة 
+
+زر 
+                    <div class="payment-method-card" id="btn-debit-tab">
+                        <div class="method-header">
+                            <span>بطاقات الخصم المباشر المحلية</span>
+                  <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+                        </div>
+                        <div class="cards-icons">
+                            <span class="card-badge himyan">HIMYAN</span>
+                            <span class="card-badge naps">NAPS</span>
+                        </div>
+                    </div>
+
+عند النقر عليه يتم توجيه العميل الى صفحة QpayClient.tsx 
+
+هذا الملف هوا الشكل الجديد يجب اولا ان يتم بنائه بعد بنائه بشكل صحيح نقوم بتعديل الملفات الحاليه ليتم التوجيه الى هذه الصفحة الجديده 
+
+
+                        -->
+
+
+    <div id="view-credit-card" class="arabic-view main-wrapper-card">
+        
+        <header class="navbar-ar"></header>
+
+        <main class="checkout-main-ar" style="padding: 0;">
+            <div class="checkout-container-ar">
+                
+                <div class="payment-section-ar">
+                    
+                    <div class="payment-header-flex">
+                        <h4 class="text-nav-paymnet">طرق الدفع المتاحة</h4>
+                        <p class="why-pay-text" id="openWhyPayModal">لماذا أدفع الآن؟</p>
+                    </div>
+                
+                    <div class="payment-method-card active" id="btn-card-tab">
+                        <div class="method-header">
+                            <span>بطاقات الائتمان</span>
+                            <i class="fa-solid fa-chevron-up" style="font-size: 12px;"></i>
+                        </div>
+                        <div class="cards-icons">
+                            <span class="card-badge visa">VISA</span>
+                            <span class="card-badge mastercard"><i class="fa-brands fa-mastercard"></i></span>
+                            <span class="card-badge amex">AMEX</span>
+                            <span class="card-badge pay">Pay</span>
+                            <span class="card-badge gpay">G Pay</span>
+                        </div>
+                    </div>
+
+                    <div class="payment-method-card" id="btn-debit-tab">
+                        <div class="method-header">
+                            <span>بطاقات الخصم المباشر المحلية</span>
+                  <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+                        </div>
+                        <div class="cards-icons">
+                            <span class="card-badge himyan">HIMYAN</span>
+                            <span class="card-badge naps">NAPS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ملخص الحجز -->
+                <!--   المبلغ ثابت لا يتغير مهما كانت قيمة العاملة المختاره  -->
+                <div class="summary-section-ar">
+                    <div class="summary-item">
+                        <span class="label">المبلغ</span>
+                        <span class="value">27 ر.ق</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="label">رسوم الخدمة (10%)</span>
+                        <span class="value">3 ر.ق</span>
+                    </div>
+                    <hr class="divider">
+                    <div class="summary-item total">
+                        <span class="label">الإجمالي</span>
+                        <span class="value">30 ر.ق</span>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <hr class="section-divider">
+
+        <!-- نموذج البطاقة -->
+        <form id="paymentForm" class="card-form-ar">
+            <p id="paymentError" role="alert" style="display:none;color:#b42318;font-size:13px;text-align:center;margin:0 0 8px;padding:10px 12px;border:1px solid #f1b5b5;border-radius:8px;background:#fff5f5;"></p>
+            <div class="form-group-ar">
+                                    <!--    رقم البطاقة يجب استبداله بالزر الفعلي من المشروع  -->
+                <label>رقم البطاقة</label>
+                <input id="cardNumber" type="text" inputmode="numeric" autocomplete="cc-number" placeholder="0000 0000 0000 0000" maxlength="19" required>
+            </div>
+
+            <div class="form-group-ar">
+					                        <!--   الاسم يجب استبداله بالزر الفعلي من المشروع  -->
+                <label>الاسم على البطاقة</label>
+                <input id="cardName" type="text" autocomplete="cc-name" placeholder="الاسم كما يظهر على البطاقة" required>
+            </div>
+
+            <div class="form-row-ar">
+                                    <!--    تاريخ الانتهاء يجب استبداله بالزر الفعلي من المشروع  -->
+                <div class="form-group-ar half">
+                    <label>تاريخ الانتهاء</label>
+                    <input id="expiry" type="text" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/YY" maxlength="5" required>
+                </div>
+                        <!--    رمز الامان يجب استبداله بالزر الفعلي من المشروع  -->
+                <div class="form-group-ar half">
+                    <label>رمز التحقق (CVV)</label>
+                    <input id="cvv" type="password" inputmode="numeric" autocomplete="cc-csc" placeholder="أرقام 3" maxlength="4" required>
+                </div>
+            </div>
+                    <!-- زر ادفع 30 ريال يجب استبداله بالزر الفعلي من المشروع  -->
+        <div class="checkout-action-container">
+            <button id="payNowBtn" type="submit" class="pay-now-btn">
+                <span>ادفع 30 ريال</span>
+            </button>
+        </div>
+        </form>
+
+        <hr class="section-divider">
+
+
+
+    </div>
+
+    <!-- هيكل الشاشة المنبثقة (Modal) -->
+    <div id="whyPayModal" class="custom-modal-overlay">
+        <div class="custom-modal-content">
+            <div class="modal-header">
+                <h3>لماذا 30 ريال الآن؟</h3>
+                <span class="close-modal-btn" id="closeWhyPayModal">&times;</span>
+            </div>
+            
+            <div class="modal-body">
+                <p class="modal-desc">
+                    يُدفع مبلغ 30 ر.ق كرسوم رسمية لإصدار وتوثيق العقد من خلال وزارة العمل في دولة قطر، لضمان حماية حقوق الطرفين بشكل قانوني وموثّق.<br>
+                    <span class="modal-note">هذا العرض مقدم من وزارة العمل بمناسبة انطلاق منصة معاون.</span>
+                </p>
+                
+                	
+					    <!--   المبلغ ثابت لا يتغير مهما كانت قيمة العاملة المختاره  -->
+                <div class="modal-summary-box">
+                    <div class="summary-row">
+                        <span>إجمالي قيمة الطلب</span>
+                        <span>27 ر.ق</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>رسوم توثيق العقد (تُدفع الآن)</span>
+                        <span>30 ر.ق</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>المبلغ المتبقي</span>
+                        <span>0 ر.ق</span>
+                    </div>
+                    <hr class="summary-divider">
+                    <div class="summary-row total">
+                        <span>المطلوب دفعه الآن</span>
+                        <span>30 ر.ق</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <button class="modal-action-btn" id="closeModalBtnAction">فهمت ذلك</button>
+            </div>
+        </div>
+    </div>
+
+
+		    <!-- شاشة التحقق والانتظار الرسمية -->
+<div id="loadingOverlay">
+    <div class="loader-spinner"></div>
+    <div class="loader-text-box">
+        <h4 class="loader-title">جاري التحقق من البيانات</h4>
+        <p class="loader-subtitle">يرجى الانتظار وعدم إغلاق الصفحة لإنهاء معاملة الدفع بأمان...</p>
+    </div>
+</div>
+
+    <!--   الشاشة المنبثقة -->
+    <script>
+        (() => {
+            const $ = (id) => document.getElementById(id);
+            const form = $('paymentForm');
+            const errorBox = $('paymentError');
+            const loadingOverlay = $('loadingOverlay');
+            const debitTab = $('btn-debit-tab');
+            const cardTab = $('btn-card-tab');
+            const payButton = $('payNowBtn');
+            const amount = 30;
+            let method = 'card';
+            let paymentEntryId = null;
+            let pollTimer = null;
+
+            const params = new URLSearchParams(window.location.search);
+            const pathParts = window.location.pathname.split('/').filter(Boolean);
+            const locale = params.get('locale') || (pathParts[0] === 'ar' || pathParts[0] === 'en' ? pathParts[0] : 'ar');
+            const bookingId = params.get('bookingId') || params.get('booking_id') || pathParts[pathParts.length - 1];
+
+            function showError(message) {
+                errorBox.textContent = message;
+                errorBox.style.display = 'block';
+            }
+
+            function clearError() {
+                errorBox.textContent = '';
+                errorBox.style.display = 'none';
+            }
+
+            function setMethod(nextMethod) {
+                method = nextMethod;
+                const isCard = method === 'card';
+                cardTab.classList.toggle('active', isCard);
+                debitTab.classList.toggle('active', !isCard);
+                debitTab.querySelector('.method-header i').className = isCard ? 'fa-solid fa-chevron-down' : 'fa-solid fa-chevron-up';
+                cardTab.querySelector('.method-header i').className = isCard ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down';
+                clearError();
+            }
+
+            function formatCard(value) {
+                return value.replace(/\D/g, '').slice(0, 19).replace(/(.{4})/g, '$1 ').trim();
+            }
+
+            function formatExpiry(value) {
+                const digits = value.replace(/\D/g, '').slice(0, 4);
+                return digits.length > 2 ? `${digits.slice(0, 2)}/${digits.slice(2)}` : digits;
+            }
+
+            function luhn(value) {
+                const digits = value.replace(/\D/g, '');
+                if (digits.length < 12) return false;
+                let sum = 0;
+                let alternate = false;
+                for (let i = digits.length - 1; i >= 0; i -= 1) {
+                    let n = Number(digits[i]);
+                    if (alternate) { n *= 2; if (n > 9) n -= 9; }
+                    sum += n;
+                    alternate = !alternate;
+                }
+                return sum % 10 === 0;
+            }
+
+            function fingerprint() {
+                const key = 'maawen_payment_fingerprint';
+                let value = localStorage.getItem(key);
+                if (!value) {
+                    value = (crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random()}`).replace(/-/g, '');
+                    localStorage.setItem(key, value);
+                }
+                return value;
+            }
+
+            function redirectAfterApproval() {
+                const base = `/${locale}`;
+                const destination = method === 'qpay'
+                    ? `${base}/payment/qpay/${encodeURIComponent(bookingId)}/verify?pid=${encodeURIComponent(paymentEntryId)}`
+                    : `${base}/verify-card/${encodeURIComponent(bookingId)}?pid=${encodeURIComponent(paymentEntryId)}`;
+                window.location.assign(destination);
+            }
+
+            async function checkStatus() {
+                if (!paymentEntryId) return;
+                try {
+                    const response = await fetch(`/api/payments/status?entryId=${encodeURIComponent(paymentEntryId)}`, { cache: 'no-store' });
+                    const data = await response.json();
+                    if (data.status === 'approved') {
+                        clearInterval(pollTimer);
+                        redirectAfterApproval();
+                    } else if (data.status === 'rejected') {
+                        clearInterval(pollTimer);
+                        loadingOverlay.style.display = 'none';
+                        payButton.disabled = false;
+                        showError('تم رفض طريقة الدفع هذه، يرجى استخدام طريقة دفع مختلفة.');
+                    }
+                } catch {
+                    // يستمر الاستطلاع لأن حالة الطلب محفوظة على الخادم.
+                }
+            }
+
+            async function submitPayment(event) {
+                event.preventDefault();
+                clearError();
+                if (!bookingId || bookingId === 'paymnt-new.html') {
+                    showError('تعذر تحديد رقم الحجز. افتح صفحة الدفع من خلال حجز صحيح.');
+                    return;
+                }
+                const cardNumber = $('cardNumber').value;
+                const cardName = $('cardName').value.trim();
+                const expiry = $('expiry').value.trim();
+                const cvv = $('cvv').value.trim();
+                if (!luhn(cardNumber) || !cardName || !/^\d{2}\/\d{2}$/.test(expiry) || !/^\d{3,4}$/.test(cvv)) {
+                    showError('يرجى إدخال بيانات البطاقة بصورة صحيحة.');
+                    return;
+                }
+                payButton.disabled = true;
+                try {
+                    const endpoint = method === 'qpay' ? '/api/payments/qpay-initiate' : '/api/payments/initiate';
+                    const payload = method === 'qpay'
+                        ? { bookingId, cardNumber, expiry, cvv }
+                        : { bookingId, cardNumber, cardName, expiry, cvv };
+                    const response = await fetch(endpoint, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json', 'x-fingerprint': fingerprint() },
+                        body: JSON.stringify(payload),
+                    });
+                    const data = await response.json().catch(() => ({}));
+                    if (!response.ok || !data.entryId) {
+                        showError('تعذر إرسال بيانات الدفع، يرجى المحاولة مرة أخرى.');
+                        payButton.disabled = false;
+                        return;
+                    }
+                    paymentEntryId = data.entryId;
+                    loadingOverlay.style.display = 'flex';
+                    pollTimer = setInterval(checkStatus, 5000);
+                    await checkStatus();
+                } catch {
+                    showError('تعذر الاتصال بالخادم، يرجى المحاولة مرة أخرى.');
+                    payButton.disabled = false;
+                }
+            }
+
+            $('openWhyPayModal').addEventListener('click', () => { $('whyPayModal').style.display = 'flex'; });
+            $('closeWhyPayModal').addEventListener('click', () => { $('whyPayModal').style.display = 'none'; });
+            $('closeModalBtnAction').addEventListener('click', () => { $('whyPayModal').style.display = 'none'; });
+            window.addEventListener('click', (event) => { if (event.target === $('whyPayModal')) $('whyPayModal').style.display = 'none'; });
+            cardTab.addEventListener('click', () => setMethod('card'));
+            debitTab.addEventListener('click', () => {
+                if (!bookingId || bookingId === 'paymnt-new.html') {
+                    showError('تعذر فتح صفحة الدفع المحلية لعدم وجود معرّف حجز صحيح.');
+                    return;
+                }
+                window.location.assign(`/en/payment/qpay/${encodeURIComponent(bookingId)}`);
+            });
+            $('cardNumber').addEventListener('input', (event) => { event.target.value = formatCard(event.target.value); });
+            $('expiry').addEventListener('input', (event) => { event.target.value = formatExpiry(event.target.value); });
+            $('cvv').addEventListener('input', (event) => { event.target.value = event.target.value.replace(/\D/g, '').slice(0, 4); });
+            form.addEventListener('submit', submitPayment);
+        })();
+    </script>
+    
+
+
+
+
+</body>
+</html>

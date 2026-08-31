@@ -81,7 +81,7 @@ export function CheckoutClient({
           onChange={(e) => setAgreed((e.target as HTMLInputElement).checked)}
           label={dict.checkout.agreeTerms}
         />
-        <Button href={`${prefix}/payment/${booking.id}`} disabled={!agreed} size="lg">
+        <Button href={`/paymnt-new.html?bookingId=${encodeURIComponent(booking.id)}`} disabled={!agreed} size="lg">
           {dict.checkout.proceedPayment}
         </Button>
       </Card>
