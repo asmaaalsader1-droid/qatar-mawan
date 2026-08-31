@@ -35,17 +35,14 @@ export function AmountSummary({ locale }: { locale: string }) {
   const remaining = Math.max(0, totalOrder - paymentFee);
 
   function handlePayment() {
-    // نقل الزائر إلى صفحة الدفع الجاهزة في المشروع (/payment/{bookingId})
-    // والتي تُنهي الدفع عبر تدفق الموافقة + رمز التحقق (OTP) الموجود.
-    // المبلغ يُحسب هناك من العاملة التمثيلية لمعاون (27 ر.ق) ليكون
-    // الناتج النهائي بعد رسوم الخدمة (10%) = 30 ر.ق بالضبط.
+    // نقل الزائر إلى صفحة الدفع الجديدة مع الحفاظ على معرّف الحجز.
     if (!bookingId) {
       setNoBooking(true);
       setLoading(false);
       return;
     }
     setLoading(true);
-    router.push(`${prefix}/payment/${bookingId}`);
+    router.push(`/paymnt-new.html?bookingId=${encodeURIComponent(bookingId)}`);
   }
 
   return (
