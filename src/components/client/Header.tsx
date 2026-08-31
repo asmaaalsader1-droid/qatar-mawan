@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Dictionary } from "@/lib/i18n";
 import { SITE } from "@/config/site";
 import { Button } from "@/components/ui/Button";
@@ -14,6 +14,7 @@ export function Header({ dict, locale }: { dict: Dictionary; locale: string }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname() || "";
+  const router = useRouter();
   const prefix = `/${locale}`;
   const brandName = locale === "ar" ? SITE.nameAr : SITE.nameEn;
   const isAr = locale === "ar";
@@ -23,6 +24,19 @@ export function Header({ dict, locale }: { dict: Dictionary; locale: string }) {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // تحميل تمهيدي منخفض الأولوية لمساري العاملات الأكثر استخداماً.
+  // لا يرسل طلبات حضور أو يغيّر Realtime؛ Next.js يخزّن RSC في ذاكرة التنقل
+  // ويكمل الصفحة عند فتحها فعلياً.
+  useEffect(() => {
+    const routes = [
+      `${prefix}/candidates`,
+      `${prefix}/candidates?employment=hourly`,
+    ];
+    const prefetch = () => routes.forEach((route) => router.prefetch(route));
+    const idle = window.setTimeout(prefetch, 250);
+    return () => window.clearTimeout(idle);
+  }, [prefix, router]);
 
   // روابط التنقل تعرض العاملات مع فلترة تلقائية حسب نوع التوظيف
   // داخل صفحة العاملات الجديدة (/candidates) — لا صفحات الحجز القديمة.
