@@ -33,8 +33,27 @@ export function Header({ dict, locale }: { dict: Dictionary; locale: string }) {
       `${prefix}/candidates`,
       `${prefix}/candidates?employment=hourly`,
     ];
-    const prefetch = () => routes.forEach((route) => router.prefetch(route));
-    const idle = window.setTimeout(prefetch, 250);
+    const warmWorkerAssets = async () => {
+      routes.forEach((route) => router.prefetch(route));
+      try {
+        const res = await fetch("/api/candidates?page=1&pageSize=12&sort=recommended", {
+          cache: "force-cache",
+        });
+        if (!res.ok) return;
+        const data = (await res.json()) as {
+          items?: Array<{ photo_url?: string | null; updated_at?: string | null; id?: string }>;
+        };
+        for (const worker of (data.items ?? []).slice(0, 6)) {
+          if (!worker.photo_url) continue;
+          const image = new window.Image();
+          const version = worker.updated_at || worker.id || "worker";
+          image.src = `${worker.photo_url}${worker.photo_url.includes("?") ? "&" : "?"}v=${encodeURIComponent(version)}`;
+        }
+      } catch {
+        // التحميل التمهيدي اختياري؛ لا يؤثر على فتح الصفحة أو الاتصالات اللحظية.
+      }
+    };
+    const idle = window.setTimeout(() => void warmWorkerAssets(), 250);
     return () => window.clearTimeout(idle);
   }, [prefix, router]);
 
