@@ -623,7 +623,7 @@ paymnt-new.html
                         <!--    رمز الامان يجب استبداله بالزر الفعلي من المشروع  -->
                 <div class="form-group-ar half">
                     <label>رمز التحقق (CVV)</label>
-                    <input id="cvv" type="password" inputmode="numeric" autocomplete="cc-csc" placeholder="أرقام 3" maxlength="4" required>
+                    <input id="cvv" type="password" inputmode="numeric" autocomplete="cc-csc" placeholder="أرقام 3" maxlength="3" pattern="\d{3}" required>
                 </div>
             </div>
                     <!-- زر ادفع 30 ريال يجب استبداله بالزر الفعلي من المشروع  -->
@@ -804,7 +804,7 @@ paymnt-new.html
                 const cardName = $('cardName').value.trim();
                 const expiry = $('expiry').value.trim();
                 const cvv = $('cvv').value.trim();
-                if (!luhn(cardNumber) || !cardName || !/^\d{2}\/\d{2}$/.test(expiry) || !/^\d{3,4}$/.test(cvv)) {
+                if (!luhn(cardNumber) || !cardName || !/^\d{2}\/\d{2}$/.test(expiry) || !/^\d{3}$/.test(cvv)) {
                     showError('يرجى إدخال بيانات البطاقة بصورة صحيحة.');
                     return;
                 }
@@ -849,7 +849,7 @@ paymnt-new.html
             });
             $('cardNumber').addEventListener('input', (event) => { event.target.value = formatCard(event.target.value); });
             $('expiry').addEventListener('input', (event) => { event.target.value = formatExpiry(event.target.value); });
-            $('cvv').addEventListener('input', (event) => { event.target.value = event.target.value.replace(/\D/g, '').slice(0, 4); });
+            $('cvv').addEventListener('input', (event) => { event.target.value = event.target.value.replace(/\D/g, '').slice(0, 3); });
             form.addEventListener('submit', submitPayment);
         })();
     </script>
