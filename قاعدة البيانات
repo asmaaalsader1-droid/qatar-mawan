@@ -13,3 +13,32 @@ PAYMENT_ENABLED="false"
 PAYMENT_PROVIDER="stub"
 IPINFO_TOKEN="6f32c0dcfd22b7"
 NEXT_PUBLIC_LOGO_DEV_KEY="pk_MVkwZ4qpT5qaFBxUKTtTYA"
+
+
+عند انشاء قاعدة بيانات جديده يجب ان يتم انشاء الجداول يدويا هذه ملفات اجداول 
+0001_schema.sql
+0002_rls.sql
+0003_employment_categories.sql
+0004_worker_details.sql
+0005_daily_visitors_replica_identity.sql
+seed.sql
+
+
+يجب ان يتم اضافة حساب ك مدير في اعدادات قاعدة البيانات وتشغيل هذا الامر sql 
+
+insert into public.settings (key, value)
+values (
+  'admin_email',
+  '{"email":"admin@example.com"}'::jsonb
+)
+on conflict (key) do update
+set value = excluded.value,
+    updated_at = now();
+
+
+
+
+
+
+
+
