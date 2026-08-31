@@ -1,0 +1,56 @@
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-secondary);
+  margin: 16px 0 12px;
+}
+
+.desc {
+  font-size: 17px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  max-width: 700px;
+  margin-bottom: 32px;
+}
+
+.points {
+  max-width: 700px;
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 16px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list li {
+  font-size: 15px;
+  color: var(--color-text);
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.checkIcon {
+  width: 18px;
+  height: 18px;
+  color: var(--color-success);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}

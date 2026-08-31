@@ -1,0 +1,496 @@
+.container {
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  border-left: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  font-family: "Cairo", "Tajawal", sans-serif;
+}
+
+/* ===== الرأس ===== */
+.header {
+  padding: 8px;
+  border-bottom: 1px solid var(--color-border);
+  background: #fff;
+}
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.inboxLabel {
+  font-size: 11px;
+  font-weight: 700;
+  color: #374151;
+}
+
+.countBadge {
+  font-size: 10px;
+  color: #6b7280;
+  font-family: monospace;
+  background: #f3f4f6;
+  padding: 1px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+}
+
+.spacer {
+  flex: 1;
+}
+
+.filterBtn {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: none;
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.filterBtn:hover {
+  background: #e5e7eb;
+}
+
+.filterActive {
+  background: #16a34a;
+  color: #fff;
+}
+
+.filterActive:hover {
+  background: #15803d;
+}
+
+/* ===== البحث ===== */
+.searchWrap {
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 6px 32px 6px 12px;
+  background: #f9fafb;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 11px;
+  color: #374151;
+  font-family: inherit;
+}
+
+.searchInput::placeholder {
+  color: #9ca3af;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #16a34a;
+  box-shadow: 0 0 0 1px #16a34a;
+  background: #fff;
+}
+
+/* ===== تحديد الكل ===== */
+.selectRow {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.selectAllBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 6px;
+  background: #f3f4f6;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #4b5563;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s;
+  font-family: inherit;
+}
+
+.selectAllBtn:hover {
+  background: #e5e7eb;
+}
+
+.squareIcon {
+  width: 12px;
+  height: 12px;
+  color: #6b7280;
+}
+
+.selectedCount {
+  font-size: 10px;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+/* ===== أزرار الإجراءات الجماعية ===== */
+.bulkBtn {
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.15s, opacity 0.15s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.bulkBtn:hover {
+  opacity: 0.9;
+}
+
+.bulkBlock {
+  background: #dc2626;
+}
+
+.bulkArchive {
+  background: #d97706;
+}
+
+.bulkUnarchive {
+  background: #0891b2;
+}
+
+.bulkDelete {
+  background: #991b1b;
+}
+
+/* ===== شارة الأرشفة ===== */
+.archivedBadge {
+  font-size: 8px;
+  font-weight: 700;
+  color: #92400e;
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  padding: 1px 5px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+/* ===== القائمة ===== */
+.list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 3px;
+}
+
+.empty {
+  text-align: center;
+  padding: 32px 12px;
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+/* ===== صف العميل ===== */
+.clientRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background 0.15s;
+}
+
+.clientRow:hover {
+  background: #f9fafb;
+}
+
+.rowActive {
+  background: #f0fdf4;
+}
+
+.rowActive:hover {
+  background: #dcfce7;
+}
+
+.rowSelected {
+  background: #eff6ff !important;
+  border-left: 3px solid #2563eb;
+  padding-left: 7px;
+}
+
+.checkBtn {
+  margin-top: 2px;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #9ca3af;
+  display: flex;
+}
+
+.checkIcon {
+  width: 14px;
+  height: 14px;
+  transition: all 0.15s;
+}
+
+.checkIconSelected {
+  color: #16a34a;
+}
+
+/* ===== الأفاتار ===== */
+.avatarWrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.avatarSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.statusDot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+}
+
+.dotActive {
+  background: #22c55e;
+  animation: pulse 2s infinite;
+}
+
+.dotIdle {
+  background: #6b7280;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.flag {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  font-size: 8px;
+  line-height: 1;
+}
+
+/* ===== معلومات العميل ===== */
+.clientInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.clientTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  margin-bottom: 2px;
+}
+
+.nameWrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.clientName {
+  font-weight: 700;
+  font-size: 13px;
+  color: #374151;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cardIcons {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.cardIcon {
+  color: #2563eb;
+  width: 14px;
+  height: 14px;
+}
+
+.visaLogo {
+  height: 14px;
+  width: auto;
+}
+
+.timeAgo {
+  font-size: 10px;
+  color: #9ca3af;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.clientBottom {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.pulseDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22c55e;
+  display: inline-block;
+  animation: pulse 2s infinite;
+  flex-shrink: 0;
+}
+
+.activityText {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4b5563;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* اسم الصفحة الحالية للعميل — أبرز من نوع النشاط العادي */
+.pageLabel {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1e40af;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.blockedIcon {
+  color: #dc2626;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+.blockedText {
+  font-size: 13px;
+  font-weight: 600;
+  color: #dc2626;
+}
+
+/* ===== تجاوب ===== */
+@media (max-width: 1024px) {
+  .container {
+    width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border-left: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+  /* القائمة تملأ الارتفاع المتاح وتتيح التمرير داخلياً. */
+  .list {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+  }
+}
+
+
+/* ===== Pagination ===== */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 8px;
+  border-top: 1px solid var(--color-border);
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.pageButton {
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  background: #f9fafb;
+  color: #374151;
+  padding: 4px 8px;
+  font-family: inherit;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.pageButton:hover:not(:disabled) {
+  background: #ecfdf5;
+  border-color: #86efac;
+}
+
+.pageButton:disabled {
+  color: #c4c9d0;
+  cursor: not-allowed;
+}
+
+.pageInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: #4b5563;
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pageInfo small {
+  color: #9ca3af;
+  font-size: 9px;
+  font-weight: 400;
+}

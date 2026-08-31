@@ -1,0 +1,137 @@
+.hero {
+  background: linear-gradient(135deg, var(--color-bg-soft) 0%, #fff 100%);
+  padding: 64px 0 48px;
+  overflow: hidden;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--color-secondary);
+}
+
+.highlight {
+  color: var(--color-primary);
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+.ctas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.trust {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.trustIcon {
+  width: 16px;
+  height: 16px;
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+
+.visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  height: 420px;
+  background: linear-gradient(145deg, var(--color-secondary), var(--color-secondary-dark));
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(27, 58, 92, 0.25);
+  animation: float 4s ease-in-out infinite;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: 20px;
+  inset-inline-end: 20px;
+  background: var(--color-success);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.badgeIcon {
+  width: 12px;
+  height: 12px;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .trust {
+    justify-content: center;
+  }
+  .ctas {
+    justify-content: center;
+  }
+}

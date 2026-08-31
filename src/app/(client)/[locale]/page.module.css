@@ -1,0 +1,199 @@
+.trustBar {
+  padding: 24px 0;
+  background: #fff;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.trustBadges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.trustBadge {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.licenseBar {
+  padding: 16px 0;
+  background: var(--color-bg-soft);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.licenseRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.licenseItem {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  white-space: nowrap;
+}
+
+.featureIcon {
+  font-size: 28px;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.featureTitle {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 8px;
+}
+
+.featureDesc {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.stepNum {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.stepTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.stepDesc {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.pricing {
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-secondary-dark));
+  color: #fff;
+  padding: 64px 0;
+  text-align: center;
+}
+
+.pricingTitle {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--color-primary);
+}
+
+.pricingNote {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.pricingCtas {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  padding: 14px 32px;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.ctaPrimary:hover {
+  transform: translateY(-2px);
+}
+
+.ctaSecondary {
+  padding: 14px 32px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.ctaSecondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.viewAllBtn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.viewAllBtn:hover {
+  transform: translateY(-2px);
+}
+
+.stars {
+  color: var(--color-warning);
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.testimonialText {
+  font-size: 15px;
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.testimonialName {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .trustBadges {
+    gap: 12px;
+    flex-direction: column;
+    text-align: center;
+  }
+}

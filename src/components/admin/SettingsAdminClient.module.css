@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--color-secondary);
+}
+
+.tableCard {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th {
+  text-align: start;
+  padding: 12px;
+  border-bottom: 2px solid var(--color-border);
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.keyCell {
+  font-family: monospace;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.valueCell {
+  font-family: monospace;
+  font-size: 12px;
+  max-width: 500px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.editBtn {
+  padding: 4px 10px;
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.deleteBtn {
+  padding: 4px 10px;
+  background: rgba(220, 38, 38, 0.1);
+  color: #991b1b;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

@@ -1,0 +1,12 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--color-bg-soft);
+}
+
+.main {
+  flex: 1;
+  padding: 0;
+  overflow: hidden;
+}

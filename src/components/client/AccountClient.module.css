@@ -1,0 +1,94 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--color-secondary);
+}
+
+.email {
+  font-size: 15px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 16px;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.bookingsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bookingRow {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.bookingImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.bookingInfo {
+  flex: 1;
+}
+
+.bookingInfo h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.bookingRef {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  font-family: monospace;
+}
+
+.bookingSalary {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.bookingStatus {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+@media (max-width: 600px) {
+  .bookingRow {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bookingStatus {
+    align-items: center;
+  }
+}

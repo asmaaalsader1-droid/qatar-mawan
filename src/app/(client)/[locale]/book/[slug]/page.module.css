@@ -1,0 +1,69 @@
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--color-secondary);
+  margin: 16px 0 24px;
+}
+
+.summary {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: var(--color-bg-soft);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.workerName {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.workerRef {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  font-family: monospace;
+  margin: 4px 0;
+}
+
+.workerSalary {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.terms {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.terms h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+.terms h3:first-child {
+  margin-top: 0;
+}
+
+.terms p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}

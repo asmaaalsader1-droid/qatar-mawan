@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معاون - عمالة منزلية بالشهر</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            DEFAULT: '#15284B',
+                            foreground: '#FFFFFF',
+                        },
+                        accent: '#6D1D38',
+                        secondary: '#FBF4F6',
+                        background: '#FBF9F6',
+                        card: '#FFFFFF',
+                        border: '#E5E7EB',
+                        'muted-foreground': '#6E6E73',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-[#1D1D1F] font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <div class="max-w-7xl mx-auto px-6 w-full flex-grow py-8">
+        
+        <header class="flex justify-between items-center mb-10">
+            <a href="/" class="w-11 h-11 rounded-full border border-border bg-white flex items-center justify-center cursor-pointer shadow-sm hover:bg-gray-50 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            </a>
+            <div class="text-right">
+                <div class="font-extrabold text-2xl text-primary leading-tight">معاون</div>
+                <span class="text-accent text-[11px] font-bold block -mt-1 tracking-wider">Ma'awen</span>
+            </div>
+        </header>
+
+        <div class="text-center mb-12 max-w-xl mx-auto">
+            <span class="inline-flex items-center gap-1.5 bg-secondary text-accent text-xs font-bold px-4 py-1.5 rounded-full mb-4">
+                <span>✦</span> عقود مرنة بأسعار توفّر لك أكثر
+            </span>
+            <h1 class="text-3xl lg:text-4xl font-black text-primary mb-3">
+                عمالة منزلية <span class="text-accent">بالشهر</span>
+            </h1>
+            <p class="text-muted-foreground text-sm lg:text-base leading-relaxed">
+                اختر مدة العقد، نوع الخدمة، الجنسية، ونمط الدوام – وحدّد موعد بدء الخدمة بكل سهولة.
+            </p>
+        </div>
+
+        <form id="booking-form" onsubmit="event.preventDefault(); submitBooking();">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <div class="lg:col-span-7 xl:col-span-8 space-y-8">
+                    
+                    <div class="bg-card rounded-3xl border border-border p-6 md:p-8 shadow-sm">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-xl font-bold text-primary flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="3" y="4" width="18" height="18" rx="2" stroke-width="2"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 2v4M8 2v4M3 10h18"/></svg>
+                                اختيار مدة العقد
+                            </h2>
+                            <span class="bg-primary text-white text-xs font-bold w-7 h-7 rounded-lg flex items-center justify-center">1</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="duration-options">
+                            <div data-duration="أسبوعان (14 زيارة)" data-price="640" class="duration-card relative border border-border bg-card rounded-2xl p-5 cursor-pointer hover:border-accent/50 transition">
+                                <div class="check-icon hidden absolute top-4 left-4 bg-accent text-white rounded-full p-1">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <div class="font-bold text-lg text-primary mb-1">أسبوعان <span class="text-xs text-muted-foreground font-normal">(14 زيارة)</span></div>
+                                <div class="text-accent font-black text-xl">640 <span class="text-xs font-normal text-muted-foreground">ر.ق</span></div>
+                            </div>
+
+                            <div data-duration="شهر" data-price="1280" class="duration-card relative border border-border bg-card rounded-2xl p-5 cursor-pointer hover:border-accent/50 transition">
+                                <div class="check-icon hidden absolute top-4 left-4 bg-accent text-white rounded-full p-1">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <div class="font-bold text-lg text-primary mb-1">شهر واحد</div>
+                                <div class="text-accent font-black text-xl">1,280 <span class="text-xs font-normal text-muted-foreground">ر.ق</span></div>
+                            </div>
+
+                            <div data-duration="شهران" data-price="2560" class="duration-card relative border border-border bg-card rounded-2xl p-5 cursor-pointer hover:border-accent/50 transition">
+                                <div class="check-icon hidden absolute top-4 left-4 bg-accent text-white rounded-full p-1">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <div class="font-bold text-lg text-primary mb-1">شهران</div>
+                                <div class="text-accent font-black text-xl">2,560 <span class="text-xs font-normal text-muted-foreground">ر.ق</span></div>
+                            </div>
+
+                            <div data-duration="3 شهور" data-price="3840" class="duration-card relative border border-border bg-card rounded-2xl p-5 cursor-pointer hover:border-accent/50 transition">
+                                <div class="check-icon hidden absolute top-4 left-4 bg-accent text-white rounded-full p-1">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <div class="font-bold text-lg text-primary mb-1">3 شهور</div>
+                                <div class="text-accent font-black text-xl">3,840 <span class="text-xs font-normal text-muted-foreground">ر.ق</span></div>
+                            </div>
+
+                            <div data-duration="6 شهور" data-price="7000" class="duration-card relative border border-border bg-card rounded-2xl p-5 cursor-pointer hover:border-accent/50 transition">
+                                <div class="check-icon hidden absolute top-4 left-4 bg-accent text-white rounded-full p-1">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <div class="font-bold text-lg text-primary mb-1">6 شهور</div>
+                                <div class="text-accent font-black text-xl">7,000 <span class="text-xs font-normal text-muted-foreground">ر.ق</span></div>
+                            </div>
+
+                            <div data-duration="سنة كاملة" data-price="13500" class="duration-card relative border border-border bg-card rounded-2xl p-5 cursor-pointer hover:border-accent/50 transition">
+                                <span class="absolute top-3 left-3 bg-accent text-white text-[10px] font-bold px-2 py-0.5 rounded-full">الأوفر</span>
+                                <div class="check-icon hidden absolute top-4 left-4 bg-accent text-white rounded-full p-1">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <div class="font-bold text-lg text-primary mb-1">سنة كاملة</div>
+                                <div class="text-accent font-black text-xl">13,500 <span class="text-xs font-normal text-muted-foreground">ر.ق</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-card rounded-3xl border border-border p-6 md:p-8 shadow-sm">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-xl font-bold text-primary flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                                اختيار الخدمة المطلوبة
+                            </h2>
+                            <span class="bg-primary text-white text-xs font-bold w-7 h-7 rounded-lg flex items-center justify-center">2</span>
+                        </div>
+
+                        <div class="space-y-3" id="service-options">
+                            <div data-service="عاملة منزلية" class="service-card relative border border-border bg-card rounded-2xl p-4 flex items-center justify-between cursor-pointer hover:border-accent/50 transition">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center shrink-0">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-primary text-base">عاملة منزلية</h3>
+                                        <p class="text-xs text-muted-foreground mt-0.5">تنظيف، غسيل، طبخ، رعاية أطفال</p>
+                                        <span class="selected-label hidden text-[11px] text-accent font-bold mt-1">✓ تم اختيارها</span>
+                                    </div>
+                                </div>
+                                <div class="check-icon hidden bg-accent text-white rounded-full p-1">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                            </div>
+
+                            <div data-service="طباخة" class="service-card relative border border-border bg-card rounded-2xl p-4 flex items-center justify-between cursor-pointer hover:border-accent/50 transition">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center shrink-0">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-primary text-base">طباخة</h3>
+                                        <p class="text-xs text-muted-foreground mt-0.5">تحضير وجبات يومية متنوعة</p>
+                                        <span class="selected-label hidden text-[11px] text-accent font-bold mt-1">✓ تم اختيارها</span>
+                                    </div>
+                                </div>
+                                <div class="check-icon hidden bg-accent text-white rounded-full p-1">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                            </div>
+
+                            <div data-service="رعاية أطفال" class="service-card relative border border-border bg-card rounded-2xl p-4 flex items-center justify-between cursor-pointer hover:border-accent/50 transition">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center shrink-0">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-primary text-base">رعاية أطفال</h3>
+                                        <p class="text-xs text-muted-foreground mt-0.5">مربية مدربة وموثوقة</p>
+                                        <span class="selected-label hidden text-[11px] text-accent font-bold mt-1">✓ تم اختيارها</span>
+                                    </div>
+                                </div>
+                                <div class="check-icon hidden bg-accent text-white rounded-full p-1">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                            </div>
+
+                            <div data-service="سائق خاص" class="service-card relative border border-border bg-card rounded-2xl p-4 flex items-center justify-between cursor-pointer hover:border-accent/50 transition">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center shrink-0">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-primary text-base">سائق خاص</h3>
+                                        <p class="text-xs text-muted-foreground mt-0.5">توصيل آمن داخل قطر</p>
+                                        <span class="selected-label hidden text-[11px] text-accent font-bold mt-1">✓ تم اختيارها</span>
+                                    </div>
+                                </div>
+                                <div class="check-icon hidden bg-accent text-white rounded-full p-1">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-card rounded-3xl border border-border p-6 md:p-8 shadow-sm">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-xl font-bold text-primary flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                نوع الخدمة (نمط الدوام)
+                            </h2>
+                            <span class="bg-primary text-white text-xs font-bold w-7 h-7 rounded-lg flex items-center justify-center">3</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="work-type-options">
+                            <div data-worktype="زيارات" class="work-card relative border border-border bg-card rounded-2xl p-5 cursor-pointer hover:border-accent/50 transition">
+                                <div class="check-icon hidden absolute top-4 left-4 bg-accent text-white rounded-full p-1">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <div class="font-bold text-lg text-primary mb-1">زيارات</div>
+                                <div class="text-xs text-muted-foreground">دوام نهاري بدون مبيت</div>
+                            </div>
+
+                            <div data-worktype="مبيت" class="work-card relative border border-border bg-card rounded-2xl p-5 cursor-pointer hover:border-accent/50 transition">
+                                <div class="check-icon hidden absolute top-4 left-4 bg-accent text-white rounded-full p-1">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                                <div class="font-bold text-lg text-primary mb-1">مبيت</div>
+                                <div class="text-xs text-muted-foreground">إقامة كاملة لدى الأسرة</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-card rounded-3xl border border-border p-6 md:p-8 shadow-sm">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-xl font-bold text-primary flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                                عدد العمالة المطلوب
+                            </h2>
+                            <span class="bg-primary text-white text-xs font-bold w-7 h-7 rounded-lg flex items-center justify-center">4</span>
+                        </div>
+
+                        <div class="border border-border rounded-2xl p-6 text-center max-w-sm mx-auto">
+                            <div class="flex items-center justify-center gap-6">
+                                <button type="button" id="btn-minus" class="w-12 h-12 bg-secondary text-primary rounded-xl font-bold text-2xl flex items-center justify-center hover:bg-accent hover:text-white transition select-none">-</button>
+                                <div>
+                                    <span id="workers-count-display" class="text-3xl font-black text-primary block">0</span>
+                                    <span class="text-xs text-muted-foreground">عامل/عاملة</span>
+                                </div>
+                                <button type="button" id="btn-plus" class="w-12 h-12 bg-secondary text-primary rounded-xl font-bold text-2xl flex items-center justify-center hover:bg-accent hover:text-white transition select-none">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-card rounded-3xl border border-border p-6 md:p-8 shadow-sm">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-xl font-bold text-primary flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><circle cx="12" cy="12" r="10" stroke-width="2"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                                اختيار الجنسية المطلوبة
+                            </h2>
+                            <span class="bg-primary text-white text-xs font-bold w-7 h-7 rounded-lg flex items-center justify-center">5</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6" id="nationality-options">
+                            <div data-nationality="الفلبين" data-flag="ph" class="nationality-card border border-border bg-card rounded-2xl p-4 text-center cursor-pointer hover:border-accent/50 transition">
+                                <div class="w-12 h-8 mx-auto mb-2 rounded overflow-hidden shadow-sm">
+                                    <svg viewBox="0 0 600 300" class="w-full h-full object-cover"><rect width="600" height="150" fill="#0038A8"/><rect y="150" width="600" height="150" fill="#CE1126"/><polygon points="0,0 260,150 0,300" fill="#FFF"/></svg>
+                                </div>
+                                <span class="font-bold text-sm text-primary block">الفلبين</span>
+                                <span class="selected-label hidden text-[10px] text-accent font-bold mt-1 block">✓ تم اختيارها</span>
+                            </div>
+
+                            <div data-nationality="الهند" data-flag="in" class="nationality-card border border-border bg-card rounded-2xl p-4 text-center cursor-pointer hover:border-accent/50 transition">
+                                <div class="w-12 h-8 mx-auto mb-2 rounded overflow-hidden shadow-sm">
+                                    <svg viewBox="0 0 900 600" class="w-full h-full object-cover"><rect width="900" height="200" fill="#FF9933"/><rect y="200" width="900" height="200" fill="#FFF"/><rect y="400" width="900" height="200" fill="#128807"/><circle cx="450" cy="300" r="80" fill="none" stroke="#000080" stroke-width="15"/></svg>
+                                </div>
+                                <span class="font-bold text-sm text-primary block">الهند</span>
+                                <span class="selected-label hidden text-[10px] text-accent font-bold mt-1 block">✓ تم اختيارها</span>
+                            </div>
+
+                            <div data-nationality="إندونيسيا" data-flag="id" class="nationality-card border border-border bg-card rounded-2xl p-4 text-center cursor-pointer hover:border-accent/50 transition">
+                                <div class="w-12 h-8 mx-auto mb-2 rounded overflow-hidden shadow-sm">
+                                    <svg viewBox="0 0 3 2" class="w-full h-full object-cover"><rect width="3" height="1" fill="#E70011"/><rect y="1" width="3" height="1" fill="#FFF"/></svg>
+                                </div>
+                                <span class="font-bold text-sm text-primary block">إندونيسيا</span>
+                                <span class="selected-label hidden text-[10px] text-accent font-bold mt-1 block">✓ تم اختيارها</span>
+                            </div>
+
+                            <div data-nationality="إثيوبيا" data-flag="et" class="nationality-card border border-border bg-card rounded-2xl p-4 text-center cursor-pointer hover:border-accent/50 transition">
+                                <div class="w-12 h-8 mx-auto mb-2 rounded overflow-hidden shadow-sm">
+                                    <svg viewBox="0 0 900 600" class="w-full h-full object-cover"><rect width="900" height="200" fill="#078930"/><rect y="200" width="900" height="200" fill="#FCD116"/><rect y="400" width="900" height="200" fill="#DA121A"/></svg>
+                                </div>
+                                <span class="font-bold text-sm text-primary block">إثيوبيا</span>
+                                <span class="selected-label hidden text-[10px] text-accent font-bold mt-1 block">✓ تم اختيارها</span>
+                            </div>
+
+                            <div data-nationality="كينيا" data-flag="ke" class="nationality-card border border-border bg-card rounded-2xl p-4 text-center cursor-pointer hover:border-accent/50 transition">
+                                <div class="w-12 h-8 mx-auto mb-2 rounded overflow-hidden shadow-sm">
+                                    <svg viewBox="0 0 900 600" class="w-full h-full object-cover"><rect width="900" height="180" fill="#000"/><rect y="210" width="900" height="180" fill="#BB0000"/><rect y="420" width="900" height="180" fill="#006600"/></svg>
+                                </div>
+                                <span class="font-bold text-sm text-primary block">كينيا</span>
+                                <span class="selected-label hidden text-[10px] text-accent font-bold mt-1 block">✓ تم اختيارها</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-secondary/60 rounded-2xl p-4 flex items-center justify-between border border-accent/20">
+                            <span class="text-xs text-muted-foreground font-medium">الجنسية المختارة</span>
+                            <div class="flex items-center gap-2 font-bold text-sm text-primary">
+                                <span id="selected-nationality-text">لم يتم الاختيار</span>
+                                <div id="selected-nationality-flag" class="w-6 h-4 rounded overflow-hidden hidden"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-card rounded-3xl border border-border p-6 md:p-8 shadow-sm">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-xl font-bold text-primary flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                تاريخ بدء الخدمة
+                            </h2>
+                            <span class="bg-primary text-white text-xs font-bold w-7 h-7 rounded-lg flex items-center justify-center">6</span>
+                        </div>
+
+                        <div>
+                            <label for="input-date" class="block text-xs font-bold text-primary mb-2">تاريخ بداية العقد</label>
+                            <input type="date" id="input-date" class="w-full border border-border rounded-2xl p-3.5 pr-4 text-sm text-primary font-medium focus:outline-none focus:border-accent bg-transparent">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="lg:col-span-5 xl:col-span-4 lg:sticky lg:top-8">
+                    <div class="bg-card rounded-3xl border border-border p-6 md:p-8 shadow-md">
+                        <h2 class="text-2xl font-black text-primary text-center mb-6">ملخّص العقد</h2>
+
+                        <div class="space-y-4 text-sm divide-y divide-border/60">
+                            <div class="flex justify-between items-center pt-2">
+                                <span class="text-muted-foreground">مدة العقد</span>
+                                <span id="summary-duration" class="font-bold text-muted-foreground italic">غير محدد</span>
+                            </div>
+
+                            <div class="flex justify-between items-center pt-4">
+                                <span class="text-muted-foreground">الخدمة</span>
+                                <span id="summary-service" class="font-bold text-muted-foreground italic">غير محدد</span>
+                            </div>
+
+                            <div class="flex justify-between items-center pt-4">
+                                <span class="text-muted-foreground">نوع الخدمة</span>
+                                <span id="summary-worktype" class="font-bold text-muted-foreground italic">غير محدد</span>
+                            </div>
+
+                            <div class="flex justify-between items-center pt-4">
+                                <span class="text-muted-foreground">الجنسية</span>
+                                <div class="flex items-center gap-2 font-bold text-primary">
+                                    <span id="summary-nationality" class="text-muted-foreground italic">غير محدد</span>
+                                    <div id="summary-flag" class="w-5 h-3.5 rounded overflow-hidden hidden"></div>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center pt-4">
+                                <span class="text-muted-foreground">عدد العمالة</span>
+                                <span id="summary-count" class="font-bold text-primary">0</span>
+                            </div>
+
+                            <div class="flex justify-between items-center pt-4">
+                                <span class="text-muted-foreground">سعر العقد</span>
+                                <span id="summary-contract-price" class="font-bold text-primary">0 ر.ق</span>
+                            </div>
+
+                            <div class="flex justify-between items-center pt-4 pb-2">
+                                <span class="text-muted-foreground">تاريخ البدء</span>
+                                <span id="summary-date" class="font-bold text-muted-foreground italic">غير محدد</span>
+                            </div>
+
+                            <div class="pt-6 space-y-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold text-primary text-base">المبلغ الإجمالي</span>
+                                    <span id="summary-total" class="font-black text-primary text-lg">0 ر.ق</span>
+                                </div>
+
+                                <div class="flex justify-between items-center text-accent font-bold">
+                                    <span>قيمة الحجز (تُدفع الآن)</span>
+                                    <span id="summary-deposit">0 ر.ق</span>
+                                </div>
+
+                                <div class="flex justify-between items-center text-muted-foreground">
+                                    <span>المتبقي (نهاية الخدمة)</span>
+                                    <span id="summary-remaining" class="font-bold text-primary">0 ر.ق</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full mt-8 bg-accent text-white font-bold py-4 rounded-2xl shadow-md hover:opacity-95 transition text-base">
+                            تأكيد الطلب
+                        </button>
+
+                        <div class="mt-6 flex items-center justify-center gap-1.5 text-xs text-muted-foreground text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-accent shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            <span>قطر – لوسيل، برج مارينا، الطابق السادس</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <footer class="border-t border-border bg-card/50 w-full mt-16">
+        <div class="container mx-auto grid gap-10 px-6 py-14 md:grid-cols-4 max-w-7xl">
+            <div class="md:col-span-1">
+                <div class="mb-4">
+                    <div class="font-extrabold text-2xl text-primary leading-tight">معاون</div>
+                    <span class="text-accent text-[11px] font-bold block -mt-1 tracking-wider">Ma'awen</span>
+                </div>
+                <p class="text-sm leading-7 text-muted-foreground">الشركة القطرية لحلول القوى البشرية. نوفّر لك عمالة منزلية موثوقة ومدرّبة بأعلى معايير الجودة في قطر.</p>
+            </div>
+            <div>
+                <h4 class="mb-4 font-black text-primary">روابط سريعة</h4>
+                <ul class="space-y-2 text-sm text-muted-foreground">
+                    <li><a href="/" class="hover:text-accent">الرئيسية</a></li>
+                    <li><a href="/#services" class="hover:text-accent">خدماتنا</a></li>
+                    <li><a href="/#why" class="hover:text-accent">لماذا معاون</a></li>
+                    <li><a href="/contact" class="hover:text-accent">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-4 font-black text-primary">خدماتنا</h4>
+                <ul class="space-y-2 text-sm text-muted-foreground">
+                    <li><a href="/hourly" class="hover:text-accent">عمالة بالساعة</a></li>
+                    <li><a href="/monthly" class="hover:text-accent">عمالة بالشهر</a></li>
+                    <li><a href="/contact" class="hover:text-accent">استقدام عمالة</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-4 font-black text-primary">معلومات الاتصال</h4>
+                <ul class="space-y-3 text-sm text-muted-foreground">
+                    <li class="flex items-start gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-4 w-4 shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        لوسيل — برج مارينا — ط 6
+                    </li>
+                    <li><a href="mailto:info@maawen.qa" class="hover:text-accent">info@maawen.qa</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-border py-5 text-center text-sm text-muted-foreground">
+            © 2026 معاون لخدمات القوى البشرية. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+
+    <script>
+        // State initialized to empty/zero
+        const state = {
+            duration: '',
+            basePrice: 0,
+            service: '',
+            workType: '',
+            workersCount: 0,
+            nationality: '',
+            flagHtml: '',
+            date: ''
+        };
+
+        // Flags HTML Map
+        const flags = {
+            ph: `<svg viewBox="0 0 600 300" class="w-full h-full object-cover"><rect width="600" height="150" fill="#0038A8"/><rect y="150" width="600" height="150" fill="#CE1126"/><polygon points="0,0 260,150 0,300" fill="#FFF"/></svg>`,
+            in: `<svg viewBox="0 0 900 600" class="w-full h-full object-cover"><rect width="900" height="200" fill="#FF9933"/><rect y="200" width="900" height="200" fill="#FFF"/><rect y="400" width="900" height="200" fill="#128807"/><circle cx="450" cy="300" r="80" fill="none" stroke="#000080" stroke-width="15"/></svg>`,
+            id: `<svg viewBox="0 0 3 2" class="w-full h-full object-cover"><rect width="3" height="1" fill="#E70011"/><rect y="1" width="3" height="1" fill="#FFF"/></svg>`,
+            et: `<svg viewBox="0 0 900 600" class="w-full h-full object-cover"><rect width="900" height="200" fill="#078930"/><rect y="200" width="900" height="200" fill="#FCD116"/><rect y="400" width="900" height="200" fill="#DA121A"/></svg>`,
+            ke: `<svg viewBox="0 0 900 600" class="w-full h-full object-cover"><rect width="900" height="180" fill="#000"/><rect y="210" width="900" height="180" fill="#BB0000"/><rect y="420" width="900" height="180" fill="#006600"/></svg>`
+        };
+
+        // DOM Elements
+        const summaryDuration = document.getElementById('summary-duration');
+        const summaryService = document.getElementById('summary-service');
+        const summaryWorkType = document.getElementById('summary-worktype');
+        const summaryCount = document.getElementById('summary-count');
+        const summaryNationality = document.getElementById('summary-nationality');
+        const summaryFlag = document.getElementById('summary-flag');
+        const summaryContractPrice = document.getElementById('summary-contract-price');
+        const summaryDate = document.getElementById('summary-date');
+        const summaryTotal = document.getElementById('summary-total');
+        const summaryDeposit = document.getElementById('summary-deposit');
+        const summaryRemaining = document.getElementById('summary-remaining');
+        const workersDisplay = document.getElementById('workers-count-display');
+        const selectedNatText = document.getElementById('selected-nationality-text');
+        const selectedNatFlag = document.getElementById('selected-nationality-flag');
+
+        function updateSummary() {
+            const total = state.basePrice * state.workersCount;
+            const deposit = state.workersCount > 0 ? 30 : 0; // Deposit fixed per order or proportional
+            const remaining = Math.max(0, total - deposit);
+
+            // Duration
+            if (state.duration) {
+                summaryDuration.textContent = state.duration;
+                summaryDuration.className = 'font-bold text-primary';
+            } else {
+                summaryDuration.textContent = 'غير محدد';
+                summaryDuration.className = 'font-bold text-muted-foreground italic';
+            }
+
+            // Service
+            if (state.service) {
+                summaryService.textContent = state.service;
+                summaryService.className = 'font-bold text-primary';
+            } else {
+                summaryService.textContent = 'غير محدد';
+                summaryService.className = 'font-bold text-muted-foreground italic';
+            }
+
+            // Work Type
+            if (state.workType) {
+                summaryWorkType.textContent = state.workType;
+                summaryWorkType.className = 'font-bold text-primary';
+            } else {
+                summaryWorkType.textContent = 'غير محدد';
+                summaryWorkType.className = 'font-bold text-muted-foreground italic';
+            }
+
+            // Nationality
+            if (state.nationality) {
+                summaryNationality.textContent = state.nationality;
+                summaryNationality.className = 'text-primary font-bold';
+                summaryFlag.innerHTML = state.flagHtml;
+                summaryFlag.classList.remove('hidden');
+                selectedNatText.textContent = state.nationality;
+                selectedNatFlag.innerHTML = state.flagHtml;
+                selectedNatFlag.classList.remove('hidden');
+            } else {
+                summaryNationality.textContent = 'غير محدد';
+                summaryNationality.className = 'text-muted-foreground italic';
+                summaryFlag.classList.add('hidden');
+                selectedNatText.textContent = 'لم يتم الاختيار';
+                selectedNatFlag.classList.add('hidden');
+            }
+
+            // Date
+            if (state.date) {
+                summaryDate.textContent = state.date;
+                summaryDate.className = 'font-bold text-primary';
+            } else {
+                summaryDate.textContent = 'غير محدد';
+                summaryDate.className = 'font-bold text-muted-foreground italic';
+            }
+
+            summaryCount.textContent = state.workersCount;
+            summaryContractPrice.textContent = `${state.basePrice.toLocaleString()} ر.ق`;
+            summaryTotal.textContent = `${total.toLocaleString()} ر.ق`;
+            summaryDeposit.textContent = `${deposit.toLocaleString()} ر.ق`;
+            summaryRemaining.textContent = `${remaining.toLocaleString()} ر.ق`;
+            workersDisplay.textContent = state.workersCount;
+        }
+
+        // Duration Handlers
+        document.querySelectorAll('#duration-options .duration-card').forEach(card => {
+            card.addEventListener('click', () => {
+                document.querySelectorAll('#duration-options .duration-card').forEach(c => {
+                    c.classList.remove('border-2', 'border-accent');
+                    c.classList.add('border', 'border-border');
+                    c.querySelector('.check-icon').classList.add('hidden');
+                });
+                card.classList.remove('border', 'border-border');
+                card.classList.add('border-2', 'border-accent');
+                card.querySelector('.check-icon').classList.remove('hidden');
+
+                state.duration = card.dataset.duration;
+                state.basePrice = parseInt(card.dataset.price, 10);
+                updateSummary();
+            });
+        });
+
+        // Service Handlers
+        document.querySelectorAll('#service-options .service-card').forEach(card => {
+            card.addEventListener('click', () => {
+                document.querySelectorAll('#service-options .service-card').forEach(c => {
+                    c.classList.remove('border-2', 'border-accent');
+                    c.classList.add('border', 'border-border');
+                    c.querySelector('.check-icon').classList.add('hidden');
+                    const label = c.querySelector('.selected-label');
+                    if(label) label.classList.add('hidden');
+                });
+                card.classList.remove('border', 'border-border');
+                card.classList.add('border-2', 'border-accent');
+                card.querySelector('.check-icon').classList.remove('hidden');
+                const activeLabel = card.querySelector('.selected-label');
+                if(activeLabel) activeLabel.classList.remove('hidden');
+
+                state.service = card.dataset.service;
+                updateSummary();
+            });
+        });
+
+        // Work Type Handlers
+        document.querySelectorAll('#work-type-options .work-card').forEach(card => {
+            card.addEventListener('click', () => {
+                document.querySelectorAll('#work-type-options .work-card').forEach(c => {
+                    c.classList.remove('border-2', 'border-accent');
+                    c.classList.add('border', 'border-border');
+                    c.querySelector('.check-icon').classList.add('hidden');
+                });
+                card.classList.remove('border', 'border-border');
+                card.classList.add('border-2', 'border-accent');
+                card.querySelector('.check-icon').classList.remove('hidden');
+
+                state.workType = card.dataset.worktype;
+                updateSummary();
+            });
+        });
+
+        // Workers Count Handlers
+        document.getElementById('btn-plus').addEventListener('click', () => {
+            state.workersCount++;
+            updateSummary();
+        });
+
+        document.getElementById('btn-minus').addEventListener('click', () => {
+            if (state.workersCount > 0) {
+                state.workersCount--;
+                updateSummary();
+            }
+        });
+
+        // Nationality Handlers
+        document.querySelectorAll('#nationality-options .nationality-card').forEach(card => {
+            card.addEventListener('click', () => {
+                document.querySelectorAll('#nationality-options .nationality-card').forEach(c => {
+                    c.classList.remove('border-2', 'border-accent');
+                    c.classList.add('border', 'border-border');
+                    const label = c.querySelector('.selected-label');
+                    if(label) label.classList.add('hidden');
+                });
+                card.classList.remove('border', 'border-border');
+                card.classList.add('border-2', 'border-accent');
+                const activeLabel = card.querySelector('.selected-label');
+                if(activeLabel) activeLabel.classList.remove('hidden');
+
+                state.nationality = card.dataset.nationality;
+                state.flagHtml = flags[card.dataset.flag];
+                updateSummary();
+            });
+        });
+
+        // Input Handlers
+        document.getElementById('input-date').addEventListener('change', (e) => {
+            state.date = e.target.value;
+            updateSummary();
+        });
+
+        function submitBooking() {
+            if (!state.duration || !state.service || !state.workType || state.workersCount === 0 || !state.nationality || !state.date) {
+                alert('يرجى استكمال جميع خيارات العقد قبل التأكيد.');
+                return;
+            }
+            alert(`تم تأكيد الطلب بنجاح!\nمدة العقد: ${state.duration}\nالخدمة: ${state.service}\nالنوع: ${state.workType}\nعدد العمالة: ${state.workersCount}\nالجنسية: ${state.nationality}\nالمبلغ الإجمالي: ${(state.basePrice * state.workersCount).toLocaleString()} ر.ق`);
+        }
+
+        // Initial Render
+        updateSummary();
+    </script>
+</body>
+</html>

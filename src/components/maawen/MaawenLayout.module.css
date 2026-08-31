@@ -1,0 +1,130 @@
+/* رأس صفحات الحجز */
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.backBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: background 0.2s;
+  color: var(--color-primary);
+}
+
+.backBtn:hover {
+  background: #f9fafb;
+}
+
+.brandBlock {
+  text-align: right;
+}
+
+.brandName {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--color-primary);
+  line-height: 1.1;
+}
+
+.brandSub {
+  color: var(--color-accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-top: -2px;
+}
+
+/* فوتر الصفحات */
+.pageFooter {
+  border-top: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  margin-top: 64px;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+
+@media (max-width: 900px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footerTitle {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.footerLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footerLink {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  transition: color 0.2s;
+}
+
+.footerLink:hover {
+  color: var(--color-accent);
+}
+
+.footerDesc {
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+  margin-top: 12px;
+}
+
+.footerAddr {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.addrIcon {
+  width: 16px;
+  height: 16px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.footerBottom {
+  border-top: 1px solid var(--color-border);
+  padding: 20px 24px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}

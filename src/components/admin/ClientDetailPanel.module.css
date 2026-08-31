@@ -1,0 +1,823 @@
+.container {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb;
+  overflow: hidden;
+  font-family: "Cairo", "Tajawal", sans-serif;
+}
+
+/* ===== حالة فارغة ===== */
+.empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #9ca3af;
+  background: #f9fafb;
+}
+
+.emptyIcon {
+  font-size: 48px;
+  opacity: 0.5;
+}
+
+.empty p {
+  font-size: 14px;
+}
+
+/* ===== شريط العنوان ===== */
+.headerBar {
+  background: #fff;
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  flex-shrink: 0;
+}
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.clientName {
+  font-weight: 700;
+  color: #111827;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.refreshIcon {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.headerBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+
+.pdfRed {
+  background: #dc2626;
+}
+
+.pdfRed:hover {
+  background: #b91c1c;
+}
+
+/* ===== شريط المعلومات ===== */
+.infoStrip {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  font-size: 11px;
+}
+
+.infoStrip::-webkit-scrollbar {
+  display: none;
+}
+
+.infoChip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-left: 1px solid #f3f4f6;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.infoIcon {
+  color: #9ca3af;
+  flex-shrink: 0;
+}
+
+.infoMono {
+  color: #374151;
+  font-family: monospace;
+}
+
+.infoMuted {
+  color: #9ca3af;
+}
+
+.infoFlag {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.blockBtn {
+  padding: 2px 10px;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.blockRedBtn {
+  background: #dc2626;
+}
+
+.blockRedBtn:hover {
+  background: #b91c1c;
+}
+
+.unblockBtn {
+  background: #16a34a;
+}
+
+.unblockBtn:hover {
+  background: #15803d;
+}
+
+.statusTag {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.statusOnline {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #86efac;
+}
+
+.statusOffline {
+  background: #f3f4f6;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+}
+
+/* ===== شريط الإجراءات ===== */
+.actionStrip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-top: 1px solid #f3f4f6;
+  flex-wrap: wrap;
+}
+
+.archiveBtn {
+  background: #d97706;
+}
+
+.archiveBtn:hover {
+  background: #b45309;
+}
+
+.unarchiveBtn {
+  background: #0891b2;
+}
+
+.unarchiveBtn:hover {
+  background: #0e7490;
+}
+
+.deleteBtn {
+  background: #991b1b;
+}
+
+.deleteBtn:hover {
+  background: #7f1d1d;
+}
+
+.cancelBtn {
+  background: #6b7280;
+}
+
+.cancelBtn:hover {
+  background: #4b5563;
+}
+
+/* ===== شريط توجيه العميل (select) ===== */
+.directStrip {
+  padding: 8px 12px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.directSelect {
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #1f2937;
+  background: #f8fafc;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.directSelect:hover {
+  border-color: #94a3b8;
+}
+
+.directSelect:focus {
+  border-color: var(--color-accent, #0e7490);
+  box-shadow: 0 0 0 2px rgba(14, 116, 144, 0.15);
+}
+
+.directPreview {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #0e7490;
+  text-decoration: none;
+  border-bottom: 1px dashed #22d3ee;
+  padding-bottom: 1px;
+}
+
+.directPreview:hover {
+  color: #155e75;
+}
+
+.confirmText {
+  font-size: 11px;
+  font-weight: 700;
+  color: #991b1b;
+  white-space: nowrap;
+}
+
+/* ===== منطقة البطاقات ===== */
+.cardsArea {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cardsArea::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cardsArea::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+/* ===== البطاقة ===== */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f3f4f6;
+  max-width: 500px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-bottom: 1px solid #f3f4f6;
+  position: relative;
+}
+
+.cardTitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.latestTag {
+  font-size: 9px;
+  font-weight: 700;
+  color: #059669;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  padding: 1px 6px;
+  border-radius: 999px;
+}
+
+.maawenTag {
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--color-accent, #6d1d38);
+  background: #fbf4f6;
+  border: 1px solid rgba(109, 29, 56, 0.25);
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-left: 4px;
+}
+
+.cardHeaderRight {
+  position: absolute;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cardTime {
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+.cardBody {
+  padding: 8px 12px;
+}
+
+/* ===== صف البيانات ===== */
+.dataRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.dataLabel {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6b7280;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.dataValue {
+  font-size: 11px;
+  font-weight: 700;
+  color: #111827;
+  text-align: left;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.valueDefault { color: #111827; }
+.valueGreen { color: #15803d; }
+.valueRed { color: #dc2626; }
+.valueAmber { color: #d97706; }
+
+/* قيم الصفوف قابلة للنسخ بالنقر */
+.dataCopyable {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 1px 4px;
+  margin: -1px -4px;
+  transition: background-color 0.15s, opacity 0.15s;
+}
+
+.dataCopyable:hover {
+  background-color: #eef2f7;
+  opacity: 0.85;
+}
+
+.dataCopyable:active {
+  opacity: 0.55;
+}
+
+.dataCopied {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.mono {
+  font-family: "Courier New", monospace;
+}
+
+.smallText {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: right;
+}
+
+/* ===== صف المرشح (في بطاقة الحجز) ===== */
+.workerRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+  margin-bottom: 4px;
+}
+
+.workerPhoto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.workerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.workerName {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.workerMeta {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+/* ===== البطاقة المصورة ===== */
+.creditCard {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #e6f4ec 0%, #c2e0cc 100%);
+  border: 1.5px solid #90c9a8;
+  padding: 12px 14px;
+  margin: 8px 0;
+}
+
+.cardDecorCircle1 {
+  position: absolute;
+  top: -30%;
+  right: -15%;
+  width: 55%;
+  height: 100%;
+  border-radius: 50%;
+  background: #006633;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.cardDecorCircle2 {
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 45%;
+  height: 80%;
+  border-radius: 50%;
+  background: #006633;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.cardTopRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+.cardBrand {
+  font-size: 16px;
+  font-weight: 900;
+  color: #004d26;
+  letter-spacing: 0.05em;
+}
+
+.cardCurrency {
+  border: 1.5px solid #006633;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #006633;
+  letter-spacing: 0.05em;
+}
+
+/* مجموعة شعار البنك + اسمه في أعلى صندوق البطاقة */
+.bankLogoGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  max-width: 60%;
+}
+
+.bankLogo {
+  display: block;
+  max-height: 30px;
+  max-width: 100px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  /* خلفية بيضاء صلبة + padding ليظهر الشعار الملوّن بوضوح */
+  background: #fff;
+  border-radius: 6px;
+  padding: 4px 6px;
+  box-sizing: content-box;
+}
+
+/* بديل نصي (الحرف الأول) عند عدم توفّر شعار البنك */
+.bankLogoFallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #006633;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.bankName {
+  font-size: 11px;
+  font-weight: 700;
+  color: #004d26;
+  line-height: 1.2;
+  max-width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cardNumber {
+  font-family: "Courier New", "Lucida Console", monospace;
+  font-weight: 700;
+  color: #004d26;
+  font-size: 20px;
+  letter-spacing: 0.18em;
+  margin: 8px 0;
+  position: relative;
+}
+
+.cardBottomRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+}
+
+.cardHolder {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cardExp {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+}
+
+.cardExpGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+}
+
+.cardLabel {
+  font-size: 8px;
+  font-weight: 700;
+  color: #2d7a4f;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.cardValueSmall {
+  font-size: 13px;
+  font-weight: 700;
+  color: #004d26;
+}
+
+/* عناصر قابلة للنسخ بالنقر (رقم البطاقة، التاريخ، CVV، OTP) */
+.copyable {
+  cursor: pointer;
+  transition: filter 0.15s, opacity 0.15s;
+  user-select: none;
+}
+
+.copyable:hover {
+  opacity: 0.7;
+  filter: brightness(1.08);
+}
+
+.copyable:active {
+  opacity: 0.5;
+}
+
+/* ===== قسم OTP ===== */
+.otpSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 0;
+  align-items: center;
+}
+
+.otpLabel {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6b7280;
+}
+
+.otpBoxes {
+  display: flex;
+  gap: 8px;
+}
+
+.otpBox {
+  width: 36px;
+  height: 44px;
+  border-radius: 6px;
+  background: #f9fafb;
+  border: 2px solid #d1d5db;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* ===== حالة الدفع ===== */
+.paymentStatus {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.statusGreen {
+  background: #f0fdf4;
+  color: #15803d;
+  border-color: #86efac;
+}
+
+.statusAmber {
+  background: #fffbeb;
+  color: #b45309;
+  border-color: #fcd34d;
+}
+
+.statusRed {
+  background: #fef2f2;
+  color: #dc2626;
+  border-color: #fca5a5;
+}
+
+/* ===== بيانات فارغة ===== */
+.emptyData {
+  text-align: center;
+  padding: 16px;
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+/* ===== أزرار المدير ===== */
+.adminActions {
+  display: flex;
+  gap: 8px;
+  padding: 8px 0 0;
+}
+
+.actionBtn {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s, opacity 0.15s;
+  color: #fff;
+}
+
+.actionBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.approveBtn {
+  background: #16a34a;
+}
+
+.approveBtn:hover:not(:disabled) {
+  background: #15803d;
+}
+
+.rejectBtn {
+  background: #dc2626;
+}
+
+.rejectBtn:hover:not(:disabled) {
+  background: #b91c1c;
+}
+
+.statusRed {
+  background: #fef2f2;
+  color: #dc2626;
+  border-color: #fca5a5;
+}
+
+.staleNote {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 12px;
+  text-align: center;
+  border: 1px dashed #cbd5e1;
+}
+
+/* زر الرجوع إلى القائمة — مخفي افتراضياً (يظهر فقط على الهاتف). */
+.backBtn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: #f9fafb;
+  color: #374151;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.backBtn:hover {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.backBtn:active {
+  background: #e5e7eb;
+}
+
+.backIcon {
+  display: block;
+}
+
+/* ===== تجاوب ===== */
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+  .otpBox {
+    width: 28px;
+    height: 36px;
+    font-size: 14px;
+  }
+  .cardNumber {
+    font-size: 16px;
+  }
+
+  /* زر الرجوع: يظهر على الهاتف فقط (مخفي على الكمبيوتر). */
+  .backBtn {
+    display: flex;
+  }
+}

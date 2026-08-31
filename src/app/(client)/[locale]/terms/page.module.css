@@ -1,0 +1,27 @@
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-secondary);
+  margin: 16px 0 24px;
+}
+
+.card {
+  max-width: 800px;
+}
+
+.content {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+
+.content :global(h2) {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin: 28px 0 10px;
+}
+
+.content :global(p) {
+  margin-bottom: 14px;
+}

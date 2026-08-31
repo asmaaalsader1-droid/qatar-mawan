@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معاون - معلومات العميل
+ساعات
+
+    </title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            DEFAULT: '#15284B',
+                            foreground: '#FFFFFF',
+                        },
+                        accent: '#6D1D38',
+                        secondary: '#FBF4F6',
+                        background: '#FBF9F6',
+                        card: '#FFFFFF',
+                        border: '#E5E7EB',
+                        'muted-foreground': '#6E6E73',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-[#1D1D1F] font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <div class="max-w-7xl mx-auto px-6 w-full flex-grow py-8">
+        
+        <!-- Header Nav -->
+        <header class="flex justify-between items-center mb-12">
+            <a href="/" class="w-11 h-11 rounded-full border border-border bg-white flex items-center justify-center cursor-pointer shadow-sm hover:bg-gray-50 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            </a>
+            <div class="text-right">
+                <div class="font-extrabold text-2xl text-primary leading-tight">معاون</div>
+                <span class="text-accent text-[11px] font-bold block -mt-1 tracking-wider">Ma'awen</span>
+            </div>
+        </header>
+
+
+    
+  <!--  صفحة تتغير نصوصها او يتم طباعة نصوص جديد بشكل ديناميكي حسب اختيار العميل من الصفحة الرئيسية اذا كان الاختيار عاملات بالساعة يتم طباعة نص فوق النموذج يوضح ما قام ب اختياره العميل عاملة بالساعة او غيرها على سبيل المثال هذا نص حجز سائق 
+
+حجز بالساعة — سائق خاص — 6 -->
+
+        <!-- Main Form Container -->
+        <main class="max-w-xl mx-auto my-6">
+            <h1 class="text-3xl font-black text-primary text-center mb-8">معلومات العميل</h1>
+
+            <div class="bg-card rounded-3xl border border-border p-8 md:p-10 shadow-sm">
+                <form id="client-info-form" onsubmit="handleSubmit(event)" class="space-y-6">
+                    
+                    <!-- Customer Name -->
+                    <div>
+                        <label for="fullName" class="block text-sm font-bold text-primary mb-2 text-right">
+                            اسم العميل
+                        </label>
+                        <input 
+                            type="text" 
+                            id="fullName" 
+                            name="fullName" 
+                            required 
+                            placeholder="الاسم الكامل"
+                            class="w-full border border-border rounded-2xl p-4 text-sm text-primary font-medium focus:outline-none focus:border-accent bg-transparent placeholder:text-gray-400 transition"
+                        />
+                    </div>
+                    
+                    
+                    <div>
+                        <label for="fullName" class="block text-sm font-bold text-primary mb-2 text-right">
+                            رقم الهوية
+                        </label>
+                        <input 
+                            type="text" 
+                            id="fullName" 
+                            name="fullid" 
+                            required 
+                            placeholder="رقم الهوية "
+                            class="w-full border border-border rounded-2xl p-4 text-sm text-primary font-medium focus:outline-none focus:border-accent bg-transparent placeholder:text-gray-400 transition"
+                        />
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div>
+                        <label for="phone" class="block text-sm font-bold text-primary mb-2 text-right">
+                            رقم الجوال
+                        </label>
+                        <div class="flex border border-border rounded-2xl overflow-hidden focus-within:border-accent transition" dir="ltr">
+                            <span class="bg-secondary text-primary font-bold px-4 flex items-center justify-center border-r border-border text-sm dir-ltr">
+                                +974
+                            </span>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                required 
+                                placeholder="XXXXXXXX"
+                                pattern="[0-9]{8}"
+                                class="w-full p-4 text-sm text-primary font-medium focus:outline-none bg-transparent placeholder:text-gray-400 text-left"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Address -->
+                    <div>
+                        <label for="address" class="block text-sm font-bold text-primary mb-2 text-right">
+                            العنوان
+                        </label>
+                        <input 
+                            type="text" 
+                            id="address" 
+                            name="address" 
+                            required 
+                            placeholder="المنطقة، الشارع، رقم المبنى"
+                            class="w-full border border-border rounded-2xl p-4 text-sm text-primary font-medium focus:outline-none focus:border-accent bg-transparent placeholder:text-gray-400 transition"
+                        />
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button 
+                        type="submit" 
+                        class="w-full mt-4 bg-accent text-white font-bold py-4 rounded-2xl shadow-md hover:opacity-95 transition text-base flex items-center justify-center gap-2"
+                    >
+                        <span>متابعة</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+
+                    <!-- Back Link -->
+                    <div class="text-center pt-2">
+                        <a href="/" class="text-sm font-bold text-muted-foreground hover:text-accent transition">
+                            العودة للرئيسية
+                        </a>
+                    </div>
+
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-border bg-card/50 w-full mt-16">
+        <div class="container mx-auto grid gap-10 px-6 py-14 md:grid-cols-4 max-w-7xl">
+            <div class="md:col-span-1">
+                <div class="mb-4">
+                    <div class="font-extrabold text-2xl text-primary leading-tight">معاون</div>
+                    <span class="text-accent text-[11px] font-bold block -mt-1 tracking-wider">Ma'awen</span>
+                </div>
+                <p class="text-sm leading-7 text-muted-foreground">الشركة القطرية لحلول القوى البشرية. نوفّر لك عمالة منزلية موثوقة ومدرّبة بأعلى معايير الجودة في قطر.</p>
+            </div>
+            <div>
+                <h4 class="mb-4 font-black text-primary">روابط سريعة</h4>
+                <ul class="space-y-2 text-sm text-muted-foreground">
+                    <li><a href="/" class="hover:text-accent">الرئيسية</a></li>
+                    <li><a href="/#services" class="hover:text-accent">خدماتنا</a></li>
+                    <li><a href="/#why" class="hover:text-accent">لماذا معاون</a></li>
+                    <li><a href="/contact" class="hover:text-accent">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-4 font-black text-primary">خدماتنا</h4>
+                <ul class="space-y-2 text-sm text-muted-foreground">
+                    <li><a href="/hourly" class="hover:text-accent">عمالة بالساعة</a></li>
+                    <li><a href="/monthly" class="hover:text-accent">عمالة بالشهر</a></li>
+                    <li><a href="/recruitment" class="hover:text-accent">استقدام عمالة</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-4 font-black text-primary">معلومات الاتصال</h4>
+                <ul class="space-y-3 text-sm text-muted-foreground">
+                    <li class="flex items-start gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-4 w-4 shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        لوسيل — برج مارينا — ط 6
+                    </li>
+                    <li><a href="mailto:info@maawen.qa" class="hover:text-accent">info@maawen.qa</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-border py-5 text-center text-sm text-muted-foreground">
+            © 2026 معاون لخدمات القوى البشرية. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            const fullName = document.getElementById('fullName').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+
+            // يمكنك التوجيه للخطوة التالية هنا
+            console.log({ fullName, phone: '+974' + phone, address });
+            alert(`شكرًا ${fullName}، تم حفظ بياناتك وسيتم التوجيه لخطوة الاستقدام التالية.`);
+        }
+        
+        
+        function handleSubmit(e) {
+    e.preventDefault();
+    const data = {
+        fullName: document.getElementById('fullName').value,
+        phone: document.getElementById('phone').value,
+        address: document.getElementById('address').value,
+        service: 'استقدام عمالة' // أو الخدمة المحددة
+    };
+
+    // حفظ البيانات في localStorage
+    localStorage.setItem('maawen_booking_data', JSON.stringify(data));
+
+    // التوجيه لصفحة ملخص الطلب
+    window.location.href = 'summary.html';
+}
+    </script>
+</body>
+</html>

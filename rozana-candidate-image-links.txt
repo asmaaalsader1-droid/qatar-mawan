@@ -1,0 +1,326 @@
+Rozana candidate image links
+=============================
+Total records: 321
+Format: number | name | nationality | direct image URL | profile URL
+
+001 | PROSSY  NAKITO | Ugandan | https://rozana-manpower.com/storage/app/public/attachments/DQFA2YwNE5EjUx5jFfvRFgwdbGo0Dk3NTpaYtJt4.jpg | https://rozana-manpower.com/maid/prossy-nakito
+002 | KEDIJA GEBE HAJO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/YneqgYsWhzndwSHcYDs7hX3mSa6b1QPZef4JoOhp.png | https://rozana-manpower.com/maid/kedija-gebe-hajo-ealho-2120
+003 | BURTUKAN ASHEBIR JOBIRA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/16zXX3Oaq6ybCVk3brT5K18rKam1fDX5yUq0FIqt.jpg | https://rozana-manpower.com/maid/burtukan-ashebir-jobira-ebmho-1356
+004 | SARAH  NAGGIRI | Ugandan | https://estella.onesourceerp.com/storage/app/public/attachments/bqSMJLmYT0qlBepXJtwGdL4XirCRkUCh1UB0pBOY.jpg | https://rozana-manpower.com/maid/sarah-naggiri-ugesho-318
+005 | HAMDAH  NABAWANDA | Ugandan | https://estella.onesourceerp.com/storage/app/public/attachments/RMILdqEBzQOq7qm9ARHfklSQHMNODCeJZDMeZQ62.jpg | https://rozana-manpower.com/maid/hamdah-nabawanda-ugesho-316
+006 | FLORENCE  NAMAWEJJE | Ugandan | https://estella.onesourceerp.com/storage/app/public/attachments/JH7ZoJaTFCDzL8mTHMcT6Y5w5NN0CJ0VUpwN8gYX.jpg | https://rozana-manpower.com/maid/florence-namawejje-ugesho-317
+007 | SHARON  KEBIRUNGI | Ugandan | https://estella.onesourceerp.com/storage/app/public/attachments/jxAtb08zjN3LLu2D5Q34pbskinGRbSedWXrtGS8r.jpg | https://rozana-manpower.com/maid/sharon-kebirungi-ugesho-315
+008 | GLORIA  NAKIDDE | Ugandan | https://estella.onesourceerp.com/storage/app/public/attachments/6TDBpbaKdpUh8qce8zuLfzt1Jx8cPYe6EwhjXtnQ.jpg | https://rozana-manpower.com/maid/gloria-nakidde-ugesho-314
+009 | MARIAM  KWAGALA | Ugandan | https://estella.onesourceerp.com/storage/app/public/attachments/L1AnoOxk1jkJ4oTGlml1MSrLIdkmQpyaDls6DQz5.jpg | https://rozana-manpower.com/maid/mariam-kwagala-ugesho-313
+010 | FAITH  CHEMUTAI | Ugandan | https://estella.onesourceerp.com/storage/app/public/attachments/QmIFKv9XHKBXrxqlDhsZ5Kx868bfmGoRbcRqL2WN.jpg | https://rozana-manpower.com/maid/faith-chemutai-ugesho-312
+011 | FAIMA  KANTONO | Ugandan | https://estella.onesourceerp.com/storage/app/public/attachments/niK4xcm32BD1M9bQHUIl8xHam02FxWc2r3IW3pz4.jpg | https://rozana-manpower.com/maid/faima-kantono-ugesho-311
+012 | WERKTU HIRPHA DINK | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/jQFYSsJP7V3vZOrxJQ83275FJRmCWbts63kKIw8P.jpg | https://rozana-manpower.com/maid/werktu-hirpha-dink-ebmho-1352
+013 | MESERET NUGUSE TULEMA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/A4tgRQ0Zf1wPiKhR0FrFwb4OtMcvwLd44HaWFO8i.jpg | https://rozana-manpower.com/maid/meseret-nuguse-tulema-ebmho-1351
+014 | ALEMTSEHAY NEGASH BEDASA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/Zd4ZFqgq1dAZKSNDMJyMa0EjjiyflKSt2350yr40.jpg | https://rozana-manpower.com/maid/alemtsehay-negash-bedasa-ebmho-1348
+015 | HAWA OUMER MUHAMMED | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/OAcvTV4ELStNxTLkOw6VcAWT3dUuxw3iiXd6OnIH.jpg | https://rozana-manpower.com/maid/hawa-oumer-muhammed-ealho-474
+016 | SHITA HAILEMARIAM DAEBO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/9D16NogtPjfIZ0MRGakH00Jd5PlLtrhyqNTbh8Qw.jpg | https://rozana-manpower.com/maid/shita-hailemariam-daebo-ealho-697
+017 | MOMINA AHMED ALI | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/7CsQsXRfoCJf1UMYfgNUR84ki45t91pHPCiwZYet.jpg | https://rozana-manpower.com/maid/momina-ahmed-ali-ebmho-1347
+018 | ROSE ANN PORDIOS JUCAL | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/gprd1snWvTGlelnPEWjMnDEavdg44l0nghrT6KsJ.png | https://rozana-manpower.com/maid/rose-ann-pordios-jucal-pkh-0557
+019 | AISHA  KISAKYE | Ugandan | https://estella.onesourceerp.com/storage/app/public/attachments/TOwmouUNA3MVpUrdkEihLDCknr7uENHd6INXq9r1.jpg | https://rozana-manpower.com/maid/aisha-kisakye-ugesho-310
+020 | KANIFA  NAMUJEKE | Ugandan | https://estella.onesourceerp.com/storage/app/public/attachments/RzZOR85Ya930JgcPT1V3I8TBSUQDLSySbMkthkkv.jpg | https://rozana-manpower.com/maid/kanifa-namujeke-ugesho-309
+021 | SINCERE  MASIKA | Ugandan | https://estella.onesourceerp.com/storage/app/public/attachments/WmwT8mUh1WYNuGkPS24teGf48efjO8Cz24dU2mwW.jpg | https://rozana-manpower.com/maid/sincere-masika-ugesho-308
+022 | PEACE SHARON NAMAGEMBE | Ugandan | https://estella.onesourceerp.com/storage/app/public/attachments/EZ7OAnWxtpgic57CjcrwyUjmGgQcyiH1i2l7ZnBX.jpg | https://rozana-manpower.com/maid/peace-sharon-namagembe-ugesho-307
+023 | JAUHALAH  NABULYA | Ugandan | https://estella.onesourceerp.com/storage/app/public/attachments/M8kUc680cOHMVxBzTsDGULT7iAG9BAAleA8ugfXd.jpg | https://rozana-manpower.com/maid/jauhalah-nabulya-ugesho-306
+024 | RESTY NAMIREMBE NABADDA | Ugandan | https://estella.onesourceerp.com/storage/app/public/attachments/crPfRFXy14DNW0TfjxrcZJynu0tAVPSbL2hCSOhv.jpg | https://rozana-manpower.com/maid/resty-namirembe-nabadda-ugesho-305
+025 | NUSRA DINO MOHAMMED | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/bWZntVrvE3kztJdSm3GEQcmLV5YLvw9N0F9hM4nU.jpg | https://rozana-manpower.com/maid/nusra-dino-mohammed-ebmho-1263
+026 | MEDINA ABU HAJI | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/eO3h3PmTpqxqsK1YKDjkbR9l3AwQbv1mUbKoWsOP.jpg | https://rozana-manpower.com/maid/medina-abu-haji-ebmho-1344
+027 | KEDIJA SULTAN KHALID | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/39azATE49gJrFm77HVJOOWM8RcFEAHlH9E9Fdh41.jpg | https://rozana-manpower.com/maid/kedija-sultan-khalid-ebmho-1343
+028 | SEADA KASO HAJO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/JqTl2SlIYfqfB1b8uoLKvv5GjrXxFbJ6JSGYnNaN.jpg | https://rozana-manpower.com/maid/seada-kaso-hajo-ebmho-1342
+029 | GENET ZELEKE DADI | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/mbFFF8znH4h4zygffQpKFIWZNYe2zrxy40DXBNif.png | https://rozana-manpower.com/maid/genet-zeleke-dadi
+030 | MOMINA ERESO TIBESO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/BlljaqWHHgQgizBJBipvv52ZtUmOqcYlvK0lym6G.jpg | https://rozana-manpower.com/maid/momina-ereso-tibeso-ebmho-1338
+031 | MESERET HAFTU ABREHA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/so72JHjBUA5NNQGPu1p1mnUlMHvhkv4pMdRDWfIq.jpg | https://rozana-manpower.com/maid/meseret-haftu-abreha-ebmho-1336
+032 | ASTER JEMEMA GECHA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/lbJQnqi2qfvse3N7GhYPfotdXWw0s4AGyQFKgRL0.jpg | https://rozana-manpower.com/maid/aster-jemema-gecha-ebmho-1334
+033 | WORKNESH NEGESE BUSHU | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/o29N56A9diKDOJjrXQHusP9IyFXuN3m6p63jCp3u.jpg | https://rozana-manpower.com/maid/worknesh-negese-bushu-ealho-1223
+034 | OBSE SHURA BOKE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/GF6b0YVsQjntkC2WhmiGJYxhNpIIXdDmEmPuhV3O.png | https://rozana-manpower.com/maid/obse-shura-boke-ealho-2022
+035 | BAHIRA MOHAMMEDSANI HUSSEN | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/HINsoCYD0bI5rMbwWvf0bZloVSDrfA2q1DMVOcTz.jpg | https://rozana-manpower.com/maid/bahira-mohammedsani-hussen-ebmho-1328
+036 | MULAT DINBRE GEBREMARIAM | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/cau9AQGungnLYkc2iClEFP5q6eSTSaQCxN12UaHW.jpg | https://rozana-manpower.com/maid/mulat-dinbre-gebremariam-ebmho-1327
+037 | FANAYE FANTA ADE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/mqswZ8VZ7VvYKO3TxyhbNlFChoD86weUmrGcOXhg.jpg | https://rozana-manpower.com/maid/fanaye-fanta-ade-ebmho-1326
+038 | MAKIDA ABDO ALIYI | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/qI3TdDJhIfKVexnMzc86AFmY8WOPMMy1cA5rMzLm.jpg | https://rozana-manpower.com/maid/makida-abdo-aliyi-ebmho-1325
+039 | HAWI FEYISA KETEMA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/2Pi35kGEzxggckQ9sezP0vJxi3RXLXtIXS5ysZgE.png | https://rozana-manpower.com/maid/hawi-feyisa-ketema-ealho-2106
+040 | BASA KSO AMAN | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/wml3z7EkV3Q2yxcBUld5VITf9q7SEc9GeKY4TpWf.png | https://rozana-manpower.com/maid/basa-kso-aman-ealho-2105
+041 | ANNET  NALUMANSI | Ugandan | https://rozana-manpower.com/storage/app/public/attachments/9kXhEi2B6ZzOea2BL0Rynix9PLEwvBkGySPRwxxx.jpg | https://rozana-manpower.com/maid/annet-nalumansi
+042 | ABEBA TESFAYE TEFER | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/WIydzrRQEdqc2wPhTdK80kY5wyLT4XHFCq9v2zB2.jpg | https://rozana-manpower.com/maid/abeba-tesfaye-tefer-ebmho-1322
+043 | MARICEL DIVINAFLOR NUYDA | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/gjRZbW6Ycd2n8Gqwf3GS41M36f8bJJUWDPkSa377.jpg | https://rozana-manpower.com/maid/maricel-divinaflor-nuyda-pkh-0526
+044 | HIWOT ANSHEBO BOTARE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/EBbp6A9pdjCPJFbLTFUas8D62VMtwbfzbet8sNuJ.jpg | https://rozana-manpower.com/maid/hiwot-anshebo-botare-ebmho-1010
+045 | SUKARE ABDELA GAMADA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/B7xGaDzJR8uMlazytd1n2FxmM1dJYBqTLtuYI0dW.jpg | https://rozana-manpower.com/maid/sukare-abdela-gamada-ealho-2097
+046 | WUBITU MILKIYAS SHIRKO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/WFi4amgISS5PSF80BsHZBuIVkGC6Ds3JvV8t11Mg.jpg | https://rozana-manpower.com/maid/wubitu-milkiyas-shirko-ebmho-1314
+047 | MEDINA ABAGIDI ABASAMBI | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/4KJfw4OcBZAlnMoHzWJMCyRGWgPD9EsHT0MtTeOh.jpg | https://rozana-manpower.com/maid/medina-abagidi-abasambi-ebmho-1315
+048 | DEBRITU SHIMELLIS NEGASH | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/z8w7WyJiY3BmC9MBdpA2N5ycQNfFcLgOit2Agb1F.jpg | https://rozana-manpower.com/maid/debritu-shimellis-negash-ebmho-1313
+049 | MESERET FEKADU LEMA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/ubBXsHnEgY4yx8bwgxiBHz0ylI9TxFD0t0dRB1mE.jpg | https://rozana-manpower.com/maid/meseret-fekadu-lema-ebmho-1309
+050 | MECHELLE ABEDIN PEÑAMANTE | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/WYCEWNiGGCDkNZ534qAeH2UddYTqIzzRV6f2v5vw.png | https://rozana-manpower.com/maid/mechelle-abedin-penamante-pkh-0554
+051 | GLORIA VALDEZ TABAYOYONG | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/f98IWp82M9AbtRMttGbE83tY4ed5kkPmeTnwCw9x.png | https://rozana-manpower.com/maid/gloria-valdez-tabayoyong-pkh-0548
+052 | EKRAM ABAS ALEMANTE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/MHGrhmHyk0JDkhyrS3rSQPErs2bQtmT7nSFBljyY.jpg | https://rozana-manpower.com/maid/ekram-abas-alemante-ebmho-1308
+053 | KENO DUGA CHALA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/nNpJ0s5JnESR2yvrha0ddFF9XrMRtOeacThK8fXN.jpg | https://rozana-manpower.com/maid/keno-duga-chala-ebmho-1307
+054 | TEWABECH GIZAW ATANSAW | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/wA47KOTgWNidWEtN0ur8knWHZ93pmQHkQyAhuPHN.jpg | https://rozana-manpower.com/maid/tewabech-gizaw-atansaw-ebmho-1303
+055 | AYANTU ALEMU GEMEDA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/roeAG6KDfMP383hAcuuF2mbEK1Aoax6svMS8neQh.jpg | https://rozana-manpower.com/maid/ayantu-alemu-gemeda-ebmho-1302
+056 | BETELHEM GEZAHEGN HAILE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/13zHt7s54KxgaxDQ1kxDoPwn9jhoZZI7PppKhRg9.jpg | https://rozana-manpower.com/maid/betelhem-gezahegn-haile-ebmho-1301
+057 | ALEM CHALA BACHA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/VLYhyJ1jtIcdM4YxMfD5znMQHMrkG5hLG3hwQ5EM.png | https://rozana-manpower.com/maid/alem-chala-bacha-ealho-2094
+058 | ABABA TADESSE BADADA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/uozQsAmQ8mIfrqPI4bZUGYAMahe0nEwKSq92Vp4J.jpg | https://rozana-manpower.com/maid/ababa-tadesse-badada
+059 | AMELEWORK ASFAW ABERA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/6a6Dte9yhaUHvqlDEVu4BpnhqEeXhy5p78iJuCdF.png | https://rozana-manpower.com/maid/amelework-asfaw-abera
+060 | ZULEYKA WARE ERESO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/bVFeeSG5X85oR1AXA5Z6Ob0URnawgqA8zICStTUZ.jpg | https://rozana-manpower.com/maid/zuleyka-ware-ereso-ebmho-1296
+061 | AMIDA NASIR KEDIR | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/0DzxSmNB2iKlfoDnCLgVfBIYAaSrrzqkenfeRXg5.jpg | https://rozana-manpower.com/maid/amida-nasir-kedir-ebmho-1292
+062 | CHALTU DESTA TESHITE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/dB0QifI6AFKaQa8TedzGTCfAlUf9UFl9RUDghddE.png | https://rozana-manpower.com/maid/chaltu-desta-teshite-ealho-1778
+063 | HABIBA KEMAL KEDIR | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/yShChokkyZSCvYntyVRdU8MRQK4uJZKftGffG4ra.jpg | https://rozana-manpower.com/maid/habiba-kemal-kedir-ebmho-1281
+064 | SIFEN AMIN JEMAL | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/wC9iyP1CGgTgs4XV6F2JTJB8IW8nVhwYdEQVGvsk.png | https://rozana-manpower.com/maid/sifen-amin-jemal-ealho-2062
+065 | MISHA YANORE ASHEBO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/sidmgQ1wCv7QkaS2bYruHaUk0pSJc3URGvQFi2og.png | https://rozana-manpower.com/maid/misha-yanore-ashebo-ealho-2060
+066 | AMRYA TADELE NEGUSE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/xGxNM5UwknydRIu0OBWYgY7v3sOH1A8cmc2PPYeo.png | https://rozana-manpower.com/maid/amrya-tadele-neguse-ealho-2058
+067 | MURIDAD SEFI SIRUR | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/fvFD63nDK4X6iYHAfp2db2LhoDUG8OLjbvPfJEUb.png | https://rozana-manpower.com/maid/muridad-sefi-sirur-ealho-2057
+068 | SEMIRA RAMETO JEMAL | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/Ahq1D49KYPeVPPhqOdsC0ZlLU3OxO7XluIiIQTOT.jpg | https://rozana-manpower.com/maid/semira-rameto-jemal-ebmho-1272
+069 | MARIA WONDEMAGEGN MICHAEL | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/T5eJYDba5eEts05QIcEPbtUuVTP9BvZ514d6At7X.jpg | https://rozana-manpower.com/maid/maria-wondemagegn-michael-ebmho-1266
+070 | JEMILA JUHAR BUKURI | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/lWN8k4QZZlP4DPO1MfKhXKNt7EQBkUnw2vAlHjsG.png | https://rozana-manpower.com/maid/jemila-juhar-bukuri-ealho-2054
+071 | TIGIST TESFAYE WAKIJRA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/Xf3OTRK4iWmpLjhgp30hTKsWQTCznzozvA3RyMRX.png | https://rozana-manpower.com/maid/tigist-tesfaye-wakijra-ealho-2052
+072 | GENET SELEMON KEBEDE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/hh68tWosCy7KGgs2FysspS3L0XXFAIyFfoNLMe0k.png | https://rozana-manpower.com/maid/genet-selemon-kebede-ealho-2051
+073 | SERKALEM BERHANU GIRMA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/X9L6z3poVNRK9eaESMkdCGYrysPep4YIyoCRV7MU.png | https://rozana-manpower.com/maid/serkalem-berhanu-girma-ealho-2050
+074 | SEMEGN BERHANU TADESSE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/NLE5gxrfvC8ACrSLEpmq8soTYUlIZcDyyCfksXUY.jpg | https://rozana-manpower.com/maid/semegn-berhanu-tadesse-ebmho-1261
+075 | KALKIDAN YIMERE SEID | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/P2wVy0a557QlqsgU5Oe9gj95H3KSQmQiNjfveOpk.jpg | https://rozana-manpower.com/maid/kalkidan-yimere-seid-ebmho-1262
+076 | SELAMNESH DEMEKE SHANKO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/83HGTSrSbRjJpQRP89ztdSiHnL0FPniRyoeUZjyN.png | https://rozana-manpower.com/maid/selamnesh-demeke-shanko-ealho-1751
+077 | KULULE KIBRE TUFA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/15oGXFKnpqz0rU1euxeyWBdLJje31sQzNOId5c9m.jpg | https://rozana-manpower.com/maid/kukule-kirbe-tufa
+078 | WERK TADESSE WAKENE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/geYh5onqjH1HJohNSA7TLr9uqiwm0s8yrggonVR4.jpg | https://rozana-manpower.com/maid/werk-tadesse-wakene
+079 | SERYA EBRAHIM HASSEN | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/EKEgIQ7ub6iMUSfbxR4rGhK3Gdr9fdw3lB7pSijM.jpg | https://rozana-manpower.com/maid/serya-ebrahim-hassen-ebmho-1253
+080 | SHASHI GENA MOHAMMED | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/S9WnravLkZusazpW6iAj1cWsuaDqNCmnSeKqe1KB.jpg | https://rozana-manpower.com/maid/shashi-gena-mohammed-ebmho-1252
+081 | ZEMED AKELE ABEBAW | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/qZY5WUhRFe38d9OWWeUiM4i8zVT6FDXAcmYD5Tdj.jpg | https://rozana-manpower.com/maid/zemed-akele-abebaw
+082 | ADDIS SHUMI BEDADA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/F9pyFhmQ6RFUCDwUXC4LNvHtGTegfo3iH3j4sukU.jpg | https://rozana-manpower.com/maid/addis-shumi-bedada
+083 | TAMIRI WERKU EJETA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/ziTDYlJmj061GZeXSqr9RbYbpC4iBfgBn525EnAN.jpg | https://rozana-manpower.com/maid/tamri-werku-ejeta
+084 | SELAM ABERA KEBEDE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/R9OFFjzytdFmIOWNJiyfeoLxxSHQqxq9MaG6MyRH.jpg | https://rozana-manpower.com/maid/selam-abera-kebede
+085 | MARTA BUKULO HIRA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/oI7gktKVJBEUUiyXMB3CHeWRmJF8HglzluMo2jyh.jpg | https://rozana-manpower.com/maid/marta-bukulo-hira
+086 | MOMA BESHIR MIESO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/tvOLFR0z8G2ahWoOsYApWA3DJcezTgc0qHE21PKo.jpg | https://rozana-manpower.com/maid/moma-beshir-mieso
+087 | GADISE ERKO MEKURIYA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/FTwRSJLqLBZwGdhYfBsFkCFLJE7bSlIVgUGJmSZ4.jpg | https://rozana-manpower.com/maid/gadise-erko-mekuriya
+088 | ZENEBECH SHANBO SHANIKO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/oesqbYhN2X8Go6QVEwyFllyr9daVCptESAIuwcdW.jpg | https://rozana-manpower.com/maid/zenebech-shanbo-shaniko
+089 | MEBRUKA NURU ADEMU | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/S2Rp5k2I8DYn7P77FHBVolo1T8aVPQewTPKDW06v.jpg | https://rozana-manpower.com/maid/mebruka-nuru-ademu-ebmho-1062
+090 | RAHEL TESFAYE LEFO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/ChO3J384MfzHHIXZgMlP4R1Vh5AWlroObBjKQrpL.jpg | https://rozana-manpower.com/maid/rahel-tesfaye-lefo-ebmho-1185
+091 | HAFIZA ABAJIHAD ABARESHAD | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/svlssNF8SI2pblzYK1Tl2OAe3QCyY2wNYj78R0a7.jpg | https://rozana-manpower.com/maid/hafiza-abajihad-abareshad-ebmho-1233
+092 | KIDIST FANTAHUN TOBERA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/dajUr5tMAIhq51DA0U0IrqNLzZp895vInHyjWQ0S.png | https://rozana-manpower.com/maid/kidist-fantahun-tobera-ealho-2041
+093 | EMEBET DEMISE TESEMA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/1a9IPyYXJrYa8R6lkzn6HIfyXqX74XZwiUb4TmsX.png | https://rozana-manpower.com/maid/emebet-demise-tesema-ealho-2040
+094 | TSEGANESH MARKOS TIRKOSA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/zgeh0P96zzJdClrqXlBketYGGmkXjyN2JmSScFW2.jpg | https://rozana-manpower.com/maid/tseganesh-markos-tirkosa-ebmho-1235
+095 | FETIYA NESRU IMAMMAMUSH | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/ZMQjoqcAGORchg5HlCinSN2kvW3SHQDncmmycrfC.jpg | https://rozana-manpower.com/maid/fetiya-nesru-imammamush-ebmho-1234
+096 | AMIRIYA TEMAMI ADEM | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/jf6j885lhPb6cIfD3ISEwDLNu6ngQ60UlwOqvkc8.jpg | https://rozana-manpower.com/maid/amiriya-temami-adem-ebmho-1231
+097 | FANOSE HORSSE GABISA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/VW6oflLbCQ1Ye5aElgU19fDRcSCt5H9ljY1lj3wT.jpg | https://rozana-manpower.com/maid/fanose-horsse-gabisa-ebmho-1230
+098 | BESHADU GETU AYANU | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/ntUjioCCOWBZFnilsaSdwYbvAliPhFne2Vexbn5m.jpg | https://rozana-manpower.com/maid/beshadu-getu-ayanu
+099 | GENET KEBEDE MEGERSA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/sf0WWWNvbo3waY6eiK1iYCWzNC3mLnyVddsiwLDg.jpg | https://rozana-manpower.com/maid/genet-kebede-megersa-ebmho-1229
+100 | ALMAZ KEDIR AMAN | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/Dti9fx9i6mmGI2cRmxpirqHcD4xv9f3ryFhGZ3Aw.jpg | https://rozana-manpower.com/maid/almaz-kedir-aman
+101 | BURTUKAN HAILU WODAJO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/hUmQPXNfeeMf74iqYhylEhfawYonWlcI9iofLcJk.jpg | https://rozana-manpower.com/maid/burtukan-hailu-wodajo
+102 | AZIZA KEDIR BUSER | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/I6GhL9dNNjcwFk1Nz94kzuH6X7UkXcVTQvTPNF61.jpg | https://rozana-manpower.com/maid/aziza-kedir-buser-ebmho-1138
+103 | ASTER ADERE GARI | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/28RQHVsIliLEpwhBSxmp2d9dZF4tXxtuIGbdp2pY.jpg | https://rozana-manpower.com/maid/aster-adere-gari-ebmho-1139
+104 | GELANE LEGESE BEDADA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/rSMnip4gv60Ddy1SchDLqKGBp9wAT6Ejk2h8bxEs.jpg | https://rozana-manpower.com/maid/gelane-legese-bedada-ebmho-1140
+105 | FIREHIWOT MEKOYA TEKLLE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/PgXWtXyw8ML2Pju6IOzqOizO7g26260i2l6okv1V.jpg | https://rozana-manpower.com/maid/firehiwot-mekoya-teklle-ebmho-1142
+106 | REHIMA ASHENO DERILO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/eUrwghA9O5Dp7WK095E3saAzRftUXwGo9A4Ubx65.jpg | https://rozana-manpower.com/maid/rehima-asheno-derilo-ebmho-1144
+107 | ALEMITU WORKNEH JIFARA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/y7d9kE6SejTsFd9082VRB0zuiDekjVqEoBsauXIl.png | https://rozana-manpower.com/maid/alemitu-workneh-jifara-ealho-1873
+108 | MEKDES DIRBA AYANO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/Zyicu3V5xMaAnEFKizEV64ehDBs9hG885tLM5O9q.png | https://rozana-manpower.com/maid/mekdes-dirba-ayano-ealho-1693
+109 | MUSLIMA HAJI MANDO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/26677TCxzE9W7KKC8gKedYXJYEO34beu6DUctKtn.jpg | https://rozana-manpower.com/maid/muslima-haji-mando-ebmho-1148
+110 | RAHMET ISA BOGE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/YjwEi6l45uyjOy9vRpF8JCpSVnbvhQbPPI9QuxPV.jpg | https://rozana-manpower.com/maid/rahmet-isa-boge-ebmho-1150
+111 | HAWA AMINO SHIBU | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/NYgdUoCvgA8T85xruowqi5Lwf4EiDUDNcHdzmG3d.jpg | https://rozana-manpower.com/maid/hawa-amino-shibu-ebmho-1154
+112 | AMINA DEGU KEDIR | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/nx6KmHuqdMWbFMcOMTYHuCtdDgxMqtzF2ivLoaUk.jpg | https://rozana-manpower.com/maid/amina-degu-kedir-ebmho-1159
+113 | ROBDIYA MUSA HASEN | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/kmthXPBaYy0EEfNQaiWHNr3WlCzzBk7dFQF3fSVn.png | https://rozana-manpower.com/maid/robdiya-musa-hasen-ealho-1566
+114 | DEMEKECH YOHANNES DERSA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/e91Sk8SSfOPwCBoFvH3B1ZN5tFmGIEUhmn0zeajs.jpg | https://rozana-manpower.com/maid/demekech-yohannes-dersa-ebmho-1173
+115 | BEZUNESH LEMMA SEBOKA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/JkDB7vGeM1MDCFmPxT9ccDZHtCYVK5tUfQmFfOpb.jpg | https://rozana-manpower.com/maid/bezunesh-lemma-seboka-ebmho-1175
+116 | HELEN ZENEBE BAYU | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/DbdvWWY6dOoDgcfFUlPoTgJBCtz5JRM7MqAwjFHM.jpg | https://rozana-manpower.com/maid/helen-zenebe-bayu-ebmho-1177
+117 | MEKDES ASCHALEW ISHETU | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/w3NJTMPCe5P4pI87uwkHEiVFKHdnPWUq0BPLkJfm.png | https://rozana-manpower.com/maid/mekdes-aschalew-ishetu-ealho-1898
+118 | MOMNIA ABAJIBEL ABADURA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/Ivel8t4tXvSacrtBNhrsoVaTutHww6b0jpPmp1kq.png | https://rozana-manpower.com/maid/momnia-abajibel-abadura-ealho-1900
+119 | MEAZA AEMIRO YETENA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/gvEOpmtfODNOIAu7G542kICyTMjAwqzrIVZzYHUK.png | https://rozana-manpower.com/maid/meaza-aemiro-yetena-ealho-1903
+120 | AYALNESH ZINABU ASSEFA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/eqCYym6uz4pKdCmBQMbfQN7jq2ruTyUSbWjMs8ac.jpg | https://rozana-manpower.com/maid/ayalnesh-zinabu-assefa-ebmho-1178
+121 | GADISE CHALA TEFA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/wBAcksWFzPYSy5rg54W2Z1YrIVAjpy8vtWteEtHD.jpg | https://rozana-manpower.com/maid/gadise-chala-tefa-ebmho-1179
+122 | JUVY ANN ALIDAY MAGBANUA | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/F8MpC0l6ea10RSEybQLIJpiJGJysVY56qhDWNJzA.jpg | https://rozana-manpower.com/maid/juvy-ann-aliday-magbanua-pkh-0530
+123 | MESERET GEMECHU AYELE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/dBoPqGwjwAgdAJ1dYgImfoDNO23hq6qoD7IlYThr.jpg | https://rozana-manpower.com/maid/meseret-gemechu-ayele-ebmho-1182
+124 | SIFAN KORSO GUYE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/WQtaf3XucFA0a8a0GyHXLVsyByGCWCD9rQniHjWE.png | https://rozana-manpower.com/maid/sifan-korso-guye-ealho-1881
+125 | KEFENI ASHETU TESFAYE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/5lNFSaGc0K7WN88y5V4YouJ7tFfj8mHwU6qAEMVa.jpg | https://rozana-manpower.com/maid/kefeni-ashetu-tesfaye-ebmho-1191
+126 | ARSEMA MEHARI MATIOS | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/k3ETTZLjbUfX6Ufcw4nhZTc2tfpEqxwFjwtd59uD.jpg | https://rozana-manpower.com/maid/arsema-mehari-matios-ebmho-1192
+127 | MEDINA MUHAMMED YESUF | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/DD8PybtQHCSrJm5vMlgpaIgJNLLWk27TQmr5yp9Z.jpg | https://rozana-manpower.com/maid/medina-muhammed-yesuf-ebmho-1195
+128 | GENET GASHURA KINSO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/r3hjYyysyKAK4Bi1H0snXRdtMZvWhwmLT32Vh7Yt.jpg | https://rozana-manpower.com/maid/genet-gashura-kinso-ebmho-1198
+129 | DERARTU KINESO ERO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/GSLxUc4UwMQxvnnVu03mANpe7ou8ASAUeTynTMTe.jpg | https://rozana-manpower.com/maid/derartu-kineso-ero-ebmho-1199
+130 | ANGELA GERONIMO DONADO | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/ZJG2IuxhwoFfCxDC3VeN9Nm2MW2T6KVIz1LPvNKo.png | https://rozana-manpower.com/maid/angela-geronimo-donado-pkh-0535
+131 | ZENABWA AYELE DAGNE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/iVYPQRfE8xFpG7AITSb56V28FlrsnYZLVjtHAHia.png | https://rozana-manpower.com/maid/zenabwa-ayele-dagne-ealho-1955
+132 | SHEMSIYA HAJI GELETO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/F7slDtEf1jb42SpwLLufMqRDTjsaQpZieNnD5b3b.png | https://rozana-manpower.com/maid/shemsiya-haji-geleto-ealho-1959
+133 | EMMA SALAUM MANGA | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/7UABrjhnm2OWZHauhu3icNYxJWWvPvmZvIaHogaN.png | https://rozana-manpower.com/maid/emma-salaum-manga-pkh-0538
+134 | ETAFERAW TADESSE GEBREMEDHEN | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/vS9b8z4foDHYE36x9GZoQ1Rm3si7HSNLtLph0300.png | https://rozana-manpower.com/maid/etaferaw-tadesse-gebremedhen-ealho-1983
+135 | ALEM TULU BIRU | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/7lfEWO6Kg9JVCsCuv2bcmjrPI6taTKhfs6EDqDoW.png | https://rozana-manpower.com/maid/alem-tulu-biru-ealho-1985
+136 | MEKDES ZENEBE WAGAW | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/B1iy3k222kHGhtBkjHTrOOYskm8zLtxXjAWQCqBP.png | https://rozana-manpower.com/maid/mekdes-zenebe-wagaw-ealho-1987
+137 | FREHIWOT TOMAS SHASH | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/pG3QZW3exwUSIznQTbFgWpTyxqMHwnF93FZuNuq0.png | https://rozana-manpower.com/maid/frehiwot-tomas-shash-ealho-1988
+138 | KERIMA YIMAM HASSEN | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/8m0c1Ez5wgCPiJ9CDsBjjeKPVolW0dbGkuzyGPy9.jpg | https://rozana-manpower.com/maid/kerima-yimam-hassen-ebmho-1210
+139 | ALEMITU DEMA BUCHE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/DRhZuErxOB11zNamhGGMvhRg51952923LwCnf8Pd.png | https://rozana-manpower.com/maid/alemitu-dema-buche-ealho-1791
+140 | MEDINA BENTU UNTURA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/kvtPoYOs5fPRoAfe3424PmMOmB5uug6qP4g1jcX9.jpg | https://rozana-manpower.com/maid/medina-bentu-untura-ebmho-1216
+141 | FIKIRTE REGASA GARI | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/W2EfLsk75dOAjc1FVypjUDEL12Eu9cC2MkfgOCqw.jpg | https://rozana-manpower.com/maid/fikirte-regasa-gari-ebmho-1219
+142 | SITINA REDI SHIHUR | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/Zfzya5FKcokLKwERUaEutafk1RZ3lwP6JK8HNxAu.jpg | https://rozana-manpower.com/maid/sitina-redi-shihur-ebmho-1222
+143 | MESERET WAKE TUFA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/zE8SRpGc2w5pCstH3HyRD0jrxOqnh2HWBBIq7uhU.png | https://rozana-manpower.com/maid/meseret-wake-tufa-ealho-1998
+144 | KORE DANDENA DEBELO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/NHGFnnnmGpNSbuuLiepK7F2it10DQqkuApoT4DE1.png | https://rozana-manpower.com/maid/kore-dandena-debelo-ealho-2000
+145 | HEMAN ASHEBIR MAMO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/HMJN3miT0SHCQ0ZvQ6vglAbkGuQCIduGATfe53FV.png | https://rozana-manpower.com/maid/heman-ashebir-mamo-ealho-2003
+146 | MESERET TESHOME LELISHO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/KrlIkYsWO05pXZIEYcoSEPDfeiUk0gezA4yerAP6.png | https://rozana-manpower.com/maid/meseret-teshome-lelisho-ealho-2005
+147 | TIGSIT BAYSA BALCHA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/yA5Dno8eu3AjChORNPmjOfV487VOUcQXxxU2Vpml.png | https://rozana-manpower.com/maid/tigsit-baysa-balcha-ealho-2006
+148 | NAFKOT WORKU TOLA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/P6UKVlDVisJevvNYWUzUYWslHyDGifnUF3rulgD6.png | https://rozana-manpower.com/maid/nafkot-worku-tola-ealho-2007
+149 | NEIMA KELIL GEMECHU | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/jsyLGKnVtoZLVyticySn9Zf8eTKgGGI7ilsL8VdC.png | https://rozana-manpower.com/maid/neima-kelil-gemechu-ealho-2008
+150 | MEAZA BEKELE ERDOLO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/dxrE1mC6jXf44sVBbWWXkWnTIxE8VkZjToRwmnk3.png | https://rozana-manpower.com/maid/meaza-bekele-erdolo-ealho-2009
+151 | SELAMAWIT TADESE WOLDEAREGAY | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/IrPG4ueB1A4BABmLg1Ekg3hUCsuFZDZqjaCw1ItR.png | https://rozana-manpower.com/maid/selamawit-tadese-woldearegay-ealho-2010
+152 | ELFNESH REGASA KEKEBE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/T2Z9XVPY9CLXd2Y8NZs0fnUx57qOPD2FYp9S4XGQ.png | https://rozana-manpower.com/maid/elfnesh-regasa-kekebe-ealho-1823
+153 | DINKE BIRHANU EDEA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/5Leg0Kvv3tT8QDicnzl9dnXNbQBPl5L7eYXFPgxr.png | https://rozana-manpower.com/maid/dinke-birhanu-edea-ealho-1950
+154 | OBISE HABTAMU DEBELE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/zVmKZ1NDG4K1oW1KNktgxe0Ab9vS1HSnL0TlVGOC.jpg | https://rozana-manpower.com/maid/obise-habtamu-debele-ebmho-1226
+155 | ALMAZ BALECHA REGU | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/KblSVcMb4aox5rzAzVesZW9RIRAVSE1sx40lx7Y3.jpg | https://rozana-manpower.com/maid/almaz-balecha-regu-ebmho-1076
+156 | JONALYN AGSAOAY GUTIERREZ | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/3c3w4aQwg7vcsvqAtA09JmUAVgJLNaD5rxip5eTK.png | https://rozana-manpower.com/maid/jonalyn-agsaoay-gutierrez-pkh-0516
+157 | MA. FATIMA DIGOL SINGH | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/mA2ukUWodQLEG9K4i6jsOVTDcY1JJSlHaqGViTlG.png | https://rozana-manpower.com/maid/ma-fatima-digol-singh-pkh-0518
+158 | JUSELLE SERRANO CALUEN | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/X4ftA6a6jduy4nZicvUhRp17y9nw4albrNMp1YPm.png | https://rozana-manpower.com/maid/juselle-serrano-caluen-pkh-0523
+159 | FETIYA AWOL SEID | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/yt3XLCCk2sGcMrrFRTTKi3C4JgwaKAR7yGqADO7A.jpg | https://rozana-manpower.com/maid/fetiya-awol-seid
+160 | AYNALEM ESHETE MINDA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/wpHsuplC2iFMSjoRQpBuBv1lgWFJGjp2jFFTdger.jpg | https://rozana-manpower.com/maid/aynalem-eshete-minda
+161 | HAYMANOT MEKONEN GEBREMESKEL | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/E98wIt8sTxq65VtqRu0buXxw4yjtZJF83m871cVX.jpg | https://rozana-manpower.com/maid/haymanot-mekonen-gebremeskel
+162 | WORKINE LELISA KABENI | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/W3ekSBeujBbBnfFmiSpaiesc0ey5tn0GYj6kltmW.jpg | https://rozana-manpower.com/maid/workine-lelisa-kabeni
+163 | BIRHAN TILAHUN ALEMU | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/KGnUD0SKiZAANiy3XnMsdWbAPyM70ShvkvdUxK0F.jpg | https://rozana-manpower.com/maid/birhan-tilahun-alemu
+164 | PHIONA  NAGGAYI | Ugandan | https://edith.onesourceerp.com/storage/app/public/attachments/30VbSmitNRMzNvhPln6Gh4YCDnRICTJB74FtV9O1.jpg | https://rozana-manpower.com/maid/phiona-naggayi
+165 | ALLEN  NASSAZI | Ugandan | https://edith.onesourceerp.com/storage/app/public/attachments/b73vrKhR0qbnR5UP8CfV9fInVpObb6CFcf1j0xeA.jpg | https://rozana-manpower.com/maid/allen-nassazi
+166 | JOWERIA  NAKANJAKO | Ugandan | https://edith.onesourceerp.com/storage/app/public/attachments/vzKZNI931OlunODUYshRUgOyMe8t8UyUOXWE7v9r.jpg | https://rozana-manpower.com/maid/joweria-nakanjako
+167 | SHARON KISAKYE MPAWILLIJA | Ugandan | https://edith.onesourceerp.com/storage/app/public/attachments/MqcyGaOSG17UumDTi7qFDSpGl1o8YGVx8Y0kOn9D.jpg | https://rozana-manpower.com/maid/sharon-kisakye-mpawillija
+168 | CHALETU ABERA EJERSSA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/v4EVNbKDhJApnDRBzLbnxEURgnKRLVIyRIhoCzL1.png | https://rozana-manpower.com/maid/chaletu-abera-ejerssa
+169 | YESHI AHMED YASSIN | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/ndysIgegk8NTOi9ZuJzR0DXcV4Hq3L3AgzBco6mw.jpg | https://rozana-manpower.com/maid/yeshi-ahmed-yassin
+170 | AJEBI MOYLID AHMED | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/Gg6x4jyJB0WsWPdtzdoiWXJbDJ3hJqIK4QarlWFQ.jpg | https://rozana-manpower.com/maid/ajebi-moylid-ahmed
+171 | KATHERINE TOBIAS MANZANIDA | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/BSZEIyDTyglgNZmMCxRxUXo4NzZQUaA0iyBw5b96.png | https://rozana-manpower.com/maid/katherine-tobias-manzanida
+172 | MARY GRACE ROTUGAL DOMINGUEZ | Filipino | https://ritemerit.onesourceerp.com/storage/app/public/attachments/3xqR27yuksYJnMVwSS9LoaKFN1uSYnQoruqtyzHu.jpg | https://rozana-manpower.com/maid/mary-grace-rotugal-dominguez
+173 | TIGIST FEKADU ROSISA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/0GHkxUqz3yrRf8ksrkoOJaDzV7Y6xBegDq6gGpHJ.jpg | https://rozana-manpower.com/maid/tigist-fekadu-rosisa
+174 | MULUMEBET SHWAYE MEKONNEN | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/QeQtjZ0y1G2rXkIutLwZHYKnAauhpGpskkYADSYJ.jpg | https://rozana-manpower.com/maid/mulumebet-shwaye-mekonnen
+175 | HANA BEKELE TADISO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/GOiXqZpxmv3HcqI7m3odgumk8ARC9Z41vYffWRdL.jpg | https://rozana-manpower.com/maid/hana-bekele-tadiso
+176 | DERARTU GIRMA RUNDASA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/rfbgpHc8kQZSu6ErtpUtQoN1SlC1hnkjAmJPjQse.jpg | https://rozana-manpower.com/maid/derartu-girma-rundasa
+177 | ENAN MUKTAR MOHAMMED | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/CH6SDta0UesoD5MhSluMrF07LGnRq774QbFVcfe2.jpg | https://rozana-manpower.com/maid/enan-muktar-mohammed
+178 | ALEM GIRMA DEFERE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/sXTvi0bBJzDMTRwX4n80leWQ0YRXLDbnKsTz2CMp.jpg | https://rozana-manpower.com/maid/alem-girma-defere
+179 | KEDJA DIBABA HUNDE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/FduQB4PhbjQ3sAECnkaXoATOGoZIfCbqJHUQCvQa.jpg | https://rozana-manpower.com/maid/kedja-dibaba-hunde
+180 | DAGIM NIGUSE BEYENE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/xIHTuWpMW1V2uRvGagpXKQe4ZdK4lp651rk0T353.jpg | https://rozana-manpower.com/maid/dagim-niguse-beyene
+181 | MEGERTU REBA DEBELA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/Jv5J1R6RdExRvH1qaNlyvXYgGnOYoZwJ7qotrUHS.jpg | https://rozana-manpower.com/maid/megertu-reba-debela
+182 | LEMLEM ATLAW MEREN | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/2uJvJgLM1pxJ7aVqf5gKFNUpy0H7d85QM8eS9qXN.jpg | https://rozana-manpower.com/maid/lemlem-atlaw-meren
+183 | TSEHAY TURUNEH ABTE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/e7X3j2RnBY5s6iYjuWxrsKToi6X95zscQnOGfLlQ.jpg | https://rozana-manpower.com/maid/tsehay-turuneh-abte
+184 | AYNALEM MUSE TEREFE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/TMbZIi8p0CwqN205Jzi8BJEIuY0ylgm3G1dazzeZ.png | https://rozana-manpower.com/maid/aynalem-muse-terefe
+185 | ALEMITU KEBEDE MEGERSA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/5W1jTHigmApITRSMtcdosu8Xnmj7b7CZe07j8a1D.jpg | https://rozana-manpower.com/maid/alemitu-kebede-megersa
+186 | LAKECH KURU REGASA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/SR4VcbT958Ji0TiOI1OjoqhA4gtPJYLG7267m5td.jpg | https://rozana-manpower.com/maid/lakech-kuru-regasa
+187 | LIDYA TESFAYE GIZAW | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/usyQeRwCE9L7InImE1urETu7CZxWp6ho1qoztQra.jpg | https://rozana-manpower.com/maid/lidya-tesfaye-gizaw
+188 | MEDINA SISAY SHIBIRU | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/yxJ7oNOQahYIb7fZu3RaINRij3uDii9cpLP0zVBQ.jpg | https://rozana-manpower.com/maid/medina-sisay-shibiru
+189 | YETIMWORK ZEBENE HABTEWOLD | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/582H2NEy0EgYjBSONO4cOWyfK0zkVHcyCOvrwgzf.jpg | https://rozana-manpower.com/maid/yetimwork-zebene-habtewold
+190 | MARTA GETANEH MARSHILE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/i9rSer2A1xZgjtsWHpsNADBsil04IvpUcf9X1VDg.jpg | https://rozana-manpower.com/maid/marta-getaneh-marshile
+191 | MICHELLE GUMBA MAHAYAG | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/jjZ8gkHISetVMM5fZSatcUInthtkNc3F7yHA7taR.png | https://rozana-manpower.com/maid/michelle-gumba-mahayag
+192 | HANA TADELE MELES | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/ciI3Z1plaClEhxPORnPrb7ZFRclHlfSHs0kRFW9Y.jpg | https://rozana-manpower.com/maid/hana-tadele-meles
+193 | ASKALE NEGESE DORI | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/X3atPFw0ygSU94OJhwIv5beleu0S2ApvQ8i7SQQF.jpg | https://rozana-manpower.com/maid/askale-negese-dori
+194 | MAYREMA KABE GERESO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/TDoSN0vOd4D8md5F3PAbLWcfAG5fYheVG1Lr04db.jpg | https://rozana-manpower.com/maid/mayrema-kabe-gereso
+195 | BEZA MEBRE MITKU | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/jfrmCROaRF0QpduNX3eMDwJhU5BORARQKbAquEhW.jpg | https://rozana-manpower.com/maid/beza-mebre-mitku
+196 | HELEN LUMOTAO ONGAYA | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/rY3sEZXj32wsTNfbCai2Q7nC4tDKklyQwsCLTUfU.jpg | https://rozana-manpower.com/maid/helen-lumotao-ongaya
+197 | ASSEFU EWUNETU FENTIE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/srhvbYqNCHKbJToCGleq8Yj4AK7Dr8gQbVXEHQLP.jpg | https://rozana-manpower.com/maid/assefu-ewunetu-fentie
+198 | ALEM ASEFA MEGERSA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/xKvtRz4oyGdobEEr2twLoLjWrxMuJu9NZTPDni2L.jpg | https://rozana-manpower.com/maid/alem-asefa-megersa
+199 | TSIGE BIRA BUNE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/gwTNLorNi55Nb6M4gdbdFSPlX1vurfnCsFk06fRg.jpg | https://rozana-manpower.com/maid/tsige-bira-bune
+200 | BONTU TEREFE GIRE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/lHjOLCXnf4i71aoCSTgw5s08GFSYffRPCQKH1MaX.jpg | https://rozana-manpower.com/maid/bontu-terefe-gire
+201 | MASTEWAL ASSEFA MEKONNEN | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/HYURuIOmols4vXI7HUjzNv3jDNFTAfQrhRvqftgc.jpg | https://rozana-manpower.com/maid/mastewal-assefa-mekonnen
+202 | WENDY BABIHIS BONAOBRA | Filipino | https://ritemerit.onesourceerp.com/storage/app/public/attachments/aNMhnQr11CUUN2KF1pu87dJ6hBwLDti8UVMQ2s5l.jpg | https://rozana-manpower.com/maid/wendy-babihis-bonaobra
+203 | MERDYA MOHAMMED DAFO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/xPiLwCsBaPAlDJme8BXg7tr1toRWJBMdBQFnesvN.jpg | https://rozana-manpower.com/maid/merdya-mohammed-dafo
+204 | HAIMANOT ELIAS LEILAGO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/fgfREurtHMaFXfzyqiUdRBnvrspFCqCL1uty8FdY.jpg | https://rozana-manpower.com/maid/haimanot-elias-leilago
+205 | MARICEL MASCARINAS VASQUEZ | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/p9WyyJimz8oAZgN8SZC5jhO0i1Hw809FN9PJ4Zoq.png | https://rozana-manpower.com/maid/maricel-mascarinas-vasquez
+206 | WORKE DEBELE REGASA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/azYA7vp6AAEtUznnIgwhBx6CwOXNpI75HRtBPAGM.png | https://rozana-manpower.com/maid/worke-debele-regasa
+207 | ABERU HIRPHASA SHABO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/z1FAJi1n1inVXE3fDOIKwlXA0q96kFGPKGL5IsaY.png | https://rozana-manpower.com/maid/aberu-hirphasa-shabo
+208 | MULU TELAHUN WELDEMESKEL | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/gYWmRb3zmFNOKvxL01dUCsl7N6r25ulSXJ9AePhe.jpg | https://rozana-manpower.com/maid/mulu-telahun-weldemeskel
+209 | MIHRET YOHANIS ERGADO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/sUy1gTVh94MSYWnwsufV1XEyPPNOP8hpozMQ14tQ.jpg | https://rozana-manpower.com/maid/mihret-yohanis-ergado
+210 | SINAFKISH MELESE KOYAMO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/RNRX56fjuHFbOdQJYnxX4BnSpVgkgkn2ajUTHZnd.jpg | https://rozana-manpower.com/maid/sinafkish-melese-koyamo
+211 | YEMISRACH BEKELE BACHIRA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/Ff2H84IEun2elLFcLpBvtzJKIXfnAKENYHbWrouo.jpg | https://rozana-manpower.com/maid/yemisrach-bekele-bachira
+212 | YESHI MENGSITU BEKELE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/4TMYJanBQ0CTNjNABndD48nYJbbm4snRl9oDNI46.png | https://rozana-manpower.com/maid/yeshi-mengsitu-bekele
+213 | GULMA ESHETU DEGEFA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/a9cyl3BVbkF1IbfNLFnIWaOASMbXPlTpKPpYYJYz.jpg | https://rozana-manpower.com/maid/gulma-eshetu-degefa
+214 | MULUKA HUSSEN TURO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/dVWCjYe8nkxUSk1wT3ZLOkZm6NWuiqm9F0LzYmQJ.jpg | https://rozana-manpower.com/maid/muluka-hussen-turo
+215 | ASNAKU KEBEDE BELETE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/Py1atGTwcLZyVm1dLlhUhQbqdAe4z5Jeo81JevBs.jpg | https://rozana-manpower.com/maid/asnaku-kebede-belete
+216 | KEDIJA AMAN BABSU | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/0OuBpZfG9fz2sOeRVmAYtRLsp0qOO2QD5vZ4fLZ3.jpg | https://rozana-manpower.com/maid/kedija-aman-babsu
+217 | EMEYE AGERU BELAY | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/oBAVfVFTpwQMXGnjABdGC89kKp8iT9hBNC3veFwV.png | https://rozana-manpower.com/maid/emeye-ageru-belay
+218 | TIGIST MOKONIN BEKELE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/V1viyh4yuNZ1SlrGthQq2sCXb9a1Vna4LKeusvg8.jpg | https://rozana-manpower.com/maid/tigist-mokonin-bekele
+219 | ZAHIRA MOHAMMED GEMECHU | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/p7LH73INE7IO2slFMIVnCnxyt5uivin06gpyM4wO.jpg | https://rozana-manpower.com/maid/zahira-mohammed-gemechu
+220 | MEKIYA HUSSEN MUHAMMED | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/pXSKgpWlR5alj4Pz4XIixW6x8BdaUhWYJ0juHIJ0.jpg | https://rozana-manpower.com/maid/mekiya-hussen-muhammed
+221 | BAYISE KASU BERADU | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/E4vHhuQxonq5NAvYpqWoPRaWWGUfswwbrAgzNOrE.jpg | https://rozana-manpower.com/maid/bayise-kasu-beradu
+222 | TESFANESH YOHANNIS WATRO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/3vWyIOutRDxcuzmQfsBA46T5HlD79GcZpM27iBBy.jpg | https://rozana-manpower.com/maid/tesfanesh-yohannis-watro
+223 | YESHAREG MISGANAW FELEKE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/NI4qKsKOt3rBeJ6hqYtX61D8J3j0Y52MLPiLVkRL.png | https://rozana-manpower.com/maid/yeshareg-misganaw-feleke
+224 | FATE MENJO WEDAJO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/3qqy15cOSIHW2uA59B0nDCqhyVvdrsntxQPdVgqR.jpg | https://rozana-manpower.com/maid/fate-menjo-wedajo
+225 | HAREGUA ENGIDAW SETARGE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/kz0poPMmJjRdy3RJ01qEFjLIisNW2jDoMDZNKMIU.jpg | https://rozana-manpower.com/maid/haregua-engidaw-setarge
+226 | YEMSRACH ALEMU BALCHA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/GJGSEtGqdyJQNQLOTbovuSyGLLATtp6zEYAXl6wj.png | https://rozana-manpower.com/maid/yemsrach-alemu-balcha
+227 | ABUNDIA MERALIA DABASOL | Filipino | https://ritemerit.onesourceerp.com/storage/app/public/attachments/Eys8mEkPB26q4LNVZjAcX9b7HZ8fFBZsTMhE7v8y.jpg | https://rozana-manpower.com/maid/abundia-meralia-dabasol
+228 | JONALYN MALLORCA GONZALES | Filipino | https://ritemerit.onesourceerp.com/storage/app/public/attachments/wTtnlDFsTeGIt64X98tIPw9qWU9qLHJvjPVwOlMW.jpg | https://rozana-manpower.com/maid/jonalyn-mallorca-gonzales
+229 | VICENTA ROSAL MANARANG | Filipino | https://ritemerit.onesourceerp.com/storage/app/public/attachments/nwKyCPm1OP0F8dSftZiiFJBbkvDoRDVR22S0pBzv.jpg | https://rozana-manpower.com/maid/vicenta-rosal-manarang
+230 | MESERET TESHOME DEBELE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/Bm1gAUvnxATOCQeTZn5ilqVK1avw9JdXset50uvi.jpg | https://rozana-manpower.com/maid/meseret-teshome-debele
+231 | MARTA DEMELASH MENGISTU | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/ZkT6QEl2tlxGSvJDozSSbuPERlrDlS6or7gTeP2b.png | https://rozana-manpower.com/maid/marta-demelash-mengistu
+232 | MESTAWET TADESSE WENDIMU | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/UWfsVNo9jtw1kPGIHWebr84Hc6qbU6HyFemfbhDe.jpg | https://rozana-manpower.com/maid/mestawet-tadesse-wendimu
+233 | LIYAT KIFLE HAYILEMARYAM | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/5uC6rje4oVpce3TVzChivfkNUsn0fj59mzMSk72B.jpg | https://rozana-manpower.com/maid/liyat-kifle-hayilemaryam
+234 | FIKER WUYCHA WEZE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/h66ob3xqha3jnygEaj3QRnYPCGnkfTJtLsdltj6z.jpg | https://rozana-manpower.com/maid/fiker-wuycha-weze
+235 | TIGIST SEWYEW AYEN | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/1YpoEJJCBVBM04YfijcSLWzu5SuakapEw0UUTziS.png | https://rozana-manpower.com/maid/tigist-sewyew-ayen
+236 | ROZA SUNDUK BARSH | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/oWTf4yYCD7lKNwFfon4ib25Zt921xG88eFV5fVod.jpg | https://rozana-manpower.com/maid/roza-sunduk-barsh
+237 | RABIYA TEHA IBRAHIM | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/tokc07V88Ue4WU4ZzTQU96NLcvCr0DHLmeTVUXSp.png | https://rozana-manpower.com/maid/rabiya-teha-ibrahim
+238 | MOMINA BUSERI NEBI | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/2hx93Me3EIhNIb6naFWlH9JGpQHdiShehgqiymXp.png | https://rozana-manpower.com/maid/momina-buseri-nebi
+239 | MESELECH MATYOS AYSARO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/0VJJY7Y4fUyQL6rAHzeLbuMAZYB1upG6aE8Wkh8q.png | https://rozana-manpower.com/maid/meselech-matyos-aysaro
+240 | KEBEBUSH TADESE AYELE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/XDTB0kUwJml1q5sahfZzhrJOcWusZRIs3BgGHU5w.jpg | https://rozana-manpower.com/maid/kebebush-tadese-ayele
+241 | EJIGE TIZAZU KEBEDE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/VToIWHB3AegPMXOodIU53aQYIu2WHKFLQLOlQUCx.png | https://rozana-manpower.com/maid/ejige-tizazu-kebede
+242 | REHIMA NASIR JEMAL | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/AvSM03YQGL6nS2hXa2DIY8kJ80gbPUjYgS25IlMa.jpg | https://rozana-manpower.com/maid/rehima-nasir-jemal
+243 | EMEBET AHMED ALI | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/HCqGMS6aRA4pHplTNSQHvUKyeG6jUDZhDdFOxGwm.png | https://rozana-manpower.com/maid/emebet-ahmed-ali
+244 | BELAY ANDARGE ENZHARE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/v4VmU5kAQa2dywPjuDVlwKoO1oUxLQROwCB3OEgd.jpg | https://rozana-manpower.com/maid/belay-andarge-enzhare
+245 | DEMILE BEDANE BORENA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/YvurlmclHeq1Zr78nQv7XKWtj7n7iv7aXjBZxAJ3.jpg | https://rozana-manpower.com/maid/demile-bedane-borena
+246 | GLYDEL MORAN CAMPOS | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/XtqVDjZw9ejSyp40wpvJz6vcEkacZEfJzt7f30Yz.png | https://rozana-manpower.com/maid/glydel-moran-campos
+247 | SHASHO GUTETA GELAN | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/ule6qzmiBx2IunP9vrNJ2PhCIvfDmDBgT3BLQwfK.jpg | https://rozana-manpower.com/maid/shasho-guteta-gelan
+248 | HANA WONDAFERASH ZELELEK | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/jSYjKhqf3XiJumbNYdp4lO97Pdhj3dFNifQaIPdq.png | https://rozana-manpower.com/maid/hana-wondaferash-zelelek
+249 | AMINA ABULE ABEBE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/xp70ATDQZbxEkOMGyIL0YwkqxkjWEsDQurrreAgs.png | https://rozana-manpower.com/maid/amina-abule-abebe
+250 | TSEHAY ASHENAFI SHANKO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/vmaLfZRkK5zjKjMw9mFrDgThQ64gVupvKt5v9tGP.png | https://rozana-manpower.com/maid/tsehay-ashenafi-shanko
+251 | HAFIZAT IBRAHIM IDIRIS | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/IFpfB6gJIjucatpFfhRKFjM5BsyaVbSblnWo3DVU.png | https://rozana-manpower.com/maid/hafizat-ibrahim-idiris
+252 | FREHIWOT SEBESIBE KASSA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/Hylqv6v4IK80X2iSDZKHp52wTPatNx0jjwJRyhDp.png | https://rozana-manpower.com/maid/frehiwot-sebesibe-kassa
+253 | TIGIST TUCHO TULU | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/jYTS6j7EjspLwXTmewoGWGnwFnidZWmxjpo25lnn.jpg | https://rozana-manpower.com/maid/tigist-tucho-tulu
+254 | RADIYA MEHAMMED ADEM | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/UvR8SfERUTmfCbpptkGlmXHWtasTdmWJ8l0DICOF.jpg | https://rozana-manpower.com/maid/radiya-mehammed-adem
+255 | ZENU DENSA DEBELA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/uQf6oZ1iGNBrpFQmER0QamtmDoz8S9vAQjpJdRgp.jpg | https://rozana-manpower.com/maid/zena-densa-debela
+256 | RADIYA UMER USMAN | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/Kil6x3XT82IKmjCY6OKpejsZ338usmzdwNjpJVgh.png | https://rozana-manpower.com/maid/radiya-umer-usman
+257 | ASKALE SHUMI ARARSO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/mRY7DDmvFVpDcTvPQuO7ve5zyEv7zVoQnOAbOsSr.png | https://rozana-manpower.com/maid/askale-shumi-ararso
+258 | EMEBET MUHABA MOHAMMED | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/5LZCkfGt9GE4qmwOujtKgeS4GLTsckUCemk0tzBu.png | https://rozana-manpower.com/maid/emebet-muhaba-mohammed
+259 | MARTA GIRMA MEKA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/E79ARbSk5oIVnc807qIrJwjSRUaJh4ve9LeNseTI.png | https://rozana-manpower.com/maid/marta-girma-meka
+260 | MESKEREM BELAY KIDANE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/i3B6y7VR91IXUuDPAiZRkbKitvSLPkbEwT6jTg6n.jpg | https://rozana-manpower.com/maid/meskerem-belay-kidane
+261 | MULU AYALEW ADUGNA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/x223xKoYN2oRoP5yxyRr5TJMbG9V9vSCm1NyxzBC.jpg | https://rozana-manpower.com/maid/mulu-ayalew-adugna
+262 | ELVIE TOLDANES | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/De4xpyrsbtKnM0soQF7KJCCmmTBX4xHx9jdX2ubb.png | https://rozana-manpower.com/maid/elvie-toldanes
+263 | BELAYNESH LEMA HUNDE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/UqPaJWwmEa1dVLs0UFoDd99eeXxzi5kWPWZNl3sf.png | https://rozana-manpower.com/maid/belaynesh-lema-hunde
+264 | SUNIYA MOHAMMED EBRAHIM | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/9B7cxL2JFAA4jRP7WiFAFTmEkChlAAIThjWs1QcY.png | https://rozana-manpower.com/maid/suniya-mohammed-ebrahim
+265 | ABEBA BORECHA FEISA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/vqug1P59oZ9d0OE1CRLMhg1W1c2aporV0NxYJjd7.jpg | https://rozana-manpower.com/maid/abeba-borecha-feisa
+266 | ABEBECH GIRMA TADESE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/XHZJxsvQDuDDRPdGrZNLZuLim5PeNEfZ7mM7hC54.jpg | https://rozana-manpower.com/maid/abebech-girma-tadese
+267 | MARESHET REGASSA BIRMEJ | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/efsFk0cHPOx6T1mDPjDiXCL11WGirUZvwzSWgz6n.jpg | https://rozana-manpower.com/maid/mareshet-regassa-birmej
+268 | FIREHIWOT ASSEFA BEYENE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/28Rjyh01QMbKV1nZyuoaCyzoAKSUGwN9DCi1eGIw.jpg | https://rozana-manpower.com/maid/firehiwot-assefa-beyene
+269 | YESHIWORK TEREFE TEGEGNE | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/RfgSbXH3pNJlJ8gO4nkPYUd3n9KwxBfW2Xs8TRBZ.jpg | https://rozana-manpower.com/maid/yeshiwork-terefe-tegegne
+270 | MISGANECH BIKAGO TURAGO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/79bWFbsYJArGllHT5zFQ9tbK4M7QUtlPrzFJFh4d.jpg | https://rozana-manpower.com/maid/misganech-bikago-turago
+271 | FATIYA KEDIR TAHIR | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/8LX22haqlr6pkD2Dnj2ryiQ91Xz945SU5SHcT9DC.jpg | https://rozana-manpower.com/maid/fatiya-kedir-tahir
+272 | HALIMA SIRAJ EMAMU | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/MoYJnA91V4mJ25MNBEUMCCNdbsA5E3n7TXOgIwnu.png | https://rozana-manpower.com/maid/halima-siraj-emamu
+273 | DERARETU HASEN DATU | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/AbAvsQFAdTeQXDpR5zpdBkhTvKa8JLdJwjrhRjrR.png | https://rozana-manpower.com/maid/deraretu-hasen-datu
+274 | ADILE DIRO MAGARSA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/ogYqOj5mUScRte035GdlZcTQm4Y5sJ7dHx4Y4ygX.jpg | https://rozana-manpower.com/maid/adile-diro-magarsa
+275 | GENELYN VALDEZ PELAYO | Filipino | https://khalid.onesourceerp.com/storage/app/public/attachments/kDwh3MRS2IZFLPfxjmbTQPChlI1i7Z0cikoYpfHA.png | https://rozana-manpower.com/maid/genelyn-valdez-pelayo
+276 | TEYBA HEDETO DIDA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/QFtxZZbwMOGMehx9uuTIvHsF1aGRGk9BkF3MHJGz.png | https://rozana-manpower.com/maid/teyba-hedeto-dida
+277 | BEREDU DEYE BERARTI | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/szxeNnPlWW4bA5MjE94AMQ4RiyDZdJ3aGvLZEaOV.png | https://rozana-manpower.com/maid/beredu-deye-berarti
+278 | ABERU ENDALE BERECHA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/8PLrt3huAnFoxEHX3KbGK9jPjnBjA6A2b3U4DnHz.png | https://rozana-manpower.com/maid/aberu-endale-berecha
+279 | TADELECH BEKELE DERIBE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/eYJwcbbPpPfd1Xf7ps1eu1PU2hIRBWmqPKr1YLRg.png | https://rozana-manpower.com/maid/tadelech-bekele-deribe
+280 | MISRA BESHIR GEDA | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/F4Rnqo8Q5OP8fueOL3AwYY6S8vwrIHS4V5H7FLjy.png | https://rozana-manpower.com/maid/misra-beshir-geda
+281 | RAHEL TSEGAYE DEMEKE | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/CYWkrTlg6HofGWCVUCkkJAbJWGvQdHApMBDj5Eyf.png | https://rozana-manpower.com/maid/rahel-tsegaye-demeke
+282 | SENAIT ASRES MERKEBU | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/HIptTTMI75cerdnP7GeKfL6PdOj6a3303Y2USi30.png | https://rozana-manpower.com/maid/senait-asres-merkebu
+283 | CHALTU BEDASA NEGERO | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/nOWXoFs22dtQ4JoZ7DJby9CABvU9OUmgbgPw9TFT.png | https://rozana-manpower.com/maid/chaltu-bedasa-negero
+284 | HALFIYA NASRO AMAN | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/ndYNQpTwZqHsSXMy4gNLrFjBU6K2BJeHeQiMkwp3.png | https://rozana-manpower.com/maid/halfiya-nasro-aman
+285 | MARTA MUCHE MOHAMMED | Ethiopian | https://alkaba.onesourceerp.com/storage/app/public/attachments/2FohEVvi2XPuSSRVEXYhLLFhxoGPXfrgWnZ3mY2y.png | https://rozana-manpower.com/maid/marta-muche-mohammed
+286 | ASEGEDECH GONFA FEYISA | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/iEgtotpSovIilF0kNwTiTsGC1ozrfHMgfdrydviD.jpg | https://rozana-manpower.com/maid/asegedech-gonfa-feyisa
+287 | FAYIZA AHMED KEDIR | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/lb4VZGNk0YlGkmKAyQpjWXJ3990IFLNnAeSteoiY.jpg | https://rozana-manpower.com/maid/fayiza-ahmed-kedir-ebmho-1054
+288 | HAMZIYA CHUKURU WAKO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/SQkmImVfFzrbe2pJAe6w6yR9NE2Jn7SE7Rqfj7xi.jpg | https://rozana-manpower.com/maid/hamziya-chukuru-wako-ebmho-1055
+289 | SEBLE DEBOCH LIMENEW | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/wD2YPcQvniEpysYWcpZtA4qzFzMYQqRR1KzB7fNS.jpg | https://rozana-manpower.com/maid/seble-deboch-limenew-ebmho-1057
+290 | EYERUSALEM DEJENE DILAMO | Ethiopian | https://bmg.onesourceerp.com/storage/app/public/attachments/xJQMGu01VFgHUzhXTu0NlkX2s5TINQXstbWQRVOR.jpg | https://rozana-manpower.com/maid/eyerusalem-dejene-dilamo-ebmho-1007
+291 | SAMIRA KASIMA SUFIYAN | Ethiopian |  | https://rozana-manpower.com/maid/samira-kasima-sufiyan
+292 | LELISE MEGERSA DIDA | Ethiopian |  | https://rozana-manpower.com/maid/lelise-megersa-dida
+293 | FATUMA MAMA BULO | Ethiopian |  | https://rozana-manpower.com/maid/fatuma-mama-bulo-ealho-2127
+294 | BIRTUKAN ESHETU GEMEDA | Ethiopian |  | https://rozana-manpower.com/maid/birtukan-eshetu-gemeda-ealho-2126
+295 | KEDIJA HUSSEN KADIRO | Ethiopian |  | https://rozana-manpower.com/maid/kedija-hussen-kadiro-ealho-2125
+296 | MOMINA ADEM EBRAHIM | Ethiopian |  | https://rozana-manpower.com/maid/momina-adem-ebrahim-ealho-2124
+297 | GUDAY ANDUALEM DEGU | Ethiopian |  | https://rozana-manpower.com/maid/guday-andualem-degu-ealho-2123
+298 | MULU MECHESA TASU | Ethiopian |  | https://rozana-manpower.com/maid/mulu-mechesa-tasu-ealho-2121
+299 | NURUH KIZZA NAKAZIBWE | Ugandan |  | https://rozana-manpower.com/maid/nuruh-kizza-nakazibwe-ugesho-319
+300 | SIDI ABDULKADIR NURHUSSEN | Ethiopian |  | https://rozana-manpower.com/maid/sidi-abdulkadir-nurhussen
+301 | SANAYT WAJENE ALARO | Ethiopian |  | https://rozana-manpower.com/maid/sanayt-wajene-alaro
+302 | FATUMA SHEMSU NEGASH | Ethiopian |  | https://rozana-manpower.com/maid/fatuma-shemsu-negash
+303 | TIGIST SISAY TAMIRIU | Ethiopian |  | https://rozana-manpower.com/maid/tigist-sisay-tamiriu-ealho-2104
+304 | EMAN BEHMUD HAJI | Ethiopian |  | https://rozana-manpower.com/maid/eman-behmud-haji-ealho-2101
+305 | ADANECH DAKITA DATA | Ethiopian |  | https://rozana-manpower.com/maid/adanech-dakita-data
+306 | TIGIST TEREFE GENETI | Ethiopian |  | https://rozana-manpower.com/maid/tigist-terefe-geneti-ealho-2098
+307 | ABEBECH ALEMU ITCHA | Ethiopian |  | https://rozana-manpower.com/maid/abebech-alemu-itcha
+308 | RUZIYA ABDURAMAN JAKAMO | Ethiopian |  | https://rozana-manpower.com/maid/ruziya-abduraman-jakamo-ebmho-1280
+309 | AJEYIBA SIRAJ NURI | Ethiopian |  | https://rozana-manpower.com/maid/ajeyiba-siraj-nuri-ealho-2056
+310 | SALHA AHMED ABUBEKER | Ethiopian |  | https://rozana-manpower.com/maid/salha-ahmed-abubeker-ealho-2037
+311 | BILAGI HABTU DESYE | Ethiopian |  | https://rozana-manpower.com/maid/bilagi-habtu-desye-ebmho-1242
+312 | MERCY ROBINA NAKAZIBWE | Ugandan |  | https://rozana-manpower.com/maid/mercy-robina-nakazibwe
+313 | REHIMA SHERIF UMER | Ethiopian |  | https://rozana-manpower.com/maid/rehima-sherif-umer
+314 | MARTA TIGISTU KONESHE | Ethiopian |  | https://rozana-manpower.com/maid/marta-tigistu-koneshe-ealho-1874
+315 | NEBIYAT ALI TESHOME | Ethiopian |  | https://rozana-manpower.com/maid/nebiyat-ali-teshome-ebmho-1193
+316 | ABERASH DESTA BEKELE | Ethiopian |  | https://rozana-manpower.com/maid/aberash-desta-bekele-ealho-1961
+317 | BELETU DEGNE ALEMU | Ethiopian |  | https://rozana-manpower.com/maid/beletu-degne-alemu-ealho-1968
+318 | GENET TUMEBO ERMO | Ethiopian |  | https://rozana-manpower.com/maid/genet-tumebo-ermo-ebmho-1081
+319 | AISHA  NAKIBIRIGE | Ugandan |  | https://rozana-manpower.com/maid/aisha-nakibirige
+320 | ASTER ADINO GEDEFA | Ethiopian |  | https://rozana-manpower.com/maid/aster-adino-gedefa
+321 | ASTER LEMA TESHOME | Ethiopian |  | https://rozana-manpower.com/maid/aster-lema-teshome

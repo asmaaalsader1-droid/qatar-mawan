@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معاون - حلول شاملة لمنزلك</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            DEFAULT: '#15284B',
+                            foreground: '#FFFFFF',
+                        },
+                        accent: '#6D1D38',
+                        secondary: '#F5EBEB',
+                        background: '#FFFFFF',
+                        card: '#FFFFFF',
+                        border: '#E8E8ED',
+                        'muted-foreground': '#6E6E73',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer base {
+            :root {
+                --shadow-soft: 0 4px 20px -2px rgba(21, 40, 75, 0.05);
+                --shadow-elegant: 0 12px 30px -4px rgba(21, 40, 75, 0.12);
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#FBF9F6] text-[#1D1D1F] font-sans antialiased flex flex-col min-h-screen justify-between">
+
+    <div class="max-w-7xl mx-auto px-6 w-full flex-grow">
+        
+        <header id="home" class="flex justify-between items-center py-6 mb-6">
+            <button class="w-11 h-11 rounded-full border border-border bg-white flex items-center justify-center cursor-pointer shadow-sm hover:bg-gray-50 transition" aria-label="Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <div class="text-right">
+                <div class="font-extrabold text-2xl text-primary leading-tight">معاون</div>
+                <span class="text-accent text-[11px] font-bold block -mt-1 tracking-wider">Ma'awen</span>
+            </div>
+        </header>
+
+        <section class="hero-1 text-center mb-16 max-w-xl mx-auto">
+            <span class="section-tag text-accent text-sm font-bold mb-2 inline-block">خدماتنا</span>
+            <h1 class="text-3xl lg:text-4xl font-extrabold text-primary mb-3">حلول شاملة لمنزلك</h1>
+            <p class="text-muted-foreground text-base mb-6">نقدم أفضل خدمات العمالة المنزلية في قطر مع ضمان الجودة والكفاءة</p>
+            
+            <div class="sponsors-label text-xs text-accent font-bold mb-3">برعاية من</div>
+            <div class="sponsors-logos flex justify-center items-center gap-6 mb-8">
+                <strong style="color:#E40000; font-size:20px;">ooredoo</strong>
+                <span style="font-size:12px; font-weight:bold; color:#6D1D38;" class="border-r border-gray-300 pr-4 text-right">وزارة العمل<br><small class="text-gray-500 font-normal">State of Qatar</small></span>
+            </div>
+
+            <div class="service-buttons flex gap-3 justify-center max-w-md mx-auto">
+                <a href="#service-hourly" class="btn-pill flex-1 py-3 px-3 rounded-full bg-primary text-white font-bold text-sm text-center transition hover:opacity-95">عمالة بالساعة</a>
+                <a href="#service-monthly" class="btn-pill flex-1 py-3 px-3 rounded-full bg-primary text-white font-bold text-sm text-center transition hover:opacity-95">عمالة بالشهر</a>
+                <a href="#service-recruit" class="btn-pill flex-1 py-3 px-3 rounded-full bg-primary text-white font-bold text-sm text-center transition hover:opacity-95">استقدام</a>
+            </div>
+        </section>
+
+        <section id="services" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+            
+            <article id="service-hourly" class="group relative scroll-mt-24 rounded-3xl border border-border bg-card p-8 shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-elegant)]">
+                <div class="mb-6 grid h-14 w-14 place-items-center rounded-2xl bg-primary text-primary-foreground transition-transform duration-300 group-hover:scale-105">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-7 w-7" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                </div>
+                <h3 class="text-2xl font-black text-primary">عمالة منزلية بالساعة</h3>
+                <p class="mt-3 leading-7 text-muted-foreground">خدمة مرنة لتنظيف وترتيب منزلك بالساعة، مع إمكانية الحجز اليومي أو الأسبوعي حسب رغبتك.</p>
+                <ul class="mt-6 space-y-2.5">
+                    <li class="flex items-center gap-2 text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check h-4 w-4 shrink-0 text-accent" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                        من ساعتين فأكثر
+                    </li>
+                    <li class="flex items-center gap-2 text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check h-4 w-4 shrink-0 text-accent" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                        عمالة مدرّبة
+                    </li>
+                    <li class="flex items-center gap-2 text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check h-4 w-4 shrink-0 text-accent" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                        أدوات تنظيف متوفرة
+                    </li>
+                </ul>
+                <a class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-accent transition-all hover:gap-3" href="/hourly" data-discover="true">
+                    احجز الآن
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left h-4 w-4" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+                </a>
+            </article>
+
+            <article id="service-monthly" class="group relative scroll-mt-24 rounded-3xl border border-border bg-card p-8 shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-elegant)]">
+                <div class="mb-6 grid h-14 w-14 place-items-center rounded-2xl bg-primary text-primary-foreground transition-transform duration-300 group-hover:scale-105">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days h-7 w-7" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>
+                </div>
+                <h3 class="text-2xl font-black text-primary">عمالة منزلية بالشهر</h3>
+                <p class="mt-3 leading-7 text-muted-foreground">عاملة منزلية بدوام كامل أو جزئي على مدار الشهر، لراحة مستمرة لعائلتك ومنزلك.</p>
+                <ul class="mt-6 space-y-2.5">
+                    <li class="flex items-center gap-2 text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check h-4 w-4 shrink-0 text-accent" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                        عقد شهري مرن
+                    </li>
+                    <li class="flex items-center gap-2 text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check h-4 w-4 shrink-0 text-accent" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                        متابعة مستمرة
+                    </li>
+                    <li class="flex items-center gap-2 text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check h-4 w-4 shrink-0 text-accent" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                        بديلة عند الحاجة
+                    </li>
+                </ul>
+                <a class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-accent transition-all hover:gap-3" href="/monthly" data-discover="true">
+                    احجز الآن
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left h-4 w-4" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+                </a>
+            </article>
+
+            <article id="service-recruit" class="group relative scroll-mt-24 rounded-3xl border border-border bg-card p-8 shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-elegant)]">
+                <div class="mb-6 grid h-14 w-14 place-items-center rounded-2xl bg-primary text-primary-foreground transition-transform duration-300 group-hover:scale-105">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plane h-7 w-7" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path></svg>
+                </div>
+                <h3 class="text-2xl font-black text-primary">استقدام عمالة منزلية</h3>
+                <p class="mt-3 leading-7 text-muted-foreground">استقدام مباشر من أفضل المصادر، مع تدقيق كامل للسير الذاتية وتدريب قبل الوصول.</p>
+                <ul class="mt-6 space-y-2.5">
+                    <li class="flex items-center gap-2 text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check h-4 w-4 shrink-0 text-accent" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                        إجراءات سريعة
+                    </li>
+                    <li class="flex items-center gap-2 text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check h-4 w-4 shrink-0 text-accent" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                        ضمان شامل
+                    </li>
+                    <li class="flex items-center gap-2 text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check h-4 w-4 shrink-0 text-accent" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                        خيارات جنسيات متعددة
+                    </li>
+                </ul>
+                <a class="mt-8 inline-flex items-center gap-2 text-sm font-bold text-accent transition-all hover:gap-3" href="/contact" data-discover="true">
+                    اطلب الخدمة
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left h-4 w-4" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+                </a>
+            </article>
+
+        </section>
+
+        <section class="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div class="space-y-6">
+                <span class="bg-secondary text-accent px-3.5 py-1.5 rounded-full text-xs font-bold inline-block">✦ مرخصة في دولة قطر</span>
+                
+                <h2 class="text-3xl lg:text-5xl font-extrabold text-primary leading-tight">
+                    راحة بيتك تبدأ<br>
+                    <span class="text-accent">مع معاون</span>
+                </h2>
+                
+                <p class="text-muted-foreground text-base leading-relaxed max-w-lg">
+                    الشركة القطرية لحلول القوى البشرية. نوفر لك عمالة منزلية موثوقة ومدربة، بالساعة أو بالشهر، مع خدمات استقدام احترافية تلبي معاييرك.
+                </p>
+
+                <div class="flex gap-3 pt-2">
+                    <button class="bg-primary text-white px-6 py-3.5 rounded-full font-bold text-sm flex items-center gap-2 hover:opacity-90 transition">
+                        اكتشف خدماتنا <span>←</span>
+                    </button>
+                    <button class="bg-transparent text-primary border border-border px-6 py-3.5 rounded-full font-bold text-sm hover:bg-white transition">
+                        احجز استشارة
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative rounded-3xl overflow-hidden shadow-lg border border-border">
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="خدمات منزلية" class="w-full object-cover h-80">
+                <div class="absolute bottom-4 right-4 bg-white p-3 px-4 rounded-2xl flex items-center gap-3 shadow-md border border-gray-100">
+                    <div class="bg-primary text-white w-10 h-10 rounded-xl flex items-center justify-center font-bold text-base">✓</div>
+                    <div>
+                        <div class="font-bold text-sm text-primary">ضمان الجودة</div>
+                        <div class="text-xs text-muted-foreground">عمالة موثقة ومدربة</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why" class="container mx-auto grid items-start gap-14 lg:grid-cols-2 py-8 mb-12">
+            <div>
+                <span class="inline-flex rounded-full bg-secondary px-4 py-1.5 text-xs font-bold text-accent">لماذا معاون</span>
+                <h2 class="mt-4 text-4xl font-black leading-tight text-primary lg:text-5xl">راحة بالك<br>أولويّتنا الأولى</h2>
+                <p class="mt-5 max-w-md text-lg leading-8 text-muted-foreground">نختار بعناية، ندرّب باحتراف، ونرافقك بعد التوظيف. لأن خدمة منزلك تبدأ بثقة لا تتزعزع.</p>
+                <div class="mt-10 grid grid-cols-2 gap-4">
+                    <div class="rounded-2xl border border-border bg-background/70 p-5">
+                        <div class="text-3xl font-black text-primary">+12</div>
+                        <div class="mt-1 text-sm text-muted-foreground">سنة خبرة</div>
+                    </div>
+                    <div class="rounded-2xl border border-border bg-background/70 p-5">
+                        <div class="text-3xl font-black text-primary">+5000</div>
+                        <div class="mt-1 text-sm text-muted-foreground">عميل سعيد</div>
+                    </div>
+                    <div class="rounded-2xl border border-border bg-background/70 p-5">
+                        <div class="text-3xl font-black text-primary">+800</div>
+                        <div class="mt-1 text-sm text-muted-foreground">عامل مدرّب</div>
+                    </div>
+                    <div class="rounded-2xl border border-border bg-background/70 p-5">
+                        <div class="text-3xl font-black text-primary">98%</div>
+                        <div class="mt-1 text-sm text-muted-foreground">نسبة الرضا</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="group relative overflow-hidden rounded-3xl border border-border bg-background/80 p-6 transition-all hover:shadow-[var(--shadow-soft)]">
+                    <div class="flex items-start gap-4">
+                        <div class="relative flex-1">
+                            <span class="absolute -top-2 left-0 text-5xl font-black text-border/80">01</span>
+                            <h3 class="relative text-xl font-black text-primary">موثوقية كاملة</h3>
+                            <p class="relative mt-2 text-sm leading-7 text-muted-foreground">عمالة مدققة الخلفية مع توثيق رسمي من وزارة العمل القطرية، وفحص طبي شامل قبل الوصول.</p>
+                        </div>
+                        <div class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-secondary text-accent transition-transform group-hover:scale-110">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check h-5 w-5" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-3xl border border-border bg-background/80 p-6 transition-all hover:shadow-[var(--shadow-soft)]">
+                    <div class="flex items-start gap-4">
+                        <div class="relative flex-1">
+                            <span class="absolute -top-2 left-0 text-5xl font-black text-border/80">02</span>
+                            <h3 class="relative text-xl font-black text-primary">جودة استثنائية</h3>
+                            <p class="relative mt-2 text-sm leading-7 text-muted-foreground">برامج تدريب مستمرة على أعلى المعايير العالمية للخدمة المنزلية والعناية بالأطفال وكبار السن.</p>
+                        </div>
+                        <div class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-secondary text-accent transition-transform group-hover:scale-110">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-5 w-5" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-3xl border border-border bg-background/80 p-6 transition-all hover:shadow-[var(--shadow-soft)]">
+                    <div class="flex items-start gap-4">
+                        <div class="relative flex-1">
+                            <span class="absolute -top-2 left-0 text-5xl font-black text-border/80">03</span>
+                            <h3 class="relative text-xl font-black text-primary">دعم 24/7</h3>
+                            <p class="relative mt-2 text-sm leading-7 text-muted-foreground">فريق خدمة عملاء متواصل بالعربية والإنجليزية، يستجيب لاستفساراتك في أي وقت.</p>
+                        </div>
+                        <div class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-secondary text-accent transition-transform group-hover:scale-110">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headphones h-5 w-5" aria-hidden="true"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-3xl border border-border bg-background/80 p-6 transition-all hover:shadow-[var(--shadow-soft)]">
+                    <div class="flex items-start gap-4">
+                        <div class="relative flex-1">
+                            <span class="absolute -top-2 left-0 text-5xl font-black text-border/80">04</span>
+                            <h3 class="relative text-xl font-black text-primary">ضمان الرضا</h3>
+                            <p class="relative mt-2 text-sm leading-7 text-muted-foreground">استبدال مجاني خلال 3 أشهر عند عدم الرضا، مع متابعة دورية لضمان استمرارية الخدمة.</p>
+                        </div>
+                        <div class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-secondary text-accent transition-transform group-hover:scale-110">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check h-5 w-5" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="border-t border-border bg-card/50 w-full">
+        <div class="container mx-auto grid gap-10 px-6 py-14 md:grid-cols-4 max-w-7xl">
+            <div class="md:col-span-1">
+                <div class="mb-4">
+                    <div class="font-extrabold text-2xl text-primary leading-tight">معاون</div>
+                    <span class="text-accent text-[11px] font-bold block -mt-1 tracking-wider">Ma'awen</span>
+                </div>
+                <p class="text-sm leading-7 text-muted-foreground">الشركة القطرية لحلول القوى البشرية. نوفّر لك عمالة منزلية موثوقة ومدرّبة بأعلى معايير الجودة في قطر.</p>
+            </div>
+            <div>
+                <h4 class="mb-4 font-black text-primary">روابط سريعة</h4>
+                <ul class="space-y-2 text-sm text-muted-foreground">
+                    <li><a href="/#home" class="hover:text-accent">الرئيسية</a></li>
+                    <li><a href="/#services" class="hover:text-accent">خدماتنا</a></li>
+                    <li><a href="/#why" class="hover:text-accent">لماذا معاون</a></li>
+                    <li><a class="hover:text-accent" href="/contact" data-discover="true">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-4 font-black text-primary">خدماتنا</h4>
+                <ul class="space-y-2 text-sm text-muted-foreground">
+                    <li><a class="hover:text-accent" href="/hourly" data-discover="true">عمالة بالساعة</a></li>
+                    <li><a class="hover:text-accent" href="/monthly" data-discover="true">عمالة بالشهر</a></li>
+                    <li><a class="hover:text-accent" href="/contact" data-discover="true">استقدام عمالة</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="mb-4 font-black text-primary">معلومات الاتصال</h4>
+                <ul class="space-y-3 text-sm text-muted-foreground">
+                    <li class="flex items-start gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        لوسيل — برج مارينا — ط 6
+                    </li>
+                    <li><a href="mailto:info@maawen.qa" class="hover:text-accent">info@maawen.qa</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-border py-5 text-center text-sm text-muted-foreground">
+            © 2026 معاون لخدمات القوى البشرية. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+
+</body>
+</html>

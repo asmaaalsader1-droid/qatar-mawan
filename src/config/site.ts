@@ -1,0 +1,55 @@
+export const SITE = {
+  name: "Ma'awen",
+  nameAr: "معاون",
+  nameEn: "Ma'awen",
+  logoUrl: "https://assets.khadmqtr.com/settings/01KQMDMAAEAAFJDWR9W4CN1YVR.png",
+  taglineAr: "حلول شاملة لمنزلك",
+  taglineEn: "Comprehensive solutions for your home",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://khdm-qatar.example",
+  phone: process.env.PHONE || "+97400000000",
+  whatsapp: process.env.WHATSAPP_NUMBER || "97400000000",
+  whatsappEnabled: true,
+  email: process.env.SITE_EMAIL || "info@maawen.qa",
+  addressAr: "لوسيل — برج مارينا — ط 6",
+  addressEn: "Lusail — Marina Tower — Floor 6",
+  commercialRegistration: process.env.COMMERCIAL_REGISTRATION || "CR-QAT-2024",
+  licenseNumber: process.env.LICENSE_NUMBER || "AD-1145-2024",
+  yearsExperience: 12,
+  familiesCount: 5000,
+  workersCount: 800,
+  workingHoursAr: "السبت–الخميس · 9ص – 9م",
+  workingHoursEn: "Sat–Thu · 9 AM – 9 PM",
+  recruitmentDurationWeeks: "4-8",
+  mapEmbedUrl: process.env.NEXT_PUBLIC_MAP_EMBED_URL || "https://maps.google.com/?q=Lusail+Qatar",
+  social: {
+    facebook: "#",
+    instagram: "#",
+    linkedin: "#",
+    tiktok: "#",
+    whatsapp: "https://wa.me/97400000000",
+  },
+  minSalary: 1200,
+  recruitmentFee: "يُحدد حسب نوع الخدمة والعاملة",
+  currencyAr: "ر.ق",
+  currencyEn: "QAR",
+  defaultLocale: "ar",
+  locales: ["ar", "en"],
+  floatingActionsEnabled: true,
+  returnPolicyAr:
+    "السياسة العامة للاسترجاع/الاستبدال: تُحدد شروط الاسترجاع لكل عاملة على حدة. في حال عدم تحديد شروط خاصة، يتم تطبيق سياسة الاستبدال خلال فترة التجربة المتفق عليها مع توفر الحجج والبنود المنصوص عليها في العقد.",
+  returnPolicyEn:
+    "General return/replacement policy: Return conditions are set for each worker individually. If no special conditions are specified, the replacement policy applies during the agreed probation period, subject to the terms and provisions set out in the contract.",
+  geoBlocking: {
+    enabled: false,
+    mode: "blocklist" as "allowlist" | "blocklist",
+    countries: [] as string[],
+  },
+  payment: {
+    enabled: false,
+    provider: "stub",
+  },
+  adminDefaultPassword: process.env.ADMIN_DEFAULT_PASSWORD || "change-me-immediately",
+} as const;
+
+export type SiteConfig = typeof SITE;
+

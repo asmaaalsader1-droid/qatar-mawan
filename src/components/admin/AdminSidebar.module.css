@@ -1,0 +1,357 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  height: 46px;
+  padding: 0 12px;
+  background: #fff;
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  user-select: none;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* ===== الشعار ===== */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 16px;
+  margin-right: 12px;
+  border-left: 1px solid var(--color-border);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.brandLogo {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #16a34a, #047857);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 900;
+  font-size: 13px;
+  box-shadow: 0 2px 6px rgba(22, 163, 74, 0.3);
+}
+
+.brandName {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+/* ===== شريط الإحصائيات ===== */
+.statsBar {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-right: auto;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.statsBar::-webkit-scrollbar {
+  display: none;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  height: 46px;
+  border-left: 1px solid var(--color-border);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.pulseDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  animation: pulse 2s infinite;
+  display: inline-block;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.statIconMuted { color: var(--color-text-muted); flex-shrink: 0; }
+.statIconBlue { color: #2563eb; flex-shrink: 0; }
+.statIconEmerald { color: #059669; flex-shrink: 0; }
+
+.statLabelSm {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.statValueBold {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.statValueGreen { color: #16a34a; font-weight: 700; font-size: 14px; }
+.statValueBlue { color: #2563eb; font-weight: 700; font-size: 14px; }
+.statValueEmerald { color: #059669; font-weight: 700; font-size: 14px; }
+.statValueAmber { color: #d97706; font-weight: 700; font-size: 14px; }
+.statValueGray { color: #9ca3af; font-weight: 700; font-size: 14px; }
+
+.slash {
+  color: #d1d5db;
+  font-size: 12px;
+}
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background: #f3f4f6;
+  margin: 0 4px;
+  flex-shrink: 0;
+}
+
+/* ===== القسم الأيمن ===== */
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border-right: 1px solid var(--color-border);
+  margin-right: auto;
+  flex-shrink: 0;
+}
+
+/* قائمة التنقل المنسدلة */
+.menuWrap {
+  position: relative;
+}
+
+.menuBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  height: 46px;
+  background: none;
+  border: none;
+  border-left: 1px solid var(--color-border);
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--color-text);
+  transition: background 0.15s;
+}
+
+.menuBtn:hover {
+  background: #f9fafb;
+}
+
+.menuLabel {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.caret {
+  font-size: 10px;
+  color: var(--color-text-muted);
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.caretOpen {
+  transform: rotate(180deg);
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  inset-inline-start: 0;
+  margin-top: 4px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  min-width: 220px;
+  padding: 6px;
+  z-index: 100;
+  animation: dropIn 0.15s ease-out;
+}
+
+@keyframes dropIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+}
+
+.navItem:hover {
+  background: #f9fafb;
+}
+
+.navActive {
+  background: rgba(200, 160, 74, 0.12);
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.navIcon {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+/* أزرار الأيقونات (إعدادات، تنبيهات) */
+.iconBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 46px;
+  color: var(--color-text-muted);
+  border-left: 1px solid var(--color-border);
+  position: relative;
+  transition: background 0.15s, color 0.15s;
+}
+
+.iconBtn:hover {
+  background: #f9fafb;
+  color: var(--color-text);
+}
+
+.badgeCount {
+  position: absolute;
+  top: 8px;
+  inset-inline-end: 6px;
+  background: var(--color-danger);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+/* زر المستخدم */
+.userBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  height: 46px;
+  background: none;
+  border: none;
+  border-left: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.userBtn:hover {
+  background: #f9fafb;
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.caretSmall {
+  width: 12px;
+  height: 12px;
+  color: var(--color-text-muted);
+}
+
+.userDropdown {
+  position: absolute;
+  top: 100%;
+  inset-inline-start: 0;
+  margin-top: 4px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  min-width: 220px;
+  padding: 6px;
+  z-index: 100;
+  animation: dropIn 0.15s ease-out;
+}
+
+.userEmail {
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 4px;
+  word-break: break-all;
+}
+
+.userMenuItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background 0.15s;
+  text-decoration: none;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: start;
+  font-family: inherit;
+}
+
+.userMenuItem:hover {
+  background: #f9fafb;
+}
+
+/* ===== تجاوب ===== */
+@media (max-width: 768px) {
+  .brandName {
+    display: none;
+  }
+  .brand {
+    padding-left: 0;
+    border-left: none;
+  }
+  .statLabelSm {
+    display: none;
+  }
+  .menuLabel {
+    display: none;
+  }
+}

@@ -1,0 +1,136 @@
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--color-secondary);
+  margin-bottom: 24px;
+}
+
+.tableCard {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th {
+  text-align: start;
+  padding: 12px;
+  border-bottom: 2px solid var(--color-border);
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.refCell {
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.statusBadge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.statusBadge[data-status="pending"] {
+  background: rgba(245, 158, 11, 0.15);
+  color: #92400e;
+}
+
+.statusBadge[data-status="confirmed"] {
+  background: rgba(16, 185, 129, 0.15);
+  color: #065f46;
+}
+
+.statusBadge[data-status="completed"] {
+  background: rgba(59, 130, 246, 0.15);
+  color: #1e40af;
+}
+
+.statusBadge[data-status="cancelled"] {
+  background: rgba(220, 38, 38, 0.15);
+  color: #991b1b;
+}
+
+.viewBtn {
+  padding: 4px 12px;
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detailRow {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.detailImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.detailRow h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.infoGrid strong {
+  color: var(--color-primary);
+}
+
+.statusActions h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 8px;
+}
+
+.statusBtns {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.statusAction {
+  padding: 8px 16px;
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.statusActive {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}

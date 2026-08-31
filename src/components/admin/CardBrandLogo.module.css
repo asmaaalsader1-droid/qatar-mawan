@@ -1,0 +1,22 @@
+.wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  max-height: 22px;
+  max-width: 64px;
+}
+
+.wrap svg {
+  display: block;
+  max-height: 22px;
+  width: auto;
+  height: auto;
+}
+
+.fallback {
+  font-size: 16px;
+  font-weight: 900;
+  color: #004d26;
+  letter-spacing: 0.05em;
+}

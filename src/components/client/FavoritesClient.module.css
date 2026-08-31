@@ -1,0 +1,26 @@
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-secondary);
+  margin: 16px 0 8px;
+}
+
+.count {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  margin-bottom: 32px;
+}
+
+.empty {
+  text-align: center;
+  padding: 64px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.empty p {
+  font-size: 18px;
+  color: var(--color-text-muted);
+}

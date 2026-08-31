@@ -1,0 +1,141 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  transition: box-shadow 0.3s, background 0.3s;
+}
+
+.scrolled {
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  gap: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  line-height: 0;
+  white-space: nowrap;
+}
+
+.logoImage {
+  display: block;
+  width: 156px;
+  height: 64px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--color-primary);
+  letter-spacing: -0.01em;
+}
+
+.logoSub {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 0.08em;
+}
+
+.logoMark {
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+  justify-content: center;
+}
+
+.link {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text);
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border 0.2s;
+}
+
+.link:hover {
+  color: var(--color-primary);
+}
+
+.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text);
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.menuBtn:hover {
+  background: var(--color-bg-soft);
+}
+
+.mobileNav {
+  display: none;
+  flex-direction: column;
+  padding: 12px 24px 20px;
+  background: #fff;
+  border-top: 1px solid var(--color-border);
+}
+
+.mobileLink {
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-bg-soft);
+}
+
+@media (max-width: 900px) {
+  .logoImage {
+    width: 132px;
+    height: 56px;
+  }
+  .nav,
+  .cta {
+    display: none;
+  }
+  .menuBtn {
+    display: block;
+  }
+  .mobileNav {
+    display: flex;
+  }
+}

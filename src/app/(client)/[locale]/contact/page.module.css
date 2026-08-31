@@ -1,0 +1,65 @@
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-secondary);
+  margin: 16px 0 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  margin-bottom: 32px;
+}
+
+.infoRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.infoRow h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.infoIcon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.infoText {
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.infoText a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.infoText a:hover {
+  text-decoration: underline;
+}
+
+.formTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .infoRow {
+    grid-template-columns: 1fr;
+  }
+}

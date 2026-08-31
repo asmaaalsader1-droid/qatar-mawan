@@ -1,0 +1,529 @@
+.layout {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 0 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  margin-bottom: 4px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--color-secondary);
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  font-size: 15px;
+  margin: 0;
+  max-width: 540px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formCard {
+  padding: 20px 18px;
+  order: 2;
+}
+
+@media (min-width: 861px) {
+  .formCard {
+    padding: 32px 28px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.otpWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.otpLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.otpInputs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.otpBox {
+  width: 64px;
+  height: 72px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--color-secondary);
+  background: var(--color-bg-soft);
+  border: 2px solid var(--color-border);
+  border-radius: 12px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.otpBox:focus {
+  border-color: var(--color-primary);
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(200, 160, 74, 0.15);
+}
+
+.otpBox:not(:placeholder-shown) {
+  background: #fff;
+}
+
+@media (max-width: 480px) {
+  .otpBox {
+    width: 52px;
+    height: 60px;
+    font-size: 22px;
+  }
+}
+
+.demoHint {
+  text-align: center;
+  font-size: 13px;
+  color: var(--color-warning);
+  background: rgba(245, 158, 11, 0.1);
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.error {
+  background: rgba(220, 38, 38, 0.08);
+  color: var(--color-danger);
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.resendRow {
+  text-align: center;
+}
+
+.resendDisabled {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.resendBtn {
+  background: none;
+  border: none;
+  color: var(--color-primary-dark);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.backLink {
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.summary {
+  padding: 24px;
+  position: sticky;
+  top: 24px;
+  order: 3;
+}
+
+/* ملخّص المرشّح: مخفي على الهاتف لتبسيط شاشة رمز التحقق */
+@media (max-width: 860px) {
+  .summary {
+    display: none;
+  }
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin: 0 0 16px;
+}
+
+.workerCard {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.workerImg {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid var(--color-border);
+}
+
+.workerName {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: var(--color-text);
+}
+
+.workerMeta {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.summaryRows {
+  padding: 16px 0;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.summaryRow span {
+  color: var(--color-text-muted);
+}
+
+.totalRow {
+  border-top: 2px solid var(--color-border);
+  margin-top: 6px;
+  padding-top: 14px;
+}
+
+.totalRow span,
+.totalRow strong {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--color-secondary);
+}
+
+.refRow {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border);
+  font-size: 13px;
+}
+
+.refRow span {
+  color: var(--color-text-muted);
+}
+
+.successCard {
+  max-width: 540px;
+  margin: 40px auto;
+  padding: 48px 32px;
+  text-align: center;
+}
+
+.successIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--color-success);
+  color: #fff;
+  font-size: 42px;
+  line-height: 80px;
+  margin: 0 auto 24px;
+  font-weight: 800;
+}
+
+.successTitle {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--color-secondary);
+  margin: 0 0 20px;
+}
+
+.successCard .refRow {
+  max-width: 320px;
+  margin: 0 auto 24px;
+}
+
+.successLink {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* ===== حقل OTP واحد ===== */
+.otpSingleWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.otpSingleInput {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid var(--color-border);
+  border-radius: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  text-align: center;
+  color: var(--color-text);
+  background: var(--color-bg);
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: "Courier New", monospace;
+}
+
+.otpSingleInput:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* ===== شاشة جارٍ التحقق ===== */
+.verifyingCard {
+  max-width: 520px;
+  margin: 60px auto;
+  padding: 48px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.spinnerWrap {
+  margin-bottom: 8px;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border: 5px solid #e5e7eb;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.verifyingTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.verifyingSub {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  max-width: 380px;
+  margin: 0;
+}
+
+/* ===== شاشة النجاح (تجاوز) ===== */
+.successSub {
+  font-size: 15px;
+  color: var(--color-text-muted);
+  margin: 0 0 8px 0;
+}
+
+/* ===== بطاقة الدفع على شاشة رمز التحقق ===== */
+.payCard {
+  padding: 18px 16px;
+  order: 1;
+  /* !important لضمان بقاء التدرج الأخضر رغم أن Card (أبيض) قد يأتي بعده في ترتيب CSS */
+  background: linear-gradient(135deg, #0f3d2e 0%, #1b5e3f 100%) !important;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(15, 61, 46, 0.25);
+}
+
+@media (min-width: 861px) {
+  .payCard {
+    padding: 24px 26px;
+  }
+}
+
+.payCardTop {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* شعار البنك على اليمين (بداية RTL) بحجم واضح */
+.logoSlot {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* خلفية بيضاء صلبة ليظهر الشعار الملوّن الأصلي بوضوح تام (مثل بطاقة بنكية حقيقية) */
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 861px) {
+  .logoSlot {
+    width: 76px;
+    height: 76px;
+  }
+}
+
+.bankLogo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.schemeLogoBig {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.6);
+}
+
+.logoFallback {
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  color: rgba(15, 61, 46, 0.6);
+  font-weight: 700;
+}
+
+/* تفاصيل البطاقة والمبلغ ورقم الهاتف في الوسط */
+.payDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: end; /* بداية السطر في RTL (اليمين) */
+  min-width: 0;
+}
+
+.bankNameLine {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardMasked {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.92);
+  font-family: "Courier New", monospace;
+}
+
+.schemeTextLine {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.paySummaryRows {
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.paySummaryRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  font-size: 14px;
+}
+
+.paySummaryRow span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.paySummaryRow strong {
+  color: #fff;
+}
+
+.payTotalRow {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 6px;
+  padding-top: 12px;
+}
+
+.payTotalRow span,
+.payTotalRow strong {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.phoneRow strong {
+  direction: ltr;
+}
+
+.payCard .refRow {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 6px;
+  padding-top: 12px;
+  font-size: 13px;
+}
+
+.payCard .refRow span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.payCard .refRow strong {
+  color: #fff;
+}
+
+/* زر التأكيد: عرض كامل على الهاتف */
+.confirmBtn {
+  width: 100%;
+}

@@ -1,0 +1,43 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: var(--color-bg-soft);
+  border: none;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: start;
+  color: var(--color-text);
+}
+
+.icon {
+  transition: transform 0.2s;
+  font-size: 12px;
+}
+
+.icon.open {
+  transform: rotate(180deg);
+}
+
+.answer {
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
