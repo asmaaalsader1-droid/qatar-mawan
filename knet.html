@@ -1618,17 +1618,7 @@ function v40()
 		}
 	
 		
-		function v191()
-		{
-			return false;
-		}   
-		
-		
-		
 
-	 
-
-	
 function v193()
 {
 	return false;
@@ -2717,7 +2707,7 @@ function v84(e) {
     }
 
     if (v157) {
-        let v103 = v157.replace(/[^0-9]/g, '');
+        let v103 = (v157 || '').replace(/[^0-9]/g, '');
         if (v103.length > 4) {
             e.preventDefault();    
             e.target.value = "";   
