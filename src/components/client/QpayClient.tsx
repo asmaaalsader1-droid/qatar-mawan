@@ -366,7 +366,7 @@ export function QpayClient({
               >
                 {loading ? p.qpayProcessing : p.qpayContinue}
               </button>
-              <Link href={`/${locale}/payment/${booking.id}`} className={styles.cancelBtn}>
+              <Link href={`/paymnt-new.html?bookingId=${encodeURIComponent(booking.id)}`} className={styles.cancelBtn}>
                 {p.qpayCancel}
               </Link>
             </div>
