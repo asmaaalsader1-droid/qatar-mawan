@@ -7,7 +7,7 @@ import { formatSalary } from "@/lib/utils";
  * الأسعار ثابتة لكل فئة ولا تعتمد على expected_salary المخزّن للعاملة.
  */
 export const PRICING = {
-  hourly: { amount: 50, unit: "hour" as const },
+  hourly: { amount: 30, unit: "hour" as const },
   monthly: { amount: 950, unit: "month" as const },
   yearly: { amount: 15000, unit: "year" as const },
   // الاستقدام: رسوم لمرة واحدة + راتب شهري ثابت للعاملة.
