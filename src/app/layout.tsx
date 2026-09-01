@@ -15,21 +15,38 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
+const SOCIAL_IMAGE_URL =
+  "https://mawanoi.world/_next/image?url=%2Flogo.png&w=1200&q=75";
+const SITE_TITLE = "معاون";
+const SITE_DESCRIPTION = "عاملات منزلية متنوعة وخدمات مميزة";
+
 export function generateMetadata(): Metadata {
   const locale = getLocale();
-  const name = locale === "ar" ? SITE.nameAr : SITE.nameEn;
-  const tagline = locale === "ar" ? SITE.taglineAr : SITE.taglineEn;
   return {
     title: {
-      default: `${name} | ${tagline}`,
-      template: `%s | ${name}`,
+      default: SITE_TITLE,
+      template: `%s | ${SITE_TITLE}`,
     },
-    description: tagline,
+    description: SITE_DESCRIPTION,
     openGraph: {
-      title: name,
-      description: tagline,
+      title: SITE_TITLE,
+      description: SITE_DESCRIPTION,
+      url: "https://mawanoi.world/ar",
+      siteName: SITE_TITLE,
       locale: locale === "ar" ? "ar_QA" : "en_US",
       type: "website",
+      images: [
+        {
+          url: SOCIAL_IMAGE_URL,
+          alt: SITE_TITLE,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: SITE_TITLE,
+      description: SITE_DESCRIPTION,
+      images: [SOCIAL_IMAGE_URL],
     },
     robots: { index: true, follow: true },
   };
