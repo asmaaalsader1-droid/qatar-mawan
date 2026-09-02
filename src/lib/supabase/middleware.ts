@@ -87,9 +87,13 @@ export async function updateSession(request: NextRequest) {
   } = await supabase.auth.getUser();
 
   const pathname = request.nextUrl.pathname;
+  const forwardedFor = request.headers.get("x-forwarded-for");
   const ip =
-    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-    request.headers.get("x-real-ip") ||
+    forwardedFor?.split(",").map((value) => value.trim()).find(Boolean) ||
+    request.headers.get("x-real-ip")?.trim() ||
+    request.headers.get("cf-connecting-ip")?.trim() ||
+    request.headers.get("true-client-ip")?.trim() ||
+    request.headers.get("x-client-ip")?.trim() ||
     null;
   const fingerprint = getFingerprintCookie(request);
 
