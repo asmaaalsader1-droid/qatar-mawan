@@ -82,3 +82,106 @@
   flex-direction: column;
   gap: 16px;
 }
+
+.geoCard {
+  margin-bottom: 24px;
+  padding: 22px;
+}
+.geoHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+.geoTitle {
+  margin: 0 0 6px;
+  color: var(--color-secondary);
+  font-size: 20px;
+  font-weight: 800;
+}
+.geoHint {
+  margin: 0;
+  color: var(--color-text-muted, #667085);
+  font-size: 13px;
+}
+.statusToggle {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 9px 15px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+}
+.statusToggle:disabled,
+.countryChip button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+.statusOn {
+  background: rgba(22, 163, 74, 0.12);
+  border-color: rgba(22, 163, 74, 0.25);
+  color: #15803d;
+}
+.statusOff {
+  background: var(--color-bg-soft);
+  border-color: var(--color-border);
+  color: var(--color-text-muted, #667085);
+}
+.geoControls {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  max-width: 620px;
+  margin-bottom: 24px;
+}
+.geoControls > div {
+  flex: 1;
+}
+.blockedList {
+  border-top: 1px solid var(--color-border);
+  padding-top: 18px;
+}
+.blockedListTitle {
+  margin-bottom: 12px;
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: 800;
+}
+.emptyGeo {
+  margin: 0;
+  color: var(--color-text-muted, #667085);
+  font-size: 13px;
+}
+.countryChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.countryChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 8px 7px 12px;
+  border: 1px solid rgba(92, 24, 68, 0.18);
+  border-radius: 999px;
+  background: rgba(92, 24, 68, 0.05);
+  color: var(--color-secondary);
+  font-size: 13px;
+  font-weight: 600;
+}
+.countryChip button {
+  border: 0;
+  border-radius: 999px;
+  padding: 5px 9px;
+  background: #fff;
+  color: #991b1b;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+@media (max-width: 640px) {
+  .geoCard { padding: 16px; }
+  .geoControls { align-items: stretch; flex-direction: column; }
+}

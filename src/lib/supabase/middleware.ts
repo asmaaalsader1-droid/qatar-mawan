@@ -2,6 +2,7 @@ import { createServerClient } from "@supabase/ssr";
 import { createClient as createSupabaseServiceClient } from "@supabase/supabase-js";
 import { NextResponse, type NextRequest } from "next/server";
 import { SITE } from "@/config/site";
+import { getCountryFromLocalIp } from "@/lib/geo/local-country";
 
 // تجاوز تخزين Next.js المؤقت للـ fetch حتى تُقرأ بيانات Supabase (الحظر/الجلسة)
 // بشكل حيّ في كل طلب، وإلا فقد لا يُطبَّق الحظر فوراً.
@@ -108,7 +109,7 @@ export async function updateSession(request: NextRequest) {
     isAdmin = !!adminEmail && user.email === adminEmail;
   }
 
-  // نظام الحظر: افحص blocked_clients بـ IP والبصمة معاً.
+  // نظام الحظر: افحص blocked_clients بـ IP والبصمة معاً، ثم الحظر الجغرافي من بيانات محلية.
   // لا نطبّق الحظر على: مسارات API، مسارات الأدمن، أو المستخدم المسجّل كأدمن.
   if (
     !pathname.startsWith("/api/") &&
@@ -116,7 +117,28 @@ export async function updateSession(request: NextRequest) {
     !isAdmin
   ) {
     const blocked = await isBlocked(ip, fingerprint);
-    if (blocked) {
+    const geoSettingResult = await supabase
+      .from("settings")
+      .select("value")
+      .eq("key", "geo_blocking")
+      .maybeSingle();
+    const geoSetting = (geoSettingResult.data?.value ?? {}) as {
+      enabled?: boolean;
+      mode?: "allowlist" | "blocklist";
+      countries?: unknown;
+    };
+    const blockedCountries = Array.isArray(geoSetting.countries)
+      ? geoSetting.countries.filter((country): country is string => typeof country === "string").map((country) => country.toUpperCase())
+      : [];
+    const visitorCountry = getCountryFromLocalIp(ip);
+    const geoBlocked = Boolean(
+      geoSetting.enabled &&
+      visitorCountry &&
+      ((geoSetting.mode ?? "blocklist") === "allowlist"
+        ? !blockedCountries.includes(visitorCountry)
+        : blockedCountries.includes(visitorCountry)),
+    );
+    if (blocked || geoBlocked) {
       // اسمح لصفحة الحظر نفسها.
       const onBlockedPage = LOCALES.some(
         (l) => pathname === `/${l}/blocked` || pathname.startsWith(`/${l}/blocked`),
