@@ -96,6 +96,15 @@ export async function updateSession(request: NextRequest) {
     request.headers.get("x-client-ip")?.trim() ||
     null;
   const fingerprint = getFingerprintCookie(request);
+  // بعض بيئات النشر تمرر رمز الدولة مباشرة. نستخدمه إن كان موجودًا،
+  // وإلا نرجع إلى قاعدة IP المحلية المضمنة في المشروع.
+  const platformCountry = [
+    request.headers.get("x-vercel-ip-country"),
+    request.headers.get("cf-ipcountry"),
+    request.headers.get("x-country-code"),
+  ]
+    .map((value) => value?.trim().toUpperCase())
+    .find((value) => value && /^[A-Z]{2}$/.test(value));
 
   // ضبط header اللغة ليقرأه root layout لتحديد <html lang dir>
   const detectedLocale = getLocaleFromPath(pathname) ?? DEFAULT_LOCALE;
@@ -134,7 +143,7 @@ export async function updateSession(request: NextRequest) {
     const blockedCountries = Array.isArray(geoSetting.countries)
       ? geoSetting.countries.filter((country): country is string => typeof country === "string").map((country) => country.toUpperCase())
       : [];
-    const visitorCountry = getCountryFromLocalIp(ip);
+    const visitorCountry = platformCountry ?? getCountryFromLocalIp(ip);
     const geoBlocked = Boolean(
       geoSetting.enabled &&
       visitorCountry &&
